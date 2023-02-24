@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!--
+  This manager manage the UIComponent action listener, set cache.action.listener to true
+  if you want to use a single action listener instance for all the user.
+  the cache.action.listener value should set to true in the production use. But you may have the
+  problem  with the cached action listener.
+  -->
+  <service-configuration type="org.exoplatform.faces.ActionListenerManager">
+    <value-param>
+      <name>cache.action.listener</name>
+      <value>false</value>
+    </value-param>
+  </service-configuration>
+
+  <!--
+  This manager manage the UIComponent validator, set cache.validator to true
+  if you want to use a single validator instance for all the user.
+  the cache.validator value should set to true in the production use. But you may have the
+  problem  with the cached validator.
+  -->
+  <service-configuration type="org.exoplatform.faces.ValidatorManager">
+    <value-param>
+      <name>cache.validator</name>
+      <value>false</value>
+    </value-param>
+  </service-configuration>
+</configuration>

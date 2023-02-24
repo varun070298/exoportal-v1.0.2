@@ -1,0 +1,2 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:m="maven" xmlns:ant="jelly:ant">
+</project>

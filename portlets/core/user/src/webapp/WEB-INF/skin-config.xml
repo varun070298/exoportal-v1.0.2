@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>user/WelcomePortlet</portlet-name>
+    <style name="welcome" url="/user/skin/portlet/welcome-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>user/Organization</portlet-name>
+    <style name="organization" url="/user/skin/portlet/organization-portlet.css"/>
+  </portlet-style-config>  
+
+  <portlet-style-config>
+    <portlet-name>user/UserInfo</portlet-name>
+    <style name="profile" url="/user/skin/portlet/user-profile-portlet.css"/>
+  </portlet-style-config>  
+
+  <portlet-style-config>
+    <portlet-name>user/RegisterPortlet</portlet-name>
+    <style name="register" url="/skin/components/UIForm.css"/>
+  </portlet-style-config>  
+</skin-config>

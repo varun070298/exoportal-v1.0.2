@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projectDescription>
+  <name>exoplatform.portlet-framework.cocoon</name>
+  <comment>The eXo platform is an Open Source integrated application suite that provides several dependant services in a loosely couple way.</comment>
+  <projects>
+    <project>exoplatform.commons</project>
+    <project>exoplatform.container</project>
+    <project>exoplatform.services.common.api</project>
+    <project>exoplatform.services.xml-processing.api</project>
+    <project>exoplatform.services.xml-processing.impl</project>
+    <project>exoplatform.services.portlet-container.api</project>
+    <project>exoplatform.services.portlet-container.impl</project>
+    <project>exoplatform.test.framework</project>
+    <project>exoplatform.services.common.impl</project>
+    <project>exoplatform.portal.api</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

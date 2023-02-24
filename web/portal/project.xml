@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../build/project.xml</extend>
+  <id>exoplatform.web.portal</id>
+  <name>eXo Portal web module</name>
+  <package>portal.war</package>
+  <description>eXo Portal web module</description>
+  <shortDescription>eXo Portal web module</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>      
+    </dependency>        
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.jsf-components</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portlet-container.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portlet-registry.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.xml-processing.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.xml-processing.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.indexing.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.indexing.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portlet-container.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>                
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>          
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.id-generator.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>                
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.id-generator.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>                
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+  </dependencies>
+
+</project>

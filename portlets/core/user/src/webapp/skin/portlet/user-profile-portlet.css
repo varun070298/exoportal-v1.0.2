@@ -1,0 +1,44 @@
+@import "/skin/components/UIForm.css" ;
+@import "/skin/components/simple-tab.css" ;
+.UIUserProfile {
+  width : 100%;
+}
+.UIUserProfile  .even{
+  background: #eeeeee ;
+}
+
+.UIUserProfile .footer{
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #CCCCCC ;
+  color: #074B88;
+  text-align : center;
+  height : 25px;
+  vertical-align : middle;
+}
+
+
+.UIUserProfile .image-section{
+  text-align : center;
+  vertical-align : middle;
+  background : #eee;
+  width: 55% ;
+}
+
+.UIUserProfile .section{
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: white ;
+  color: #074B88;
+  width : 100%;
+}
+
+.UIUserProfile .section .label {
+  width: 120px ;
+}
+
+.UIUserProfile .avatar {
+  background: #eeeeee ;
+  vertical-align: middle ;
+  text-align: center ;
+}

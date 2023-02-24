@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projectDescription>
+  <name>exoplatform.services.wsrp.impl</name>
+  <comment>exo wsrp services jar impl</comment>
+  <projects>
+    <project>exoplatform.commons</project>
+    <project>exoplatform.services.common.api</project>
+    <project>exoplatform.services.database.api</project>
+    <project>exoplatform.container</project>
+    <project>exoplatform.services.wsrp.api</project>
+    <project>exoplatform.services.organization.api</project>
+    <project>exoplatform.services.backup.api</project>
+    <project>exoplatform.services.portlet-container.api</project>
+    <project>exoplatform.services.common.impl</project>
+    <project>exoplatform.services.database.impl</project>
+    <project>exoplatform.services.resources.api</project>
+    <project>exoplatform.services.resources.impl</project>
+    <project>exoplatform.services.portal.api</project>
+    <project>exoplatform.services.portal.impl</project>
+    <project>exoplatform.services.organization.impl</project>
+    <project>exoplatform.services.portlet-container.impl</project>
+    <project>exoplatform.services.id-generator.api</project>
+    <project>exoplatform.services.id-generator.impl</project>
+    <project>exoplatform.test.framework</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

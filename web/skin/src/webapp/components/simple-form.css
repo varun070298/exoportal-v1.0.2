@@ -1,0 +1,79 @@
+.UISimpleForm {
+  background: transparent ;
+  margin: 0px auto;
+}
+
+.UISimpleForm  table {
+  margin : 0px auto;
+  border : 1px solid #dddddd;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UISimpleForm th {
+  padding: 5px 2px ;
+  text-align: left ;
+  background: url("/skin/components/search/1-dot-line.gif") bottom repeat-x ;
+  border: none;
+}
+
+.UISimpleForm td {
+  padding: 3px ;
+  border: none;
+}
+
+.UISimpleForm input {
+  width: 250px ;
+}
+
+/*matching attribute is supported by mozilla only */
+/*
+.UISimpleForm input[readonly] {
+  background: #EEE;
+  border: 1px solid ;
+}
+*/
+
+.UISimpleForm input.short {
+  width: 150px ;
+}
+
+.UISimpleForm input.long {
+  width: 400px ;
+}
+
+.UISimpleForm input.radio {
+  width: 15px ;
+}
+
+.UISimpleForm input.checkbox {
+  width: 15px ;
+}
+
+.UISimpleForm select {
+  width: 250px ;
+}
+
+.UISimpleForm select.short {
+  width: 150px ;
+}
+
+.UISimpleForm select.long {
+  width: 400px ;
+}
+
+.UISimpleForm textarea {
+  width: 250px ; height: 75px ;
+}
+
+.UISimpleForm textarea.large {
+  width: 100% ; height: 450px ;
+}
+
+.UISimpleForm label {
+  font-weight: normal ;
+}
+
+.UISimpleForm a {
+  padding: 2px ;
+}

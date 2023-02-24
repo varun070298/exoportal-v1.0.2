@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE faces-config PUBLIC
+"-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+"http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+-->
+<faces-config>
+	<factory>
+		<application-factory>com.sun.faces.application.ApplicationFactoryImpl</application-factory>
+		<faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+		<lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+		<render-kit-factory>com.sun.faces.renderkit.RenderKitFactoryImpl</render-kit-factory>
+  	</factory>
+
+  	<render-kit>
+  		<!-- Default eXo renderers -->
+	   <renderer>
+	     <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+	     <renderer-type>SelectListRenderer</renderer-type>
+	     <renderer-class>org.exoplatform.portlets.weather.renderer.html.SelectListRenderer</renderer-class>
+	   </renderer>    
+
+	   <!-- xhtml-mp specifics renderers -->
+ 
+		<renderer>
+      	<component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      	<renderer-type>XHTMLMPSelectListRenderer</renderer-type>
+      	<renderer-class>org.exoplatform.portlets.weather.renderer.xhtml_mp.SelectListRenderer</renderer-class>
+		</renderer>
+		
+	</render-kit>
+	
+</faces-config>

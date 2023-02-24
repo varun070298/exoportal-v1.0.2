@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration 
+    key="org.exoplatform.services.grammar.wiki.WikiEngineService"
+    type="org.exoplatform.services.grammar.wiki.impl.WikiEngineServiceImpl">
+   <values-param>
+     <name>token.handlers</name>
+     <!-- unknow token type-->
+     <value>org.exoplatform.services.grammar.wiki.impl.DefaultTokenHandler</value>
+     <!-- multiple new line token type-->
+     <value>org.exoplatform.services.grammar.wiki.impl.MultipleNewLineTokenHandler</value>
+     <!-- bold token **bold** -->
+     <value>org.exoplatform.services.grammar.wiki.impl.BoldTokenHandler</value>
+     <!-- underline token __underline__ -->
+     <value>org.exoplatform.services.grammar.wiki.impl.UnderlineTokenHandler</value>
+     <!-- italic token ~~italic~~ -->
+     <value>org.exoplatform.services.grammar.wiki.impl.ItalicTokenHandler</value>
+     <!-- strike token -strike- -->
+     <value>org.exoplatform.services.grammar.wiki.impl.StrikeTokenHandler</value>
+     <!-- smiley token :-) , :-)) , :-(( :-( ...... -->
+     <value>org.exoplatform.services.grammar.wiki.impl.SmileyTokenHandler</value>
+     <!-- link token [link>htpp://link] -->
+     <value>org.exoplatform.services.grammar.wiki.impl.LinkTokenHandler</value>
+     <!-- list token \n* , \n**, \n*** -->
+     <value>org.exoplatform.services.grammar.wiki.impl.ListTokenHandler</value>
+     <!-- enumerated token \n 1.  -->
+     <value>org.exoplatform.services.grammar.wiki.impl.EnumeratedTokenHandler</value>
+     <!-- roman enumerated token \n a.  -->
+     <value>org.exoplatform.services.grammar.wiki.impl.AlphabeticalEnumeratedTokenHandler</value>
+     <!-- roman enumerated token \n i.  -->
+     <value>org.exoplatform.services.grammar.wiki.impl.RomanEnumeratedTokenHandler</value>
+     <!-- text token {text} -->
+     <value>org.exoplatform.services.grammar.wiki.impl.TextTokenHandler</value>
+     <!-- java token {java} -->
+     <value>org.exoplatform.services.grammar.wiki.impl.JavaTokenHandler</value>
+     <!-- 1 title token  -->
+     <value>org.exoplatform.services.grammar.wiki.impl.TitleITokenHandler</value>
+     <!-- 1.1 title token  -->
+     <value>org.exoplatform.services.grammar.wiki.impl.TitleIITokenHandler</value>
+   </values-param>
+
+   <properties-param>
+     <name>smiley.configuration</name>
+     <property name=":-)" value="&lt;img src='/skin/icons/smileys/smile.gif'/&gt;"/>
+     <property name=":-))" value="&lt;img src='/skin/icons/smileys/laughing.gif'/&gt;"/>
+
+     <property name=":-(" value="&lt;img src='/skin/icons/smileys/sad.gif'/&gt;"/>
+     <property name=":-((" value="&lt;img src='/skin/icons/smileys/very_sad.gif'/&gt;"/>
+   </properties-param>
+  </service-configuration>
+
+  <service-configuration 
+    key="org.exoplatform.services.grammar.converter.Text2HtmlConverter"
+    type="org.exoplatform.services.grammar.converter.impl.Text2HtmlConverterImpl"/>
+</configuration>

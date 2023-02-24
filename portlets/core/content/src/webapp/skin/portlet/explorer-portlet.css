@@ -1,0 +1,65 @@
+@import "/skin/components/simple-grid.css" ;
+@import "/skin/components/simple-tab.css" ;
+@import "/skin/components/simple-form.css" ;
+
+.explorer-portlet .UIExplorer  {
+  width: 100% ;
+  background: white ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size : 10pt;
+  border: 2px solid #CCCCCC ;
+}
+
+.explorer-portlet .UIExplorer td  {
+  vertical-align: top ;
+}
+
+.explorer-portlet .UIExplorer .header  {
+  height: 35px ;
+  text-align: center ;
+  font-weight: bold ;
+  vertical-align: middle ;
+  background: #DDDDDD ;
+  text-decoration: none ;
+  border: 2px solid #CCCCCC ;
+}
+
+.explorer-portlet a  {
+  text-decoration: underline;
+  color: #074B88;
+}
+
+.explorer-portlet label {
+  color: #074B88;
+}
+
+.explorer-portlet .UIExplorer .tree  {
+  width: 175px ;
+  border: 2px solid #CCCCCC ;
+}
+
+.explorer-portlet .UIExplorer .detail  {
+  padding: 5px ;
+  width: 100% ;
+}
+
+.explorer-portlet .UIChildrenInfo  td {
+  border-top: 0px ;
+  border-left: 0px ;
+  border-right: 0px ;
+  border-bottom: 1px ;
+}
+
+.explorer-portlet .UIContentEditor  select {
+  width: auto ;
+}
+
+.explorer-portlet .UIContentEditor  td {
+  border: none ;
+  background : #fafafa;
+}
+
+.explorer-portlet .UIUpload  td {
+  border: none ;
+  background : #fafafa;
+}

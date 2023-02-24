@@ -1,0 +1,14 @@
+dn: dc=exoplatform,dc=org
+objectclass: top
+objectclass: dcObject
+objectclass: organization
+o: exoplatform
+dc: exoplatform
+
+dn: cn=Manager,dc=exoplatform,dc=org
+objectclass: organizationalRole
+cn: Manager
+
+dn: ou=portal,dc=exoplatform,dc=org
+ou: portal
+description: Portal organizational unit

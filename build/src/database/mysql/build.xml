@@ -1,0 +1,57 @@
+<project name="mysql.task" default="tasks" basedir="..">
+  <!-- Display all the targets -->
+  <target name="tasks">
+    <echo message=""/>
+    <echo message="The following targets are available:"/>
+    <echo message="ping:  check if mysql server is available"/>
+    <echo message="create.database:  create database instance"/>
+    <echo message="drop.database:  drop database instance"/>
+    <echo message="create.user:  create user and set permission for database instance"/>
+    <echo message="create.table: create tables for exo platform"/>
+    <echo message="drop.table:  drop all the tables "/>
+  </target>
+
+  <!--Check mysql server, create database , user and table-->
+  <!--use mysqladmin -h for more option , user, password, host, port....-->
+  <property name="mysql.port" value="3306" />
+  <property name="mysql.host" value="localhost" />
+  <property name="db.name" value="exodb" />
+  <property name="mysql.info" 
+            value="--host=${mysql.host} --port=${mysql.port} --user=root --password=root"/>
+
+  <target name="ping">
+    <echo message="Ping mysql server"/>
+    <exec dir="." executable="mysqladmin" failonerror="true" 
+          os="Linux, Windows 2000">
+      <arg line="${mysql.info} ping"/>
+    </exec>
+  </target>
+
+  <target name="create.database" depends="drop.database">
+    <echo message="Create a new database ${db.name}"/>
+    <exec dir="." executable="mysqladmin" failonerror="true" 
+          os="Windows 2000, Linux">
+      <arg line="${mysql.info} create ${db.name}"/>
+    </exec>
+  </target>
+
+  <target name="drop.database">
+    <echo message="drop  database ${db.name} if exist"/>
+    <exec dir="." executable="mysqladmin" failonerror="false" 
+          os="Windows 2000, Linux">
+      <arg line="${mysql.info} -f drop ${db.name}"/>
+    </exec>
+  </target>
+
+  <target name="create.user">
+    <echo message="How to do this :-( , I have no idea"/>
+    <echo message="you need to run the command manually, mysql -u root -proot mysql &lt; createUser.sql"/>
+  </target>
+
+  <target name="create.table">
+    <echo message="Create all the tables"/>
+  </target>
+  <target name="drop.table">
+    <echo message="drop all the tables"/>
+  </target>
+</project>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <id>exoplatform.portlets.ext.weather</id>
+  <name>${pom.artifactId} Portlet</name>
+
+  <description>${pom.artifactId} Portlet</description>
+  <shortDescription>${pom.artifactId} Portlet</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.jsf-components</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>jaxrpc</groupId>
+      <artifactId>jaxrpc</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis</artifactId>
+      <version>1.1</version>
+    </dependency>    
+  </dependencies>
+</project>

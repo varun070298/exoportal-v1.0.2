@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">JSF Weather Portlet</description>
+    <portlet-name>WeatherPortlet</portlet-name>
+    <display-name xml:lang="EN">JSF Weather Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.weather.component.UIWeatherViewPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.weather.component.UIWeatherEditPortlet.class</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+       <mime-type>text/html</mime-type>
+       <portlet-mode>edit</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>WeatherResource</resource-bundle>
+
+    <portlet-info>
+      <title>JSF Weather Portlet</title>
+      <short-title>JSF Weather Portlet</short-title>
+      <keywords>weather</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>code</name>
+        <value>LFRB</value>
+      </preference>
+    </portlet-preferences>
+
+  </portlet>
+
+</portlet-app>

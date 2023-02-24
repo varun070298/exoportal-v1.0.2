@@ -1,0 +1,43 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+
+  <preGoal name="java:compile">
+
+    <mkdir dir="${src.gen.dir}"/>
+
+    <ant:java fork="yes" dir="wsdl" classname="org.apache.axis.wsdl.WSDL2Java">
+      <ant:sysproperty key="proxySet" value=""/>
+      <ant:sysproperty key="proxyHost" value="localhost"/>
+      <ant:sysproperty key="proxyPort" value="80"/>
+      <ant:arg line="-v -t -O -1 --server-side --deployScope 'Application' -W -o ${src.gen.dir} wsrp_service.wsdl"/>
+      <ant:classpath refid="maven.dependency.classpath"/>
+    </ant:java>
+
+    <delete file="${src.gen.dir}/org/exoplatform/services/wsrp/bind/WSRP_v1_ServiceDescription_Binding_SOAPImpl.java"/>
+    <delete file="${src.gen.dir}/org/exoplatform/services/wsrp/bind/WSRP_v1_Registration_Binding_SOAPImpl.java"/>
+    <delete file="${src.gen.dir}/org/exoplatform/services/wsrp/bind/WSRP_v1_Markup_Binding_SOAPImpl.java"/>
+    <delete file="${src.gen.dir}/org/exoplatform/services/wsrp/bind/WSRP_v1_PortletManagement_Binding_SOAPImpl.java"/>
+
+    <ant:echo>copying resources to ${maven.build.dest} from ${src.gen.dir}</ant:echo>
+
+    <ant:copy todir="${maven.build.dest}">
+      <ant:fileset dir="${src.gen.dir}" includes="**/*.properties,**/bgm.ser"/>
+    </ant:copy>
+
+    <ant:path id="generated.src.path">
+      <ant:pathelement location="${src.gen.dir}"/>
+    </ant:path>
+    <maven:addPath id="maven.compile.src.set" refid="generated.src.path"/>
+
+  </preGoal>
+
+  <goal name="exo:wsrp">
+    <ant:java fork="yes" classname="org.exoplatform.services.wsrp.AdminClient">
+      <ant:arg line="-lhttp://localhost:8080/wsrp/services ${src.gen.dir}/org/exoplatform/services/wsrp/wsdl/deploy.wsdd"/>
+      <ant:classpath>
+        <ant:path refid="maven.dependency.classpath"/>
+        <ant:pathelement path="${maven.build.dest}"/>
+      </ant:classpath>
+    </ant:java>
+  </goal>
+
+</project>

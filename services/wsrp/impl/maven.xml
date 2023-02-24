@@ -1,0 +1,44 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+
+  <postGoal name="java:compile">
+    <attainGoal name="exo:hibernate:mapping"/>
+    <attainGoal name="exo:compile.war.template"/>    
+  </postGoal>
+
+  <goal name="exo:compile.war.template">
+    <ant:mkdir dir="${portlet.template.dir}/WEB-INF/classes"/>
+    <ant:javac srcdir="${portlet.template.dir}/src" destdir="${portlet.template.dir}/WEB-INF/classes"
+               debug="${maven.compile.debug}"
+               deprecation="${maven.compile.deprecation}"
+               optimize="${maven.compile.optimize}">
+      <ant:classpath>
+        <ant:path refid="maven.dependency.classpath"/>
+        <ant:pathelement path="${maven.build.dest}"/>
+      </ant:classpath>
+    </ant:javac>
+
+    <ant:copy todir="${portlet.template.dir}/WEB-INF/classes">
+      <ant:fileset dir="${portlet.template.dir}/src">
+        <ant:include name="**/*.properties"/>
+        <ant:include name="**/*.xml"/>
+      </ant:fileset>
+    </ant:copy>
+  </goal>
+
+  <preGoal name="test:test">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+
+  <preGoal name="test:single">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+
+  <postGoal name="clean:clean">
+    <delete dir="${portlet.template.dir}/WEB-INF/classes/org"/>
+  </postGoal>
+</project>
+

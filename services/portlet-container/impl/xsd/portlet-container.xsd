@@ -1,0 +1,106 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+  jxb:version="1.0">
+
+  <xsd:element name="portlet-container" type="PortletContainerType"/>
+
+  <xsd:complexType name="PortletContainerType">
+    <xsd:sequence>
+      <xsd:element name="global" type="Global" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="shared-session" type="SharedSession" minOccurs="0" maxOccurs="1"/>      
+      <xsd:element name="object-pool" type="ObjectPool" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="cache" type="Cache" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="supported-content" type="SupportedContent" minOccurs="1" maxOccurs="unbounded"/>
+      <xsd:element name="custom-mode" type="CustomMode" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="custom-window-state" type="CustomWindowState" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="properties" type="Properties" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:element name="description">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="lang" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>  
+
+  <!-- ============================================================================ -->
+  <!--                           Global element                                     -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="Global">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="description" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="major-version" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="minor-version" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <!-- ============================================================================ -->
+  <!--                           Shared session element                             -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="SharedSession">
+    <xsd:sequence>
+      <xsd:element name="enable" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>  
+
+  <!-- ============================================================================ -->
+  <!--                           Object Pool element                                -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="ObjectPool">
+    <xsd:sequence>
+      <xsd:element name="instances-in-pool" minOccurs="1" maxOccurs="1" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ============================================================================ -->
+  <!--                           Cache  element                                     -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="Cache">
+    <xsd:sequence>
+      <xsd:element name="enable" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <!-- ============================================================================ -->
+  <!--                           Custom mode element                                -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="SupportedContent">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>  
+
+  <!-- ============================================================================ -->
+  <!--                           Custom mode element                                -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="CustomMode">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ============================================================================ -->
+  <!--                           Custom window state                                -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="CustomWindowState">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- ============================================================================ -->
+  <!--                                  Properties                                  -->
+  <!-- ============================================================================ -->
+  <xsd:complexType name="Properties">
+    <xsd:sequence>
+      <xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>
+

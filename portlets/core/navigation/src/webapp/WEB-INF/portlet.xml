@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app 
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" 
+	version="1.0">
+
+  <portlet>
+    <description xml:lang="EN">Menu Portlet</description>
+    <portlet-name>Menu</portlet-name>
+    <display-name xml:lang="EN">Menu Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UIMenu.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.nav.component.UINavigationEdit.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.nav</resource-bundle>
+
+    <portlet-info>
+      <title>nav:menu</title>
+      <short-title>nav:short-title</short-title>
+      <keywords>nav:keywords</keywords>
+    </portlet-info>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">First Level Menu Portlet</description>
+    <portlet-name>FirstLevelMenu</portlet-name>
+    <display-name xml:lang="EN">First Level Menu Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UIFirstLevelMenu.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.nav.component.UINavigationEdit.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.nav</resource-bundle>
+
+    <portlet-info>
+      <title>nav:menu</title>
+      <short-title>nav:short-title</short-title>
+      <keywords>nav:keywords</keywords>
+    </portlet-info>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Breadcrumbs Portlet</description>
+    <portlet-name>Breadcrumbs</portlet-name>
+    <display-name xml:lang="EN">Breadcrumbs Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UIBreadcrumbs.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.nav</resource-bundle>
+
+    <portlet-info>
+      <title>nav:menu</title>
+      <short-title>nav:short-title</short-title>
+      <keywords>nav:keywords</keywords>
+    </portlet-info>
+  </portlet>  
+  
+  <portlet>
+    <description xml:lang="EN">Horizontal Menu Portlet</description>
+    <portlet-name>HorizontalMenu</portlet-name>
+    <display-name xml:lang="EN">Horizontal Menu Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UIHorizontalMenu.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.nav</resource-bundle>
+
+    <portlet-info>
+      <title>nav:menu</title>
+      <short-title>nav:short-title</short-title>
+      <keywords>nav:keywords</keywords>
+    </portlet-info>
+  </portlet>  
+  
+  <portlet>
+    <description xml:lang="EN">Sitemap Portlet</description>
+    <portlet-name>Sitemap</portlet-name>
+    <display-name xml:lang="EN">Sitemap Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UISitemap.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.nav</resource-bundle>
+
+    <portlet-info>
+      <title>nav:menu</title>
+      <short-title>nav:short-title</short-title>
+      <keywords>nav:keywords</keywords>
+    </portlet-info>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Visited Pages Portlet</description>
+    <portlet-name>VisitedPagesPortlet</portlet-name>
+    <display-name xml:lang="EN">Visited Pages Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.nav.component.UIVisitedPages.class</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.navigation.VisitedPagesPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Visited Pages</title>
+      <short-title>Visited Pages</short-title>
+      <keywords>action, history</keywords>
+    </portlet-info>
+  </portlet>
+
+</portlet-app>

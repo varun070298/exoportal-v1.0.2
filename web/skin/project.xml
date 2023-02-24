@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../build/project.xml</extend>
+  <id>exoplatform.web.skin</id>
+  <name>eXo skin web module</name>
+  <package>skin.war</package>
+  <description>eXo Skin web module</description>
+  <shortDescription>eXo Skin web module</shortDescription>
+
+  <dependencies/>
+</project>

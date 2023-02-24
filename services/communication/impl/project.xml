@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <id>exoplatform.services.communication.impl</id>
+  <name>eXo communication service impl</name>
+  <package>exo.services.communication</package>
+  <description>eXo communication service impl</description>
+  <shortDescription>eXo communication service impl</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.communication.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.indexing.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.xml-processing.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.id-generator.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>xmldb</groupId>
+      <artifactId>xmldb-api</artifactId>
+      <version>20021118</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>mail</artifactId>
+      <jar>mail.jar</jar>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>pop3</artifactId>
+      <jar>pop3.jar</jar>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>imap</artifactId>
+      <jar>imap.jar</jar>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>smtp</artifactId>
+      <jar>smtp.jar</jar>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>activation</artifactId>
+      <jar>activation.jar</jar>
+    </dependency>
+
+    <dependency>
+      <id>commons-httpclient</id>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+    </dependency>
+    <!-- ========================================================= -->
+    <!-- UNIT TEST DEPENDECY                                       -->
+    <!-- ========================================================= -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.id-generator.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.xml-processing.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.indexing.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.test.framework</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties><eclipse.dependency>true</eclipse.dependency></properties>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>target/generated-src</sourceDirectory>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/ForumServiceTestCase.java</include>        
+      </includes>
+    </unitTest>
+    <resources>
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>

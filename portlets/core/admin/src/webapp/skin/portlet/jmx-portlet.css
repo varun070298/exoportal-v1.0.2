@@ -1,0 +1,124 @@
+.jmx-portlet a {
+  margin : 0px 1px 0px 1px;
+}
+
+.jmx-portlet .UIJMXPortlet  {
+  width: 100% ; height: 100% ;
+  background: white ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  padding: 0px 0px 0px 0px;
+}
+
+.jmx-portlet .UIJMXPortlet img {
+  vertical-align : bottom;
+}
+
+.jmx-portlet .UIJMXPortlet  .header {
+  height: 35px ;
+  border: 1px solid #CCCCCC;
+  text-align: center ;
+  vertical-align: middle ;
+  background: #fafafa;
+  color: #074B88;
+}
+
+.jmx-portlet .UIJMXPortlet  .UINavigator {
+  padding: 1px ; margin: 3px ;
+  border: 1px solid #CCCCCC;
+  width: 250px ;
+  background: #eeeeee;
+}
+
+.jmx-portlet .UIJMXPortlet  .UINavigator ul {
+  padding: 0px 0px 0px 0px ;
+  margin:  0px  0px 0px 5px;
+}
+
+.jmx-portlet .UIJMXPortlet  .UINavigator li {
+  padding: 0px 0px 0px 0px ;
+  margin: 0px  0px 0px 25px;
+}
+
+.jmx-portlet .UIJMXPortlet  .UINavigator ul .leaf {
+ list-style-image : url("/exo-admin/images/bean.gif");
+ margin: 0px  0px 0px 45px;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIListMBean {
+  padding: 1px ; margin: 0px ;
+  border: 1px solid #CCCCCC;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIListMBean td {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIListMBean th {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean {
+  margin: 0px ; padding: 2px ;
+  border: 1px solid #CCCCCC;
+  width: 100% ;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean td {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean th {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean .method {
+  margin-bottom: 5px ;
+  padding: 3px ;
+  background: #fafafa;
+  width: 100% ;
+  border: none ;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean ul {
+  padding: 0px 0px 0px 0px ;
+  margin:  0px  0px 0px 5px;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIMBean li {
+  padding: 0px 0px 0px 0px ;
+  margin: 0px  0px 0px 30px;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIOperation {
+  padding: 1px ; margin: 0px ;
+  border: 1px solid #CCCCCC;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIOperation td {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .UIOperation th {
+  padding: 2px ;
+  border: 1px solid #CCCCCC;
+}
+
+.jmx-portlet .UIJMXPortlet  .footer {
+  height: 35px ;
+  border: 1px solid #CCCCCC;
+  text-align: center ;
+  vertical-align: middle ;
+  background: #fafafa;
+  color: #074B88;
+}

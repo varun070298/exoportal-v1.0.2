@@ -1,0 +1,53 @@
+.sitemap-portlet .UISitemap {
+  margin: 0px ;
+  text-transform: capitalize ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 12pt; font-weight: bold ;
+  width: auto ; height: 100% ;
+  padding: 5px 5px 5px 5px ;
+}
+
+.sitemap-portlet .UISitemap .even{
+  float : left;
+  background : #EEEEEE;
+  padding: 5px 5px 5px 5px ;
+}
+
+.sitemap-portlet .UISitemap .odd{
+  height: 100% ;
+  float : left;
+  padding: 5px 5px 5px 5px ;
+}
+
+.sitemap-portlet .UISitemap a {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 10pt; font-weight: bold ;
+  text-decoration: none ;
+  color: #074B88;
+}
+
+.sitemap-portlet .UISitemap ul{
+  margin: 0px 0px 0px 20px;
+  padding: 0px ;
+  list-style-type: none ;
+  width: auto ;
+}
+
+.sitemap-portlet .UISitemap ul.first-level{
+  padding: 0px 0px 5px 0px;
+  list-style-image: url("exo-sitemap/pages-16x16.gif") ;
+}
+
+.sitemap-portlet .UISitemap ul.nth-level{
+  list-style-image: url("exo-sitemap/page-16x16.gif") ;
+}
+
+.sitemap-portlet .UISitemap ul.nth-level a{
+  color : #AAAAAA;
+}
+
+.sitemap-portlet .UISitemap li{
+  margin: 0px 5px 0px 0px;
+  padding: 0px ;
+  width: auto ;
+}

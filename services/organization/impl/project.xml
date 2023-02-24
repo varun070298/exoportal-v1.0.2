@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.services.organization.impl</id>
+  <name>eXo Organization Service impl</name>
+  <shortDescription>eXo Organization Service impl</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.ldap.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>    
+    
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>ldapbp</groupId>
+      <artifactId>ldapbp</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <!-- ========================================================= -->
+    <!-- UNIT TEST DEPENDECY                                       -->
+    <!-- ========================================================= -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+    
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.ldap.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>    
+    
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.test.framework</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/TestHibernate*.java</include>
+      </includes>
+    </unitTest>
+  </build>
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.business-process.payraise</id>
+  <name>eXo payraise BP</name>
+  <shortDescription>eXo payraise BP</shortDescription>
+
+</project>

@@ -1,0 +1,103 @@
+.menu-portlet {
+  padding: 0px ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.menu-portlet .UIMenu {
+  margin: 0px 0px 0px 0px ;
+  background: #EEEEEE ;
+  width: auto ; height: 100% ;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.menu-portlet .UIMenu .tree {
+  padding: 5px 5px 5px 5px ;
+}
+
+.menu-portlet .UIMenu ul {
+  margin: 0px 0px 5px 3px;
+  padding: 1px 0px 0px 0px ;
+  list-style-type: none ;
+  width: auto ;
+}
+
+.menu-portlet .UIMenu .root a{
+  margin: 0px ;
+  text-transform: capitalize ;
+  font-size: 12pt; font-weight: bold ;
+  width: auto ;
+  color: orange ;
+  text-decoration: none ;
+}
+
+.menu-portlet .UIMenu li {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px ;
+  border-top: 1px solid #bbb;
+  width: auto ;
+}
+
+.menu-portlet .UIMenu li.expanded-child{
+  background: url("exo-menu/expand.gif") no-repeat 0% 3px;
+  padding: 0px 0px 3px 15px;
+  margin: 0px 0px 0px 0px;
+}
+
+.menu-portlet .UIMenu li.expanded-child a{
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 10pt; font-weight: bold ;
+  text-decoration: none ;
+  color: #074B88;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+.menu-portlet .UIMenu li.collapsed-child{
+  background: url("exo-menu/collapse.gif") no-repeat 0% 3px ;
+  padding: 0px 3px 3px 15px;
+}
+
+.menu-portlet .UIMenu li.collapsed-child a{
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 10pt; font-weight: bold ;
+  text-decoration: none ;
+  color: #074B88;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+.menu-portlet .UIMenu li.leaf{
+  background: url("exo-menu/page-16x16.gif") no-repeat 0% 3px ;
+  padding: 0px 3px 3px 16px;
+}
+
+.menu-portlet .UIMenu li.leaf a{
+  font-size: 10pt; font-weight: bold ;
+  text-decoration: none ;
+  color: #074B88;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+.menu-portlet .UIMenu img{
+  vertical-align : middle;
+  margin: 0px 0px 0px 1px;
+}
+
+.menu-portlet .UIMenu .edit-actions{
+  display : block;    
+  text-align : right;
+}
+
+.menu-portlet .UIMenu .inspect{
+  text-align : center;
+  text-decoration : none;
+  margin: 0px 0px 0px 1px;
+  border : 1px outset #eeeeee;
+  background : #fafafa; 
+}
+
+.menu-portlet .UIMenu .inspect a{
+  color: #074B88;
+  text-decoration : none;
+}

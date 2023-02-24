@@ -1,0 +1,109 @@
+.horizontal-portlet{
+  background-color: #ccc; 
+}
+
+.UIHorizontalMenu {
+  padding: 0px 0px 0px 0px ;
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  height: 22px;
+  text-decoration: none;
+  color: white;
+  position: relative ;
+  text-transform: capitalize ;
+}
+
+.UIHorizontalMenu a {
+  margin: 0px;
+  padding: 0px 15px 0px 15px;
+  height: 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  vertical-align: top ;
+}
+
+.UIHorizontalMenu dl, dt, dd, li {
+  padding : 0px;
+  margin : 0px;
+}
+
+.UIHorizontalMenu ul {
+  list-style-type: none;
+  padding : 0px;
+  margin : 0px;
+}
+
+.UIHorizontalMenu dl {
+  float: left;
+  background-color: #ccc; 
+}
+
+.UIHorizontalMenu .home-dl {
+  padding: 0px 2px 0px 3px;
+  text-align : center; 
+  width : 20px;
+}
+
+.UIHorizontalMenu dt {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.UIHorizontalMenu dd {
+
+  padding : 0px;
+  display: none;
+  font-size: 8pt;
+  font-weight: bold;
+  width: 200px;
+  position: absolute;
+  background-color: #EEEEEE;
+}
+
+.UIHorizontalMenu dt a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+}
+
+.UIHorizontalMenu dt a:hover {
+  color: #074B88;
+}
+
+.UIHorizontalMenu dd a {
+  color: #074B88;
+}
+
+.UIHorizontalMenu dd a:hover {
+  background-color: #95c4ea;
+}
+
+.UIHorizontalMenu a.selected {
+  color: #074B88 ;
+  padding: 0px 0px 2px 0px;
+  display: inline;
+  text-align : left;
+}
+
+
+.UIHorizontalMenu .left-selected-tab {
+  width: 13px ; height: 18px ;
+  margin: 0px; padding: 0px;
+  border: none ;
+  text-align : left;
+}
+
+
+.UIHorizontalMenu .right-selected-tab {
+  width: 17px ; height: 18px ;
+  margin: 0px; padding: 0px;
+  border: none ;
+}
+
+.UIHorizontalMenu .home-icon {
+  float: left;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background: url("exo-toolbar/home-16x16.gif")  top;
+}

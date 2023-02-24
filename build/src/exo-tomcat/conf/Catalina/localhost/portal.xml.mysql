@@ -1,0 +1,68 @@
+<Context path="/portal" docBase="portal" debug="0" reloadable="true" crossContext="true">
+  <Logger className="org.apache.catalina.logger.SystemOutLogger"
+    prefix="localhost_exo_portal." suffix=".txt"
+    timestamp="true"/>
+  <!--
+  <Logger className="org.apache.catalina.logger.FileLogger"
+    prefix="exo_portal." suffix=".txt" timestamp="true"/>          
+  -->
+  <!--
+  Remove this if you want to use the default StandarManager. The standard 
+  manager try to save the the session when you restart the tomcat it may cause
+  problem as not all of your session attribute is not serializable
+  -->
+  <Manager className="org.apache.catalina.session.PersistentManager"
+    saveOnRestart="false"/>
+
+
+  <Realm className="org.apache.catalina.realm.JAASRealm"
+         appName="exo-domain"
+         userClassNames="org.exoplatform.services.security.UserPrincipal"
+         roleClassNames="org.exoplatform.services.security.RolePrincipal"
+         debug="0"/>
+
+  <Resource name="jdbc/ExoDS" auth="SERVLET" type="javax.sql.DataSource"/>
+  <ResourceParams name="jdbc/ExoDS">
+    <parameter>
+      <name>factory</name>
+      <value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+    </parameter>
+    <parameter><name>maxActive</name> <value>100</value></parameter>
+    <parameter><name>maxIdle</name><value>30</value></parameter>
+    <parameter><name>maxWait</name><value>10000</value></parameter>
+    <parameter><name>username</name><value>exo</value></parameter>
+    <parameter><name>password</name><value>exo</value></parameter>
+    <parameter><name>driverClassName</name><value>com.mysql.jdbc.Driver</value></parameter>
+    <parameter><name>url</name><value>jdbc:mysql://localhost:3306/exodb?relaxAutoCommit=true&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8</value></parameter>
+  </ResourceParams>
+  <!--
+  <Resource name="jdbc/WorkflowDS" auth="SERVLET" type="javax.sql.DataSource"/>
+  <ResourceParams name="jdbc/WorkflowDS">
+    <parameter>
+      <name>factory</name>
+      <value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+    </parameter>
+    <parameter><name>maxActive</name> <value>100</value></parameter>
+    <parameter><name>maxIdle</name><value>30</value></parameter>
+    <parameter><name>maxWait</name><value>10000</value></parameter>
+    <parameter><name>username</name><value>exo</value></parameter>
+    <parameter><name>password</name><value>exo</value></parameter>
+    <parameter><name>driverClassName</name><value>com.mysql.jdbc.Driver</value></parameter>
+    <parameter><name>url</name><value>jdbc:mysql://localhost:3306/exodb?relaxAutoCommit=true&autoReconnect=true</value></parameter>
+  </ResourceParams>
+  -->
+  <Resource name="jdbc/WorkflowDS" auth="SERVLET" type="javax.sql.DataSource"/>
+  <ResourceParams name="jdbc/WorkflowDS">
+    <parameter>
+      <name>factory</name>
+      <value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+    </parameter>
+    <parameter> <name>maxActive</name> <value>100</value> </parameter>
+    <parameter><name>maxIdle</name><value>30</value></parameter>
+    <parameter><name>maxWait</name> <value>10000</value></parameter>
+    <parameter><name>username</name> <value>sa</value></parameter>
+    <parameter><name>password</name><value></value></parameter>
+    <parameter><name>driverClassName</name><value>org.hsqldb.jdbcDriver</value></parameter>
+    <parameter><name>url</name><value>jdbc:hsqldb:../temp/data/workflow</value> </parameter>
+  </ResourceParams>
+</Context>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 2.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+  <!--
+  <session-factory name="/hibernate/sessionFactory"/>
+  -->
+  <session-factory>   
+      
+    <!--
+     <property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+    <property name="connection.url">jdbc:hsqldb:.</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password"></property>
+    -->
+    
+   
+    <property name="connection.provider_class">org.exoplatform.services.database.impl.ExoConnectionProvider</property>
+    <property name="dialect">net.sf.hibernate.dialect.HSQLDialect</property>
+    <property name="show_sql">false</property>
+    <property name="hibernate.cache.provider_class">org.exoplatform.services.database.impl.ExoCacheProvider</property>
+ 		
+    <mapping resource="exo/services/resources/impl/ResourceBundleDescriptionImpl.hbm.xml"/>
+    <mapping resource="exo/services/resources/impl/ResourceBundleDataImpl.hbm.xml"/>
+  </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,35 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:ant="jelly:ant" xmlns:maven="jelly:maven">
+  <goal name="exo:test:portal">
+    <java classname="org.exoplatform.test.web.WebLoadRunner" fork="yes">
+      <arg value="org/exoplatform/test/portal/Runner.groovy"/>
+      <classpath>
+        <pathelement location="${maven.test.dest}"/>
+        <pathelement location="${basedir}/src/groovy"/>
+        <pathelement location="${maven.build.dest}"/>
+        <pathelement location="${basedir}/../../business-processes/holiday/target"/>
+        <path refid="maven.dependency.classpath"/>
+      </classpath>
+    </java>
+  </goal>
+
+  <goal name="exo:release">	
+    <property name="template.dir" value="${maven.build.dir}/exo-webunits"/>
+    <mkdir   dir="${template.dir}" />
+    <j:forEach var="lib" items="${pom.artifacts}">
+      <j:set var="dep" value="${lib.dependency}"/> 
+      <j:if test="${dep.type =='jar'}"> 
+        <echo>copying [${lib.path}] dependency to ${template.dir}</echo>				
+        <copy todir="${template.dir}" file="${lib.path}"/>  
+      </j:if>           
+    </j:forEach> 
+    <copy todir="${template.dir}" overwrite="true">
+      <fileset dir="${maven.src.dir}/groovy">
+        <excludes name="**/.svn/*"/>
+      </fileset>
+    </copy>
+    <copy todir="${template.dir}" file="run.sh"/>
+    <copy todir="${template.dir}" file="run.bat"/>
+    <copy todir="${template.dir}" 
+          file="../../business-processes/holiday/target/exoplatform.business-process.holiday-1.0.par"/>
+  </goal>
+</project>

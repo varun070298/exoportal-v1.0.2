@@ -1,0 +1,16 @@
+<table width="100%" border="1">
+  <tr>
+    <th>User Name</th>
+    <th>First Name</th>
+    <th>Last  Name</th>
+    <th>Email</th>
+  </tr>
+  #foreach( $user in $users )
+  <tr>
+  	<td>$user.getUserName()</td>
+    <td>$user.getFirstName()</td>
+    <td>$user.getLastName()</td>
+    <td>$user.getEmail()</td>
+  </tr>
+  #end
+</table>

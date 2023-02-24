@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.portlet-framework.exomvc</id>
+  <name>eXo MVC Framework</name>
+  <shortDescription>eXo MVC Framework</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>velocity</groupId>
+      <artifactId>velocity</artifactId>
+      <version>1.4</version>
+    </dependency>
+  </dependencies>
+</project>

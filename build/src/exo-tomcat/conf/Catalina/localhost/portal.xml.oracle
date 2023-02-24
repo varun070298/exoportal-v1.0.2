@@ -1,0 +1,38 @@
+<Context path="/portal" docBase="portal" debug="0" reloadable="true" crossContext="true">
+  <Logger className="org.apache.catalina.logger.SystemOutLogger"
+    prefix="localhost_exo_portal." suffix=".txt"
+    timestamp="true"/>
+  <!--
+  <Logger className="org.apache.catalina.logger.FileLogger"
+    prefix="exo_portal." suffix=".txt" timestamp="true"/>          
+  -->
+  <!--
+  Remove this if you want to use the default StandarManager. The standard 
+  manager try to save the the session when you restart the tomcat it may cause
+  problem as not all of your session attribute is not serializable
+  -->
+  <Manager className="org.apache.catalina.session.PersistentManager"
+    saveOnRestart="false"/>
+
+  <Realm   className="org.apache.catalina.realm.JDBCRealm" debug="99"
+          driverName="oracle.jdbc.driver.OracleDriver"
+       connectionURL="jdbc:oracle:thin:@amadeus:1521:amadeus"
+      connectionName="exo" connectionPassword="exo"
+           userTable="exo_user" userNameCol="username" userCredCol="password"
+       userRoleTable="exo_role" roleNameCol="role" />
+
+  <Resource name="jdbc/ExoDb" auth="SERVLET" type="javax.sql.DataSource"/>
+  <ResourceParams name="jdbc/ExoDb">
+    <parameter>
+      <name>factory</name>
+      <value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+    </parameter>
+    <parameter><name>maxActive</name> <value>100</value></parameter>
+    <parameter><name>maxIdle</name><value>30</value></parameter>
+    <parameter><name>maxWait</name><value>10000</value></parameter>
+    <parameter><name>username</name><value>exo</value></parameter>
+    <parameter><name>password</name><value>exo</value></parameter>
+    <parameter><name>driverClassName</name><value>oracle.jdbc.driver.OracleDriver</value></parameter>
+    <parameter><name>url</name><value>jdbc:oracle:thin:@amadeus:1521:amadeus</value></parameter>
+  </ResourceParams>
+</Context>

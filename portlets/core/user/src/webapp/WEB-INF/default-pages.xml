@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<portal-config>
+  <default-locale>en</default-locale>
+  <resource-name>pages.properties</resource-name>
+  <security>public</security>
+  <default-style>blue-lagoon</default-style>
+
+  <banner>
+    <portlet showInfoBar="false" style="banner">
+      <window-id>web/BannerPortlet/window-banner</window-id>
+    </portlet>
+  </banner>
+
+  <page default="true">
+    <title>Home</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="200">
+      <tab default="true">
+        <title>tab 1</title>
+        <column width="*">
+          <portlet>
+            <title>Welcome</title>
+            <window-id>user/WelcomePortlet/window-welcome-user</window-id>
+          </portlet>
+          <portlet>
+            <title>Download page</title>
+            <window-id>content/DisplayContent/window-download</window-id>
+          </portlet>
+          <portlet>
+            <title>Need support?</title>
+            <window-id>content/DisplayContent/window-company</window-id>
+          </portlet>          
+        </column>
+      </tab>
+    </main-column>
+    <main-column width="*" renderer="default">
+      <tab>
+        <title>Welcome</title>
+        <column width="*">
+          <portlet>
+            <title>Exo Portal</title>
+            <window-id>web/RssPortlet/window-exo-portal-rss</window-id>
+          </portlet>        
+        </column>
+      </tab>           
+      <tab>
+        <title>News</title>
+        <column width="*">
+          <portlet>
+            <title>What's new...</title>
+            <window-id>web/RssPortlet/window-news</window-id>
+          </portlet>
+        </column>
+      </tab>                     
+    </main-column>
+    <main-column width="200" renderer="default">
+      <tab default="true">
+        <title>tab 1</title>
+        <column width="*">
+          <portlet>
+            <title>Related projects</title>
+            <window-id>content/DisplayContent/window-related-projects</window-id>
+          </portlet>            
+          <portlet>
+            <title>Some statistics</title>
+            <window-id>content/DisplayContent/window-statistic</window-id>
+          </portlet>
+        </column>
+      </tab>
+    </main-column>
+  </page>
+
+  <page>
+    <title>Documentation</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>Overview</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>The modules</title>
+            <window-id>content/DisplayContent/window-modules</window-id>
+          </portlet>
+        </column>
+      </tab>    
+      <tab>
+        <title>Document</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>Document</title>
+            <window-id>web/IFramePortlet/window-document</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>Eclipse plugin</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>eXo IDE integration</title>
+            <window-id>content/DisplayContent/window-ide</window-id>
+          </portlet>
+        </column>
+      </tab>         
+    </main-column>     
+  </page>
+  
+  <page>
+    <title>Reports</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+      
+    <main-column width="*">
+      <tab>
+        <title>Unit Tests</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>JUnit tests results</title>
+            <window-id>web/IFramePortlet/window-tests</window-id>
+          </portlet>
+        </column>
+      </tab>          
+      <tab>
+        <title>Load Tests</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>JMeter tests results</title>
+            <window-id>web/IFramePortlet/window-tests</window-id>
+          </portlet>
+        </column>
+      </tab>            
+    </main-column>     
+  </page>  
+
+  <page>
+    <title>CVS Stats</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+      
+    <main-column width="*">
+      <tab>
+        <title>ExoPortal</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoPortal cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-portal</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>ExoPortletContainer</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoPortletContainer cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-portlet-container</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>ExoDeployers</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoDeployers cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-deployers</window-id>
+          </portlet>
+        </column>
+      </tab>          
+      <tab>
+        <title>ExoServer</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoServer cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-server</window-id>
+          </portlet>
+        </column>
+      </tab>          
+      <tab>
+        <title>ExoServicesContainer</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoServicesContainer cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-services-container</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>ExoPortlets</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoPortlets cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-portlets</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>ExoServicesAPI</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoServicesAPI cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-services-api</window-id>
+          </portlet>
+        </column>
+      </tab>          
+      <tab>
+        <title>ExoServices</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoServices cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-services</window-id>
+          </portlet>
+        </column>
+      </tab>          
+      <tab>
+        <title>ExoCommons</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>ExoCommons cvs statistic</title>
+            <window-id>web/IFramePortlet/window-exo-commons</window-id>
+          </portlet>
+        </column>
+      </tab>          
+    </main-column>     
+  </page>  
+
+  <page>
+    <title>Web Tools</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>Forum Portlet</title>
+        <column width="*">
+          <portlet height="100%" style="forum">
+            <title>Forum</title>
+            <window-id>communications/Forum/window-forum-portlet</window-id>
+          </portlet>
+        </column>
+      </tab>    
+      <tab>
+        <title>Mail Portlet</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>Forum</title>
+            <window-id>communications/Mail/window-mail-portlet</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <!--
+      <tab>
+        <title>Chat Portlet</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>Chat</title>
+            <window-id>communications/Chat/window-chat-portlet</window-id>
+          </portlet>
+        </column>
+      </tab>      
+      -->
+      <tab>
+        <title>PHPBB Forum</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>iframe</title>
+            <window-id>web/IFramePortlet/window-forum</window-id>
+          </portlet>
+        </column>
+      </tab>
+    </main-column>
+  </page>
+
+  <page>
+    <title>Monitors</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>Portal Monitor</title>
+        <column width="*">
+          <portlet>
+            <title>Portal Monitor</title>
+            <window-id>admin/PortalMonitor/window-portal-monitor</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>User Monitor</title>
+        <column width="*">
+          <portlet>
+            <title>Session Monitor</title>
+            <window-id>admin/UserMonitor/window-user-monitor</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>Organization</title>
+        <column width="*">
+          <portlet>
+            <title>Organization</title>
+            <window-id>user/Organization/window-organization</window-id>
+          </portlet>
+        </column>
+      </tab>      
+    </main-column>
+  </page>
+
+  <page>
+    <title>Surprise</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>Cms Explorer</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>Content Explorer</title>
+            <window-id>content/CmsExplorer/window-cms-explorer</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>File Explorer</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>Content Explorer</title>
+            <window-id>content/FileExplorer/window-file-explorer</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <!--
+      <tab>
+        <title>FacesPortlet</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>FacesPortlet</title>
+            <window-id>HelloFacesPortletFramework/HelloFacesPortletFramework/window-hellofacesworld-1</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>DebugFacesPortlet</title>
+        <column width="*">
+          <portlet height="100%">
+            <title>FacesDebug</title>
+            <window-id>HelloFacesPortletFramework/DebugPortlet/window-hellofacesworld-2</window-id>
+          </portlet>
+        </column>
+      </tab>
+      -->
+      <tab>
+        <title>Miscellenous</title>
+        <column width="200">          
+          <portlet showInfoBar="true">
+            <title>Calendar</title>
+            <window-id>utilities/Calendar/window-calendar</window-id>
+          </portlet>        	        
+          <portlet renderer="default" showInfoBar="true">
+            <title>Hello Framework</title>
+            <window-id>HelloPortletFramework/HelloPortletFramework/window-helloframework-1</window-id>
+          </portlet>          
+        </column>  
+        <column width="*">     
+          <portlet renderer="default">
+            <title>Hello World</title>
+            <window-id>HelloWorld/HelloWorld/window-helloworld-1</window-id>
+          </portlet>        
+        </column>          
+      </tab>      
+      <tab>
+        <title>Sun Jsp Portlet</title>
+        <column width="*">
+          <portlet>
+            <window-id>SunSample/JSPPortlet/window-jspportlet-1</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>Sun Weather Portlet</title>
+        <column width="*">
+          <portlet>
+            <window-id>SunSample/WeatherPortlet/window-weather-1</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <!--
+      <tab>
+        <title>Sun Notepad Portlet</title>
+        <column width="*">
+          <portlet>
+            <window-id>SunSample/NotepadPortlet/window-notepad-1</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>Sun Bookmark Portlet</title>
+        <column width="*">
+          <portlet>
+            <window-id>SunSample/BookmarkPortlet/window-bookmark-1</window-id>
+          </portlet>
+        </column>
+      </tab>
+      -->      
+      <tab>
+        <title>Velocity Demo</title>
+        <column width="*">
+          <portlet>
+            <title>Velocity Demo</title>
+            <window-id>examples/VelocityDemo/window-velocity-1</window-id>
+          </portlet>
+        </column>
+      </tab>      
+    </main-column>
+  </page>
+
+  <page>
+    <title>My Portal</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>Register</title>
+        <column width="*">
+          <portlet>
+            <title>Register</title>
+            <window-id>user/RegisterPortlet/window-register</window-id>
+          </portlet>
+        </column>
+      </tab>
+
+      <tab>
+        <title>Profile</title>
+        <column width="*">
+          <portlet>
+            <title>Profile</title>
+            <window-id>user/UserInfo/window-user-info</window-id>
+          </portlet>
+        </column>
+      </tab>
+    </main-column>
+  </page>
+
+  <page>
+    <title>Admin</title>
+    <user-page-type>
+      <view-permission>any</view-permission>
+    </user-page-type>
+    <main-column width="*">
+      <tab>
+        <title>User Customization</title>
+        <column width="*">
+          <portlet>
+            <title>Customization</title>
+            <window-id>user/UserCustomizationPortlet/window-user-customizer</window-id>
+          </portlet>
+        </column>
+      </tab>
+      <tab>
+        <title>Group Customization</title>
+        <column width="*">
+          <portlet>
+            <title>Customization</title>
+            <window-id>user/GroupCustomizationPortlet/window-group-customizer</window-id>
+          </portlet>
+        </column>
+      </tab>
+    </main-column>
+  </page>
+
+  <footer>
+    <portlet showInfoBar="false" style="footer">
+      <window-id>web/FooterPortlet/window-footer</window-id>
+    </portlet>
+  </footer>
+
+</portal-config>

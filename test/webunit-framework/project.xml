@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.test.webunit-framework</id>
+  <name>eXo webunit  framework</name>
+  <shortDescription>eXo webunit framework</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>httpunit</groupId>
+      <artifactId>httpunit</artifactId>
+      <version>1.6</version>
+    </dependency>
+  </dependencies>
+</project>

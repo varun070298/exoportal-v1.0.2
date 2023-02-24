@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>wsrp/WSRPAdminPortlet</portlet-name>
+    <style name="wsrp-admin" url="/wsrp/skin/portlet/wsrp-admin-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>wsrp/WSRPConsumerPortlet</portlet-name>
+    <style name="wsrp" url="/wsrp/skin/portlet/wsrp-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

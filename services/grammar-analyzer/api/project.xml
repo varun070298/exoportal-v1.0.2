@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.services.grammar-analyzer.api</id>
+  <name>Language grammar analyzer service API</name>
+  <shortDescription>Grammar analyzer</shortDescription>
+  
+  <dependencies/>
+</project>

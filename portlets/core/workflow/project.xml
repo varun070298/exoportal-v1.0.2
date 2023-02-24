@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <id>exoplatform.portlets.core.workflow</id>
+  <name>${pom.artifactId} Portlet</name>
+  <package>exo.webapp.${pom.artifactId}.*</package>
+
+  <description>${pom.artifactId} Portlet</description>
+  <shortDescription>${pom.artifactId} Portlet</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.jsf-components</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.workflow.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>jbpm</groupId>
+      <artifactId>jbpm</artifactId>
+      <version>2.0-beta2</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+    <!-- for exo-jsf-framework UIFileUpload-->
+    <dependency>
+      <id>commons-fileupload</id>
+      <version>1.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+    <!-- =============================================================== -->
+    <!--            U N I T    T E S T                                   -->
+    <!-- =============================================================== -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.workflow.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+</project>

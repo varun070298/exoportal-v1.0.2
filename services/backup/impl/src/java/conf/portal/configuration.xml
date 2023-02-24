@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration 
+    key="org.exoplatform.services.backup.ImportExportService"
+    type="org.exoplatform.services.backup.impl.ImportExportServiceImpl">
+    <value-param>
+      <name>backup.directory</name>
+      <value>G:\exodata</value>
+    </value-param>
+  </service-configuration>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.ImportExportPluginImpl"/>
+  <service-configuration type="org.exoplatform.services.portal.impl.ImportExportPluginImpl"/>
+</configuration>

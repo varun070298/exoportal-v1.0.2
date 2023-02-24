@@ -1,0 +1,44 @@
+.wiki {
+}
+
+.wiki .bold {
+  font-weight: bold ;
+}
+
+.wiki .italic {
+  font-style: italic ;
+}
+
+.wiki .underline {
+  text-decoration: underline ;
+}
+
+.wiki .text {
+  font-family: Courier, 'Courier New', sans-serif; 
+  font-size: 11px; 
+  color: #006600;
+  border: 1px #D1D7DC solid; 
+  background-color: #FAFAFA; 
+}
+
+/*----------------------------------------------------------------*/
+.wiki .enumerated {
+}
+
+.wiki .enumerated li {
+  list-style-type: decimal ;
+}
+/*----------------------------------------------------------------*/
+.wiki .alphabetical-enumerated {
+}
+
+.wiki .alphabetical-enumerated li {
+  list-style-type: lower-latin ;
+}
+/*----------------------------------------------------------------*/
+.wiki .roman-enumerated {
+}
+
+.wiki .roman-enumerated li {
+  list-style-type: lower-roman ;
+}

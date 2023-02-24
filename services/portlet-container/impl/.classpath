@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<classpath>
+  <classpathentry excluding="" kind="src" path="src/java">
+  </classpathentry>
+  <classpathentry output="target/test-classes" kind="src" path="src/test">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/junit/jars/junit-3.8.1.jar">
+  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.commons">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.common.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.database.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.xml-processing.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.portlet-container.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.organization.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.portal.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.container">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/aspectj/jars/aspectjtools-1.2.jar">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.id-generator.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.id-generator.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.common.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.database.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.portal.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.organization.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.backup.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.resources.api">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.services.resources.impl">
+  </classpathentry>
+  <classpathentry kind="src" path="/exoplatform.test.framework">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jsf/jars/jsf-api-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jsf/jars/jsf-impl-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jstl/jars/jstl.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/jstl/jars/jstl_el.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/xml-resolver/jars/xml-resolver-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/aspectj/jars/aspectjrt-1.2.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-logging/jars/commons-logging-1.0.4.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-lang/jars/commons-lang-2.0.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-collections/jars/commons-collections-3.0.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-pool/jars/commons-pool-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-digester/jars/commons-digester-1.5.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-validator/jars/commons-validator-1.1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/commons-beanutils/jars/commons-beanutils-1.6.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/lucene/jars/lucene-1.4.3.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/hibernate/jars/hibernate-2.1.6.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/cglib/jars/cglib-full-2.0.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/odmg/jars/odmg-3.0.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/misc/jars/jta-spec-1.0.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/xpp3/jars/xpp3-1.1.2a.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/xstream/jars/xstream-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/mx4j/jars/mx4j-jmx-1.1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/mx4j/jars/mx4j-tools-1.1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/dom4j/jars/dom4j-1.4.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/picocontainer/jars/picocontainer-1.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/hsqldb/jars/hsqldb.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/ldapsdk/jars/ldapsdk-4.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/servletapi/jars/servletapi-2.3.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/portlet-api/jars/portlet-api-1.0.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/asm/jars/asm-1.4.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/asm/jars/asm-util-1.4.1.jar">
+  </classpathentry>
+  <classpathentry kind="var" path="MAVEN_REPO/groovy/jars/groovy-1.0-beta-7.jar">
+  </classpathentry>
+  <classpathentry kind="output" path="target/classes">
+  </classpathentry>
+</classpath>

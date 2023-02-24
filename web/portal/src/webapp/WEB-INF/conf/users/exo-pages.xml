@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<page-set>
+  <page>
+    <owner>exo</owner>
+    <name>/home</name>
+    <title>Home</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Home</title>
+      <windowId>exo:/content/DisplayStaticContent/news</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>Introduction</name>
+          <value>title=content.title.introduction</value>
+          <value>uri=war:/portal/static-content/home-intro</value>
+          <value>encoding=UTF-8</value>
+          <read-only>false</read-only>
+        </preference>
+        <preference>
+          <name>Portal</name>
+          <value>title=content.title.portal</value>
+          <value>uri=war:/portal/static-content/home-portal</value>
+          <value>encoding=UTF-8</value>
+          <read-only>false</read-only>
+        </preference>
+        <preference>
+          <name>CMS</name>
+          <value>title=content.title.cms</value>
+          <value>uri=war:/portal/static-content/home-cms</value>
+          <value>encoding=UTF-8</value>
+          <read-only>false</read-only>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/products</name>
+    <title>Products</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Products</title>
+      <windowId>exo:/content/DisplayStaticContent/products</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=/products/product</value>
+          <value>uri=war:/portal/static-content/products/product</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/products/architecture</name>
+    <title>Architecture</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Architecture</title>
+      <windowId>exo:/content/DisplayStaticContent/architecture</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/products/architecture</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/products/editions</name>
+    <title>Editions</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Editions</title>
+      <windowId>exo:/content/DisplayStaticContent/editions</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/products/editions</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/products/eclipse-plugin</name>
+    <title>Eclipse Plugin</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Eclipse Plugin</title>
+      <windowId>exo:/content/DisplayStaticContent/eclipse-plugin</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/products/eclipse-plugin</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/products/licenses</name>
+    <title>Licenses</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Licenses</title>
+      <windowId>exo:/content/DisplayStaticContent/licenses</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/products/license</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+  
+  <page>
+    <owner>exo</owner>
+    <name>/home/products/pricing</name>
+    <title>Pricing</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Pricing</title>
+      <windowId>exo:/content/DisplayStaticContent/pricing</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/products/pricing</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>  
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services</name>
+    <title>Services</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Services</title>
+      <windowId>exo:/content/DisplayStaticContent/services</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/services/services</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/audit</name>
+    <title>Audit</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Audit</title>
+      <windowId>exo:/content/DisplayStaticContent/audit</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/services/audit</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/design</name>
+    <title>Design</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Design</title>
+      <windowId>exo:/content/DisplayStaticContent/design</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/services/design</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/integration</name>
+    <title>Integration</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Integration</title>
+      <windowId>exo:/content/DisplayStaticContent/integration</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/integration</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/training</name>
+    <title>Training</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Training</title>
+      <windowId>exo:/content/DisplayStaticContent/training</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/training</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/custom-developments</name>
+    <title>Custom Developments</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Custom Developments</title>
+      <windowId>exo:/content/DisplayStaticContent/custom-developments</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/services/custom-development</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/services/web-design</name>
+    <title>Web Design</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Web Design</title>
+      <windowId>exo:/content/DisplayStaticContent/web-design</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/services/web-design</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/company</name>
+    <title>Company</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Company</title>
+      <windowId>exo:/content/DisplayStaticContent/about-us</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/company/about-us</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/company/contact-us</name>
+    <title>Contact Us</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Contact US</title>
+      <windowId>exo:/content/DisplayStaticContent/contact-us</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/company/contact-us</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/company/integrators</name>
+    <title>Integrators</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <container renderer="TabRenderer">    
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>European Integrators</title>
+        <windowId>exo:/content/DisplayStaticContent/eu-integrators</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/eu-integrators</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>US Integrators</title>
+        <windowId>exo:/content/DisplayStaticContent/us-integrators</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/us-integrators</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>Asia Integrators</title>
+        <windowId>exo:/content/DisplayStaticContent/asia-integrators</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/asia-integrators</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>Africa Integrators</title>
+        <windowId>exo:/content/DisplayStaticContent/africa-integrators</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/africa-integrators</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>            
+    </container>              
+  </page> 
+  
+  <page>
+    <owner>exo</owner>
+    <name>/home/company/oem</name>
+    <title>OEMs</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>OEMs</title>
+      <windowId>exo:/content/DisplayStaticContent/oem</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/company/oem</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>  
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/company/technical</name>
+    <title>ISVs</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Technical Partners</title>
+      <windowId>exo:/content/DisplayStaticContent/technical</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/company/technical</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+  
+  <page>
+    <owner>exo</owner>
+    <name>/home/company/users</name>
+    <title>End Users</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <container renderer="TabRenderer">    
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>Users</title>
+        <windowId>exo:/content/DisplayStaticContent/users</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/users</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>       
+      <portlet>
+        <portlet-style>exo-content</portlet-style>
+        <title>Use Case</title>
+        <windowId>exo:/content/DisplayStaticContent/use-case</windowId>
+        <portlet-preferences>
+          <preference>
+            <name>default</name>
+            <value>title=Default Content</value>
+            <value>uri=war:/portal/static-content/company/use-case</value>
+            <value>encoding=UTF-8</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>     
+    </container>              
+  </page>   
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/press</name>
+    <title>Press</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Press</title>
+      <windowId>exo:/content/DisplayStaticContent/press</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/press/press</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/press/books</name>
+    <title>Books</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Books</title>
+      <windowId>exo:/content/DisplayStaticContent/books</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/press/books</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/press/whitepapers</name>
+    <title>White Papers</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>WhitePapers</title>
+      <windowId>exo:/content/DisplayStaticContent/whitepapers</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/press/white-papers</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/press/blogs</name>
+    <title>Blogs</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Blogs</title>
+      <windowId>exo:/content/DisplayStaticContent/blogs</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/press/blogs</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/community</name>
+    <title>Community</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet width="*">
+      <portlet-style>exo-content</portlet-style>
+      <title>Community</title>
+      <windowId>exo:/content/DisplayStaticContent/community</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/community/charter</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+
+  <page renderer="PageColumnRenderer">
+    <owner>exo</owner>
+    <name>/home/community/news</name>
+    <title>News</title>
+    <state>maximized</state>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <container renderer="TabRenderer">    
+      <portlet>
+        <title>The Server Side</title>
+        <showInfoBar>false</showInfoBar>
+        <windowId>exo:/web/RssPortlet/RssPortlet</windowId>
+        <portlet-style>rss</portlet-style>
+        <portlet-preferences>
+          <preference>
+            <name>description</name>
+            <value>This is the news from internet</value>
+          </preference>
+          <preference>
+            <name>url</name>
+            <value>http://www.theserverside.com/rss/theserverside-1.0.rdf</value>
+          </preference>
+          <preference>
+            <name>channel</name>
+            <value>News</value>
+          </preference>
+          <preference>
+            <name>item-to-show</name>
+            <value>5</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>
+      <portlet>
+        <title>New eXo Documentation</title>
+        <showInfoBar>false</showInfoBar>
+        <windowId>exo:/web/RssPortlet/exo_news</windowId>
+        <portlet-style>default</portlet-style>
+        <portlet-preferences>
+          <preference>
+            <name>description</name>
+            <value>This is the news from internet</value>
+          </preference>
+          <preference>
+            <name>url</name>
+            <value>http://www.exoplatform.com/xwiki/bin/view/Main/WebRss?xpage=rdf</value>
+          </preference>
+          <preference>
+            <name>channel</name>
+            <value>News</value>
+          </preference>
+          <preference>
+            <name>item-to-show</name>
+            <value>5</value>
+          </preference>
+        </portlet-preferences>
+      </portlet>
+      <container id="blogs" renderer="TabRenderer">  
+        <container id="Portals" renderer="TabRenderer">  
+          <portlet>
+            <title>Punit Pandey</title>
+            <showInfoBar>false</showInfoBar>
+            <windowId>exo:/web/RssPortlet/exo_blog_punit</windowId>
+            <portlet-style>default</portlet-style>
+            <portlet-preferences>
+              <preference>
+                <name>description</name>
+                <value>This is the news from internet</value>
+              </preference>
+              <preference>
+                <name>url</name>
+                <value>http://www.jroller.com/rss/portlets</value>
+              </preference>
+              <preference>
+                <name>channel</name>
+                <value>News</value>
+              </preference>
+              <preference>
+                <name>item-to-show</name>
+                <value>5</value>
+              </preference>
+            </portlet-preferences>
+          </portlet>        
+        </container> 
+        <container id="Wiki" renderer="TabRenderer">  
+          <portlet>
+            <title>Ludovic Dubost</title>
+            <showInfoBar>false</showInfoBar>
+            <windowId>exo:/web/RssPortlet/exo_blog_ludo</windowId>
+            <portlet-style>default</portlet-style>
+            <portlet-preferences>
+              <preference>
+                <name>description</name>
+                <value>This is the news from internet</value>
+              </preference>
+              <preference>
+                <name>url</name>
+                <value>http://www.ludovic.org/blog/index.rdf</value>
+              </preference>
+              <preference>
+                <name>channel</name>
+                <value>News</value>
+              </preference>
+              <preference>
+                <name>item-to-show</name>
+                <value>5</value>
+              </preference>
+            </portlet-preferences>
+          </portlet>        
+        </container>        
+      </container>
+    </container>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/community/forum</name>
+    <title>Forum</title>
+    <state>maximized</state>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <portlet-style>forum</portlet-style>
+      <title>Forum</title>
+      <windowId>exo:/communications/Forum/forum</windowId>
+    </portlet>
+  </page>
+  
+  <page>
+    <owner>exo</owner>
+    <name>/home/community/messages</name>
+    <title>Messages</title>
+    <state>maximized</state>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <title>Message Center</title>
+      <portlet-style>msc</portlet-style>
+      <windowId>exo:/communications/MessageCenter/message-center</windowId>
+    </portlet>
+  </page>  
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/community/wiki</name>
+    <title>Wiki</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <container renderer="ContainerColumnRenderer" width="*">
+      <portlet width="*">
+        <title>Wiki</title>
+        <windowId>exo:/xwiki/xwiki/wiki</windowId>
+      </portlet>
+    </container>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/my-portal</name>
+    <title>My Portal</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <portlet-style>register</portlet-style>
+      <title>My Portal</title>
+      <windowId>exo:/user/RegisterPortlet/window-register</windowId>
+    </portlet>
+  </page>
+
+  <page>
+    <owner>exo</owner>
+    <name>/home/sitemap</name>
+    <title>Site Map</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <portlet-style>sitemap</portlet-style>
+      <title>Site Map</title>
+      <windowId>exo:/nav/Sitemap/sitemap</windowId>
+    </portlet>
+  </page>
+  
+  <page>
+    <owner>exo</owner>
+    <name>/home/search</name>
+    <title>Search</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <portlet-style>search</portlet-style>
+      <title>Search</title>
+      <windowId>exo:/content/SearchPortlet/search</windowId>
+    </portlet>
+  </page>  
+
+  <page>
+    <owner>exo</owner>
+    <name>/mobile</name>
+    <title>Mobile</title>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <portlet>
+      <title>Home</title>
+      <windowId>exo:/content/DisplayStaticContent/mobile</windowId>
+      <portlet-preferences>
+        <preference>
+          <name>default</name>
+          <value>title=Default Content</value>
+          <value>uri=war:/portal/static-content/mobile-home</value>
+          <value>encoding=UTF-8</value>
+        </preference>
+      </portlet-preferences>
+    </portlet>
+  </page>
+</page-set>

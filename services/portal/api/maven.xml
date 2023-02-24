@@ -1,0 +1,37 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:j="jelly:core" xmlns:ant="jelly:ant"> 
+<!--
+  <ant:taskdef name="jaxb" classname="com.sun.tools.xjc.XJCTask">
+    <ant:classpath refid="maven.dependency.classpath"/>
+  </ant:taskdef>
+  <preGoal name="java:compile">
+    <mkdir dir="${src.gen.dir}"/>
+    <uptodate property="jaxb.pages.uptodate" targetfile="xsd/pages.xsd">
+      <srcfiles dir= "${src.gen.dir}" includes="**/*.*"/>
+    </uptodate>
+    
+    <uptodate property="jaxb.skin.uptodate" targetfile="xsd/skin.xsd">
+      <srcfiles dir= "${src.gen.dir}" includes="**/*.*"/>
+    </uptodate>
+    <j:if test="${jaxb.skin.uptodate}">
+      <ant:jaxb schema="xsd/skin.xsd" target="${src.gen.dir}" 
+                package="org.exoplatform.services.portal.model.skin" extension="false" 
+        readonly="true">
+        <ant:arg line="-nv -use-runtime org.exoplatform.commons.jaxb.impl.runtime"/>
+      </ant:jaxb>  
+    </j:if>
+    
+    <ant:echo>copying resources to ${maven.build.dest} from ${src.gen.dir}</ant:echo>
+      
+    <ant:copy todir="${maven.build.dest}">
+      <ant:fileset dir="${src.gen.dir}" 
+        includes="**/*.properties,**/bgm.ser" />
+    </ant:copy>
+    
+    <ant:path id="generated.src.path">
+      <ant:pathelement location="${src.gen.dir}"/>
+    </ant:path>
+    
+    <maven:addPath id="maven.compile.src.set" refid="generated.src.path"/>
+  </preGoal>
+  -->
+</project>

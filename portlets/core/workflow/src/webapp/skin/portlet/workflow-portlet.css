@@ -1,0 +1,67 @@
+@import "/skin/components/simple-tab.css" ;
+
+.workflow-portlet a {
+  margin : 0px 1px 0px 1px;
+}
+
+.workflow-portlet .UIFileUpLoad {
+  width: 100% ;
+  background: white ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.workflow-portlet .UIWorkflowPortlet  {
+  width: 100% ;
+  background: white ;
+}
+
+.workflow-portlet .UIBPDefinition {
+  width: 100% ;
+  color: black ;
+}
+
+.workflow-portlet .UIBPDefinition th {
+  background: #bbb ;
+}
+
+.workflow-portlet .UIBPDefinition td {
+  text-align : center;
+}
+
+.workflow-portlet .UIBPDefinition .even{
+  background: #EEE ;
+}
+
+.workflow-portlet .UITask {
+  width: auto;
+  color: black ;
+}
+
+.workflow-portlet .UITask th {
+  text-align : center;
+  background: #bbb ;
+}
+
+.workflow-portlet .UITask td {
+  text-align : center;
+}
+
+.workflow-portlet .UITaskList {
+  width: 100%;
+  color: black ;
+}
+
+.workflow-portlet .UITaskList th {
+  text-align : center;
+  background: #bbb ;
+}
+
+.workflow-portlet .UITaskList td {
+  text-align : center;
+}
+
+
+.workflow-portlet .UITaskList .even{
+  background: #EEE ;
+}

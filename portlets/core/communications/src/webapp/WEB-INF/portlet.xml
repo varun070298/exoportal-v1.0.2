@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+  <portlet>
+    <description xml:lang="EN">Forum</description>
+    <portlet-name>Forum</portlet-name>
+    <display-name xml:lang="EN">Forum</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.communication.forum.component.UIForumPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlet.faces.component.UIPreferencesEditor.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-config</name>
+      <value>org.exoplatform.portlets.communication.forum.component.UIForumAdminController.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/forum-portlet-help.html</value>
+    </init-param>
+
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+      <portlet-mode>config</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <supported-locale>no</supported-locale>
+
+    <resource-bundle>locale.portlet.communication.ForumResource</resource-bundle>
+
+    <portlet-info>
+      <title>Forum</title>
+      <short-title>Forum</short-title>
+      <keywords>forum</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>forum-owner</name>
+        <value>exo</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+    <security-role-ref>
+      <role-name>user</role-name>
+      <role-link>user</role-link>
+    </security-role-ref>
+  </portlet>
+
+
+  <portlet>
+    <description xml:lang="EN">Message center</description>
+    <portlet-name>MessageCenter</portlet-name>
+    <display-name xml:lang="EN">MessageCenter</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.communication.message.component.UIMessageCenterPortlet.class</value>
+    </init-param>
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.communication.message.component.UIMessageCenterConfig.class</value>
+    </init-param>
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/message-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <supported-locale>no</supported-locale>
+    <resource-bundle>locale.portlet.communication.MessageCenterPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Message Center</title>
+      <short-title>Message</short-title>
+      <keywords>mail, message</keywords>
+    </portlet-info>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">SMS Portlet</description>
+    <portlet-name>SMS</portlet-name>
+    <display-name xml:lang="EN">SMS</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.communication.sms.component.UISmsPortlet.class</value>
+    </init-param>
+    <init-param>
+      <name>default-edit</name>      
+      <value>org.exoplatform.portlets.communication.sms.component.UISmsAdminPortlet.class</value>
+    </init-param>
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlets.communication.sms.component.UISmsHelpContent.class</value>
+    </init-param>
+    <init-param>
+      <name>default-monitor</name>      
+      <value>org.exoplatform.portlets.communication.sms.component.UISmsMonitorPortlet.class</value>
+    </init-param>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+      <portlet-mode>monitor</portlet-mode>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <supported-locale>no</supported-locale>
+    <resource-bundle>locale.portlet.communication.SmsResource</resource-bundle>
+    <portlet-info>
+      <title>SMS</title>
+      <short-title>portlet sms</short-title>
+      <keywords>portlet sms, admin</keywords>
+    </portlet-info>
+    <portlet-preferences>
+      <preference>
+        <name>gatewayUsername</name>
+        <value>uid</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>gatewayPassword</name>
+        <value>pwd</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>    
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>sms</role-link>
+    </security-role-ref>
+    <security-role-ref>
+      <role-name>user</role-name>
+      <role-link>sms</role-link>
+    </security-role-ref>
+  </portlet>
+  
+</portlet-app>

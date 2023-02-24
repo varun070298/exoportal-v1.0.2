@@ -1,0 +1,21 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+
+  <goal name="javacc:bbcode">
+    <property name="maven.javacc.javacc.grammar"
+              value="${basedir}/src/java/org/exoplatform/services/grammar/bbcode/impl/BBCodeParser.jj"/>
+    <property name="maven.javacc.javacc.target.dir" value="${basedir}/src/java"/>
+    <property name="maven.javacc.javacc.package" 
+              value="org.exoplatform.services.grammar.bbcode.impl.parser" />
+    <attainGoal name="javacc:javacc-generate"/>
+  </goal>
+
+  <preGoal name="java:compile">
+    <attainGoal name="javacc:bbcode"/>
+
+    <ant:path id="generated.src.path">
+      <ant:pathelement location="${src.gen.dir}"/>
+    </ant:path>
+    <maven:addPath id="maven.compile.src.set" refid="generated.src.path"/>
+  </preGoal>
+</project>
+

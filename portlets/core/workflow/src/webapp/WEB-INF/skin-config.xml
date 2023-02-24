@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>workflow/Workflow</portlet-name>
+    <style name="workflow" url="/workflow/skin/portlet/workflow-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

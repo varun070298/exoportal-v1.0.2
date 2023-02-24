@@ -1,0 +1,227 @@
+@import "/skin/components/ic3-button.css";
+@import "/skin/components/ic3-button-2.css";
+@import "/skin/decorators/ic3-border/decorator.css";
+@import "/skin/components/search-component.css" ;
+@import "/skin/components/calendar-component.css" ;
+
+.msc-portlet  {
+  font-size: 11pt;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.msc-portlet .no-account {
+  margin: 0px auto 0px auto; 
+  text-align : center;
+  background : #fafafa;
+  border: 1px solid #BBBBBB ; 
+}
+
+.msc-portlet  input {
+  margin: 0px 5px 0px 0px;
+}
+
+.msc-portlet  img{
+  vertical-align : middle;
+}
+
+.msc-portlet  .UIMessageCenterPortlet {
+  width: auto;
+}
+
+.msc-portlet  .UIAccountConfiguration {
+ width: 100% ;
+}
+
+.msc-portlet  .UIAccountConfiguration th {
+  padding: 2px ;
+  font-size: 14pt;
+  text-align: left ;
+  padding: 1px 15px 10px 15px;
+  background: url("msc/2-dot-line.gif") bottom repeat-x;
+}
+
+.msc-portlet  .UIAccountConfiguration td {
+  width: 50% ;
+  padding: 10px ;
+  text-align: justify ;
+  vertical-align: top;
+  font-size: 9pt;
+}
+
+.msc-portlet  .UIAccountConfiguration h6 {
+  padding: 1px 5px 10px 5px;
+  font-size: 10pt;
+  text-align: left ;
+  margin: 2px ;
+  background: url("msc/1-dot-line.gif") bottom repeat-x;
+  color :  #F47823;
+}
+
+.msc-portlet  .UIAccountConfiguration .account-detail td {
+  padding: 0px ;
+}
+
+.msc-portlet  .UISelectAccount  {
+  /*margin: 0 auto 0 auto;*/
+  float: right ;
+}
+
+/*---------------------------UIAccount------------------------*/
+.msc-portlet  .UIAccount {
+  padding: 10px 0px 5px 0px;
+  height : 25px;
+  background: url("msc/2-dot-line.gif") bottom repeat-x;
+}
+
+
+
+/*---------------------------UIAccountForm------------------------*/
+.msc-portlet  .UIAccountForm {
+  margin: 0px auto ;
+}
+
+.msc-portlet  .UIAccountForm input, 
+.msc-portlet  .UIAccountForm select, 
+.msc-portlet  .UIAccountForm textarea  {
+  width: 300px;
+}
+/*---------------------------UIMessageForm------------------------*/
+.msc-portlet  .UIMessageForm {
+  width: 500px ;
+  margin: 15px ;
+}
+
+.msc-portlet  .UIMessageForm .bottom-line td {
+  background: url("msc/1-dot-line.gif") bottom repeat-x ;
+  padding: 10px 0px ;
+}
+
+.msc-portlet  .UIMessageForm  td {
+  font-size: 9pt;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.msc-portlet  .UIMessageForm  label {
+  font-weight: bold ;
+  font-size: 14pt ;
+  color : #074B88;
+}
+
+.msc-portlet  .UIMessageForm  input {
+  width: 350px ;
+}
+
+.msc-portlet  .UIMessageForm  select {
+  width: 350px ;
+  margin: 0px 0px 5px 0px;
+}
+
+.msc-portlet  .UIMessageForm  textarea {
+  width: 500px ;
+  height: 250px
+}
+
+/*---------------------------UIMessageFolder------------------------*/
+.msc-portlet  .UIMessageFolder {
+  margin: 5px 10px 5px 10px;
+  width: 98% ;
+}
+
+.msc-portlet  .UIMessageFolder th {
+  border: 1px solid #CCCCCC ;
+}
+
+.msc-portlet  .UIMessageFolder td {
+  border: 1px solid #CCCCCC ; 
+  padding: 1px 1px 1px 5px;
+  text-align : center;
+}
+
+.msc-portlet  .UIMessageFolder .new{
+ background : #eeeeee;
+ font-weight: bold ;
+ font-size : 10pt;
+}
+
+.msc-portlet  .UIMessageFolder .read{
+ background : #fafafa;
+}
+
+.msc-portlet  .UIMessageFolder .subject{
+ text-align : left;
+}
+
+.msc-portlet  .UIMessageFolder .footer {
+  background : #fafafa;
+  text-align : right;
+}
+
+/*---------------------------UIViewMessage------------------------*/
+.msc-portlet  .UIViewMessage {
+
+  width: 98% ;
+  background : #fafafa;
+  border: 1px solid #CCCCCC ; 
+}
+
+.msc-portlet  .UIViewMessage th {
+  text-align: left ;
+  padding: 5px 5px ;
+  font-weight: normal ;
+  background: url("msc/1-dot-line.gif") bottom repeat-x ;
+}
+
+.msc-portlet  .UIViewMessage td {
+  padding: 10px 10px ;
+}
+
+.msc-portlet  .UIViewMessage label {
+  display: block ;
+  float: left ;
+  width: 75px ;
+  font-weight : bold;
+}
+
+.msc-portlet  .UIViewMessage img {
+  margin : 1px 1px 1px 1px;
+}
+
+/*---------------------------UISearchBar------------------------*/
+/*override UISearch component setting in search-component.css*/
+.msc-portlet .UISearchBar  {
+  padding: 0px; 
+  margin: 5px auto 5px auto ;
+  width: 98% ;
+  background: #fafafa ;
+}
+
+.msc-portlet .UISearchBar  input{
+  border : 1px solid #eeeeee;
+}
+
+/*---------------------------UIAdvancedSearch------------------------*/
+.msc-portlet  .UIAdvancedSearch {
+  margin: 5px auto 5px auto ;
+  width: 98% ;
+  font-weight: bold ;
+  background : #fafafa;
+  border : 1px solid #eeeeee;
+}
+
+.msc-portlet  .UIAdvancedSearch th {
+  text-align: left ;
+  padding: 5px 0px ;
+  background: url("msc/1-dot-line.gif") bottom repeat-x ;
+}
+
+.msc-portlet  .UIAdvancedSearch td {
+  padding: 5px 20px ;
+}
+
+.msc-portlet  .UIAdvancedSearch input {
+   width: 300px ;
+}
+
+.msc-portlet  .UIAdvancedSearch .indent-2 input{
+   width: 30px ;
+}

@@ -1,0 +1,5 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:m="maven" xmlns:ant="jelly:ant">
+  <postGoal name="java:compile">
+    <attainGoal name="exo:hibernate:mapping"/>    
+  </postGoal>
+</project>

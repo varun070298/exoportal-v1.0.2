@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE faces-config PUBLIC
+"-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+"http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config>
+  <factory>
+    <faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+    <lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+  </factory>
+
+  <render-kit>      
+    <renderer>
+      <component-family>org.exoplatform.faces.core.component.UISimpleForm</component-family>
+      <renderer-type>ContentPreviewRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.ContentPreviewRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>DefaultContentRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.DefaultContentRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>ImageRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.ImageRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>TextContentRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.TextContentRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>ExplorerRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.ExplorerRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.content.explorer.component.UIJCRNodeInfo</component-family>
+      <renderer-type>JCRNodeInfoRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.explorer.renderer.html.JCRNodeInfoRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.content.display.component.UIContentConfig</component-family>
+      <renderer-type>ContentConfigRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.content.display.renderer.html.ContentConfigRenderer</renderer-class>
+    </renderer>
+  </render-kit>
+</faces-config>

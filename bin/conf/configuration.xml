@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!-- ============================================================================= -->
+  <!--    Groovy Manager Container Configuration                                     -->
+  <!-- ============================================================================= -->
+  <service-configuration type="org.exoplatform.container.groovy.GroovyManagerContainer">
+    <value-param>
+      <name>check.modified.period</name>
+      <description>Check the modified groovy classes and reload, the period is in ms, -1 to disable</description>
+      <value>5000</value>
+    </value-param>
+  </service-configuration>
+
+  <service-configuration type="org.exoplatform.container.monitor.jvm.J2EEServerInfo"/>
+
+  <service-configuration 
+    key="org.exoplatform.container.monitor.jvm.OperatingSystemInfo"
+    type="org.exoplatform.container.monitor.jvm.v14.OperatingSystemInfoImpl"/>
+
+  <service-configuration 
+    key="org.exoplatform.container.monitor.jvm.JVMRuntimeInfo"
+    type="org.exoplatform.container.monitor.jvm.v14.JVMRuntimeInfoImpl">
+   <properties-param>
+     <name>add.system.properties</name>
+     <property name="org.apache.lucene.maxClauseCount" value="3000"/>
+   </properties-param>
+  </service-configuration>
+</configuration>
+
+<!--<property name="javax.xml.transform.TransformerFactory" 
+  value="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl"/>-->

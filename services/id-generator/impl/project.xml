@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.services.id-generator.impl</id>
+  <name>ID Generator Service API</name>
+  <shortDescription>ID Generator Services API</shortDescription>
+  
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.id-generator.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+</project>

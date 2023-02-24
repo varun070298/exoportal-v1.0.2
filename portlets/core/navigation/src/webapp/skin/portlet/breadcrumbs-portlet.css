@@ -1,0 +1,34 @@
+.breadcrumbs-portlet {
+  padding: 0px ;
+}
+
+.breadcrumbs-portlet .UIBreadcrumbs {
+  margin-top: 0px 0px 0px 0px ;
+  background: #EEEEEE ;
+  width: 100% ; height: 100% ;
+  padding: 2px 5px 1px 3px ;
+  border-bottom: 1px solid #DDDDDD;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #074B88;
+}
+
+.breadcrumbs-portlet .UIBreadcrumbs a{
+  font-size: 9pt;
+  text-decoration: underline;
+  color: #074B88;
+}
+
+.breadcrumbs-portlet div{
+  float : left;
+}
+
+.breadcrumbs-portlet .UIBreadcrumbs .flags{
+  float : right;
+  padding: 1px 1px 0px  1px ;
+  margin : 0px 5px 0px 5px ;
+}
+
+.breadcrumbs-portlet .UILanguageSelector a {
+  padding: 0px 2px ;
+}

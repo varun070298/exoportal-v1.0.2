@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <!--
+    This listener will assign some default role and memberships to a user when he resisters
+  -->
+  <service-configuration type="org.exoplatform.services.cms.impl.NewUserListener">
+    <object-param>
+      <name>new.user.configuration</name>
+      <type>org.exoplatform.services.cms.impl.NewUserConfig</type>
+      <description>configuration for the localtion of content files to inject in jcr</description>
+
+      <!-- The location of the the configuration files -->
+      <property name="contentLocation" value="war:/conf/content" />
+
+      <!-- JCR Workspace used -->
+      <property name="workspace" value="ws" />      
+
+      <!-- JCR root path -->
+      <property name="jcrPath" value="/cms/home" />            
+
+      <!-- Create user home dir for new user -->
+      <!--property name="createHome" value="false" /-->    
+      
+      <!-- Template user name -->
+      <property name="template" value="template" />                 
+
+      <!-- Template content for basic new users -->      
+      <property name="users[0]" value="#new NewUserConfig$User" />
+      <property name="users[0].userName" value="template" />    
+
+      <!-- Default users -->      
+      <property name="users[1]" value="#new NewUserConfig$User" />
+      <property name="users[1].userName" value="admin" />
+
+      <property name="users[2]" value="#new NewUserConfig$User" />
+      <property name="users[2].userName" value="portal" />
+      <property name="users[2].referencedFiles[0]" value="/products/product" />               
+            
+      <property name="users[3]" value="#new NewUserConfig$User" />
+      <property name="users[3].userName" value="exo" />     
+      
+      <property name="users[4]" value="#new NewUserConfig$User" />
+      <property name="users[4].userName" value="demo" />    
+      <property name="users[4].referencedFiles[0]" value="/home-intro" />  
+      <property name="users[4].referencedFiles[1]" value="/community/charter" />           
+                   
+    </object-param>
+  </service-configuration>
+</configuration>

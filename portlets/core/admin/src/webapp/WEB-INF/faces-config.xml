@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!DOCTYPE faces-config PUBLIC
+"-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+"http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+
+<faces-config>
+  <factory>
+    <faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+    <lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+  </factory>
+
+  <render-kit>
+    <!-- *********************** Renderers for log portlet *************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.log.component.UILogMessages</component-family>
+      <renderer-type>LogMessagesRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.log.renderer.html.LogMessagesRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** Renderers for monitor portlet *************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.portlet.component.UIPortalMonitor</component-family>
+      <renderer-type>PortalMonitorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.portlet.renderer.html.PortalMonitorRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.portlet.component.UIPortletContainerMonitor</component-family>
+      <renderer-type>PortletContainerMonitorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.portlet.renderer.html.PortletContainerMonitorRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.portlet.component.UIPortletApplicationMonitor</component-family>
+      <renderer-type>PortletApplicationMonitorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.portlet.renderer.html.PortletApplicationMonitorRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.portlet.component.UIPortletMonitor</component-family>
+      <renderer-type>PortletMonitorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.portlet.renderer.html.PortletMonitorRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.portlet.component.UIPortletMenu</component-family>
+      <renderer-type>PortletMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.portlet.renderer.html.PortletMenuRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.monitor.session.component.UIActionHistory</component-family>
+      <renderer-type>ActionHistoryRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.monitor.session.renderer.html.ActionHistoryRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** Renderers for backup portlet *************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIData</component-family>
+      <renderer-type>DataRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.backup.renderer.html.DataRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIImportData</component-family>
+      <renderer-type>ImportDataRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.backup.renderer.html.ImportDataRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIExportData</component-family>
+      <renderer-type>ExportDataRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.backup.renderer.html.ExportDataRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIBackupPortlet</component-family>
+      <renderer-type>BackupPortletRenderer</renderer-type>
+      <renderer-class>org.exoplatform.faces.core.renderer.html.NodeTabbedPaneRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIImportUserDataNode</component-family>
+      <renderer-type>ChildrenRenderer</renderer-type>
+      <renderer-class>org.exoplatform.faces.core.renderer.html.ChildrenRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.backup.component.UIImportServiceDataNode</component-family>
+      <renderer-type>ChildrenRenderer</renderer-type>
+      <renderer-class>org.exoplatform.faces.core.renderer.html.ChildrenRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** Renderers for portlet registery portlet *************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletRegistry</component-family>
+      <renderer-type>ChildrenRenderer</renderer-type>
+      <renderer-class>org.exoplatform.faces.core.renderer.html.ChildrenRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletCategories</component-family>
+      <renderer-type>PortletCategoriesRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.portletregistery.renderer.html.PortletCategoriesRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletCategory</component-family>
+      <renderer-type>PortletCategoryRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.portletregistery.renderer.html.PortletCategoryRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletList</component-family>
+      <renderer-type>AddPortletRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.portletregistery.renderer.html.AddPortletRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletInfo</component-family>
+      <renderer-type>PortletInfoRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.portletregistery.renderer.html.PortletInfoRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.portletregistery.component.UIPortletRole</component-family>
+      <renderer-type>PortletRoleRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.portletregistery.renderer.html.PortletRoleRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** Renderers for jmx portlet *************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.jmx.component.UIJMXPortlet</component-family>
+      <renderer-type>JMXPortletRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.jmx.renderer.html.JMXPortletRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.jmx.component.UINavigator</component-family>
+      <renderer-type>NavigatorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.jmx.renderer.html.NavigatorRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.jmx.component.UIMBean</component-family>
+      <renderer-type>ViewMBeanRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.jmx.renderer.html.ViewMBeanRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.jmx.component.UIOperation</component-family>
+      <renderer-type>OperationRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.jmx.renderer.html.OperationRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** admin console portlets  *************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.console.component.UIAdminConsolePortlet</component-family>
+      <renderer-type>AdminConsolePortletRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.console.renderer.html.AdminConsolePortletRenderer</renderer-class>
+    </renderer>   
+  </render-kit>
+</faces-config>

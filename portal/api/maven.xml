@@ -1,0 +1,18 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+
+  <postGoal name="clean:clean">
+    <delete dir="${portlet.template.dir}/WEB-INF/classes"/>
+  </postGoal>
+
+  <preGoal name="test:test">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+
+  <preGoal name="test:single">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+</project>

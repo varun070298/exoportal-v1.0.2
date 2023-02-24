@@ -1,0 +1,92 @@
+.UIForm {
+  background: transparent ;
+  margin: 10px auto;
+  width: 90% ;
+}
+
+.UIForm  table {
+}
+
+.UIForm td {
+  padding: 3px 10px 3px 10px ;
+  vertical-align: middle ;
+}
+
+.UIForm td.label {
+  text-align: right ;
+  padding: 0px 10px 0px 10px ;
+  width: 150px;
+  vertical-align: middle ;
+}
+
+.UIForm label {
+  padding: 0px ;
+  text-align: right ;
+  padding: 0px 10px 10px 20px ;
+}
+
+.UIForm input {
+  width: 400px ;
+}
+
+.UIForm textarea {
+  width: 400px ; height: 75px ;
+}
+
+.UIForm a {
+  padding: 2px ;
+}
+
+.UIForm .buttons {
+  width: 100% ;
+  margin: 10px ;
+  text-align: center ;
+}
+/******************************Compact Form***************************/
+.UICompactForm {
+  background: transparent ;
+  width: 350px ;
+  margin: 5px auto;
+}
+
+.UICompactForm  table {
+}
+
+.UICompactForm td {
+  padding: 3px 10px 3px 10px ;
+  vertical-align: middle ;
+}
+
+.UICompactForm td.label {
+  text-align: right ;
+  padding: 0px 10px 0px 10px ;
+  vertical-align: middle ;
+}
+
+.UICompactForm label {
+  padding: 0px ;
+  text-align: right ;
+  padding: 0px 10px 10px 20px ;
+}
+
+.UICompactForm input {
+  width: 200px ;
+}
+
+.UICompactForm select {
+  width: 200px ;
+}
+
+.UICompactForm textarea {
+  width: 200px ; height: 75px ;
+}
+
+.UICompactForm a {
+  padding: 2px ;
+}
+
+.UICompactForm .buttons {
+  width: 100% ;
+  margin: 10px ;
+  text-align: center ;
+}

@@ -1,0 +1,85 @@
+/***********************************************************************************
+ *	The.defaults decorator                                                         *
+ ***********************************************************************************/
+.default-decorator {
+  width: 100% ; height: auto ;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+.portlet-info-bar {
+  background: #EEEEEE  ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  color: #AAADCD ;
+  font-size: 10pt;
+  font-weight : bold;
+  height: 16px ;
+}
+
+.portlet-info-bar a {
+  padding: 0px !important ;
+}
+
+.portlet-button-help {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/help-16x16.gif") ;
+}
+
+.portlet-button-config {
+  display: inline ;
+  border: none ;
+  width:  18px ; height: 16px ;
+  background-image: url("default-action-icons/config-16x16.gif") ;
+}
+
+.portlet-button-wsrp {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/wsrp-16x16.gif") ;
+}
+
+.portlet-button-monitor {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/monitor-16x16.gif") ;
+}
+
+.portlet-button-edit {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/edit-16x16.gif") ;
+}
+
+.portlet-button-view {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/view-16x16.gif") ;
+}
+
+.portlet-button-normal {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/normal-view-16x16.gif") ;
+}
+
+.portlet-button-minimized {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/min-view-16x16.gif") ;
+}
+
+.portlet-button-maximized {
+  display: inline ;
+  border: none ;
+  width:  16px ; height: 16px ;
+  background-image: url("default-action-icons/max-view-16x16.gif") ;
+}
+

@@ -1,0 +1,34 @@
+.UIProperties {
+  width: 100% ;
+}
+
+.UIProperties {
+  border: 1px solid #074B88;
+}
+
+.UIProperties  th {
+  border-bottom: 1px solid #bbb ;
+  border-top: 1px solid #bbb ;
+  padding: 2px ;
+  background: #dddddd ;
+  color: #074B88;
+}
+
+.UIProperties  td {
+  text-align: left ;
+  border: 1px solid #ccc;
+}
+
+.UIProperties  .key {
+  color: #074B88;
+  text-align: left ;
+  white-space: nowrap;  
+  padding: 2px 5px 2px 5px ;
+  width: 200px ;
+}
+
+.UIProperties  .value {
+  color: orange;
+  text-align: left ;
+  padding: 2px 5px 2px 5px ;
+}

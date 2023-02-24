@@ -1,0 +1,22 @@
+.exo-config-content-portlet .UIContentPortlet {
+  background: #fafafa ;
+  border: 1px solid #CCCCCC;
+  margin : 3px auto 0px auto ;
+  padding: 5px 0px 3px 3px ;
+  text-align : center;
+}
+
+.exo-config-content-portlet .UIContentPortlet a {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size : 10pt;font-weight: bold ;
+  text-decoration : none;
+  color : #074B88;
+}
+
+.exo-config-content-portlet .UIContentPortlet a:hover {
+  color : orange;
+}
+
+.exo-config-content-portlet .UIContentPortlet a img {
+  vertical-align : middle;
+}

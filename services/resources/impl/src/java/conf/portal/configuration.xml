@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!-- ============================================================================= -->
+  <!--    R E S O U R C E   S E R V I C E    C O N F I G U R A T I O N               -->
+  <!-- ============================================================================= -->
+  <service-configuration 
+    key="org.exoplatform.services.resources.ResourceBundleService"
+    type="org.exoplatform.services.resources.impl.ResourceBundleServiceImpl">
+    <values-param>
+      <name>persisted.packages</name>
+      <description>The resources package should be saved into DB</description>
+      <value>locale.users</value>
+      <value>locale.portal</value>
+      <!--
+      <value>locale.portlet</value>      
+      -->
+      <value>locale.custom</value>
+      <value>locale.test</value>
+      <value>your.company.package</value>
+    </values-param>
+  </service-configuration>
+  <!-- ============================================================================= -->
+  <!--    C O N F I G U R A T I O N   S E R V I C E    C O N F I G U R A T I O N     -->
+  <!-- ============================================================================= -->
+  <service-configuration 
+    key="org.exoplatform.services.config.ConfigurationService"
+    type="org.exoplatform.services.config.impl.ConfigurationServiceImpl" />
+</configuration>

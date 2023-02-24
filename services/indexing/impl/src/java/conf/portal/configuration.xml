@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration type="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
+  <service-configuration type="org.exoplatform.services.indexing.impl.FileIndexerPluginImpl"/>
+  <!-- ============================================================================= -->
+  <!--    I N D E X I N G    S E R V I C E    C O N F I G U R A T I O N              -->
+  <!-- ============================================================================= -->
+  <service-configuration 
+    key="org.exoplatform.services.indexing.IndexingService"
+    type="org.exoplatform.services.indexing.impl.IndexingServiceImpl">
+    <value-param>
+      <name>index.database.dir</name>
+      <value>default</value>
+    </value-param>
+  </service-configuration>
+</configuration>

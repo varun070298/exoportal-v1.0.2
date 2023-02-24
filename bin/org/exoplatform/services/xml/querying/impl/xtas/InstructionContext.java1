@@ -1,0 +1,29 @@
+package exo.services.xml.querying.impl.xtas;
+
+/**
+ * @version $Id: InstructionContext.java1 566 2005-01-25 12:50:49Z kravchuk $
+ *
+ */
+public class InstructionContext {
+
+    String sourceId;
+    String destinationId;
+
+    public InstructionContext(String sourceId, String destinationId) 
+    {
+       this.sourceId = sourceId;
+       this.destinationId = destinationId;
+    }
+
+    public String getSourceId()
+    { 
+        return sourceId; 
+    }
+
+    public String getDestinationId()
+    { 
+        return destinationId; 
+    }
+
+
+}

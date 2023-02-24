@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.build</id>
+  <name>eXo platform</name>
+  <groupId>exo</groupId>
+  <currentVersion>${exoplatform.version}</currentVersion>
+
+  <!-- ################################################################ -->
+  <!--    Project management section                                    -->
+  <!-- ################################################################ -->
+  <organization>
+    <name>eXo Platform SARL</name>
+    <url>http://www.exoplatform.com</url>
+    <logo>/images/logo.jpg</logo>
+  </organization>
+
+  <inceptionYear>2000</inceptionYear>
+  <package>exo.</package>
+  <description>
+      The eXo platform is an Open Source integrated application suite
+      that provides several dependant services in a loosely couple way.
+  </description>
+  <shortDescription>a powerful integrated application suite</shortDescription>
+  <url>http://exo.sourceforge.net/</url>
+  <issueTrackingUrl>http://tuan.dyndns.org/jira</issueTrackingUrl>
+  <siteAddress>shell.sourceforge.net</siteAddress>
+  <siteDirectory>/home/groups/e/ex/exo/htdocs/exo</siteDirectory>
+  <distributionDirectory>/home/groups/e/ex/exo/htdocs/builds/</distributionDirectory>
+
+  <repository>
+    <connection>scm:cvs:pserver:anonymous@cvs.sf.net:/home/cvsroot:exo</connection>
+    <url>http://cvs.sf.net/cgi-bin/viewcvs.cgi/exo/</url>
+  </repository>
+
+  <versions>
+    <version>
+      <id>${exoplatform.version}</id>
+      <name>${exoplatform.version}</name>
+      <tag>HEAD</tag>
+    </version>
+  </versions>
+
+  <mailingLists>
+    <mailingList>
+      <name>Developer list</name>
+      <subscribe>http://lists.sourceforge.net/lists/listinfo/exo-developers</subscribe>
+      <unsubscribe>http://lists.sourceforge.net/lists/listinfo/exo-developers.</unsubscribe>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=exo-developers</archive>
+    </mailingList>
+    <mailingList>
+      <name>cvs change list</name>
+      <subscribe>http://lists.sourceforge.net/lists/listinfo/exo-cvs</subscribe>
+      <unsubscribe>http://lists.sourceforge.net/lists/listinfo/exo-cvs.</unsubscribe>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=exo-cvs</archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+    <developer>
+      <name>Benjamin Mestrallet</name>
+      <id>benj</id>
+      <email>benjamin.mestrallet@exoplatform.com</email>
+      <organization>eXo platform SARL</organization>
+      <roles>
+        <role>Project Admin</role>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Tuan Nguyen</name>
+      <id>tuan08</id>
+      <email>tuan.nguyen@exoplatform.com</email>
+      <organization>eXo platform SARL</organization>
+      <roles>
+        <role>Project Admin</role>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Dan Hodnett</name>
+      <id>dhodnett</id>
+      <email>dhodnett@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Gennady Azarenkov</name>
+      <id>geaz</id>
+      <email>geaz@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Ove Ranheim</name>
+      <id>oranheim</id>
+      <email>ove.ranheim@exoplatform.com</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Hatim Khan</name>
+      <id>hatimk</id>
+      <email>hatimk@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Peter</name>
+      <id>lxchit</id>
+      <email>lxchit@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Daniel Summer</name>
+      <id>danny_xcz</id>
+      <email>danny_xcz@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Veronika Mazour</name>
+      <id>nikamazour</id>
+      <email>nikamazour@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Filotto Nicolas</name>
+      <id>essobedo</id>
+      <email>essobedo@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Laurent Guitier</name>
+      <id>guitier</id>
+      <email>guitier@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Joel Shellman</name>
+      <id>ikestrel</id>
+      <email>ikestrel@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Sérgio Almeida Dias</name>
+      <id>sedibr</id>
+      <email>sedibr@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Cédric Torcq</name>
+      <id>torcq</id>
+      <email>torcq@users.sourceforge.net</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <contributors>
+    <contributor>
+      <name>Knut Rodum</name>
+      <email>knut.rodum@music-interactive.net</email>
+    </contributor>
+    <contributor>
+      <name>michael galkovsky</name>
+      <email>mindgutter@yahoo.com</email>
+    </contributor>
+  </contributors>
+
+  <licenses/>
+
+  <!-- ################################################################ -->
+  <!--    Project dependency section                -->
+  <!-- ################################################################ -->
+  <!-- ************************ jsf ************************ -->
+  <dependencies>
+    <dependency>
+      <groupId>jsf</groupId>
+      <artifactId>jsf-api</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>    
+    <dependency>
+      <groupId>jsf</groupId>
+      <artifactId>jsf-impl</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>    
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <jar>jstl.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>        
+      </properties>
+    </dependency>    
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl_el</artifactId>
+      <jar>jstl_el.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>        
+      </properties>
+    </dependency> 
+    <dependency>
+      <groupId>xml-resolver</groupId>
+      <artifactId>xml-resolver</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+    <!-- ************************ aspectj ************************ -->
+    <dependency>
+      <groupId>aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.2</version>
+      <url>http://eclipse.org/aspectj</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+    <!-- ************************ jakarta commons ************************ -->
+    <dependency>
+      <id>commons-logging</id>
+      <version>1.0.4</version>
+      <url>http://jakarta.apache.org/commons/logging.html</url>
+      <properties>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>      
+    </dependency>
+
+    <dependency>
+      <id>commons-lang</id>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-collections</id>
+      <version>3.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>        
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-pool</id>
+      <version>1.1</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-digester</id>
+      <version>1.5</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+
+    <dependency>
+      <groupId>commons-validator</groupId>
+      <artifactId>commons-validator</artifactId>
+      <version>1.1.1</version>
+      <properties>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.6</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>lucene</id>
+      <version>1.4.3</version>
+      <url>http://jakarta.apache.org/lucene</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+    <!-- ************************ hibernate ************************ -->
+    <dependency>
+      <groupId>hibernate</groupId>
+      <artifactId>hibernate</artifactId>
+      <version>2.1.6</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib-full</artifactId>
+      <version>2.0.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <!--    <dependency>
+      <groupId>ehcache</groupId>
+      <artifactId>ehcache</artifactId>
+      <version>0.9</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>-->
+
+    <dependency>
+      <groupId>odmg</groupId>
+      <artifactId>odmg</artifactId>
+      <version>3.0</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>misc</groupId>
+      <artifactId>jta-spec</artifactId>
+      <version>1.0.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <!-- ************************ xdoclet ************************ -->
+    <dependency>
+      <groupId>jibx</groupId>
+      <artifactId>jibx-run</artifactId>
+      <jar>jibx-run.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>xpp3</groupId>
+      <artifactId>xpp3</artifactId>
+      <version>1.1.2a</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+    <!-- ************************ JMX ************************ -->
+    <dependency>
+      <id>mx4j+jmx</id>
+      <version>1.1.1</version>
+      <properties>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+    <dependency>
+      <id>mx4j+tools</id>
+      <version>1.1.1</version>
+      <properties>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>      
+    </dependency>
+    <!-- ************************ misc ************************ -->
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.4</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>picocontainer</groupId>
+      <artifactId>picocontainer</artifactId>
+      <version>1.1</version>
+      <properties>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <jar>hsqldb.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>ldapbp</groupId>
+      <artifactId>ldapbp</artifactId>
+      <version>1.0</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>servletapi</id>
+      <version>2.3</version>
+    </dependency>
+
+    <dependency>
+      <id>portlet-api</id>
+      <groupId>portlet-api</groupId>
+      <version>1.0</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+    <!-- ************************ groovy ********************************** -->
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>1.4.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm-util</artifactId>
+      <version>1.4.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>groovy</id>
+      <version>1.0-beta-7</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>
+    <!-- ************************ unit test dependencies ****************** -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+  </dependencies>
+  <!-- ################################################################ -->
+  <!--    Project build and reports section             -->
+  <!-- ################################################################ -->
+
+  <build>
+    <nagEmailAddress>tuan.nguyen@exoplatform.com</nagEmailAddress>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/Test*.java</include>
+      </includes>
+    </unitTest>
+    <resources>
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+
+  <reports>
+    <report>maven-faq-plugin</report>    
+    <report>maven-javadoc-plugin</report>
+    <report>maven-license-plugin</report>
+
+    <!--    <report>maven-changes-plugin</report>
+    <report>maven-changelog-plugin</report>
+    <report>maven-file-activity-plugin</report>
+    <report>maven-developer-activity-plugin</report>
+    <report>maven-jdepend-plugin</report>
+    <report>maven-checkstyle-plugin</report>
+    <report>maven-jxr-plugin</report>
+    <report>maven-junit-report-plugin</report>
+    <report>maven-tasklist-plugin</report>
+    <report>maven-pmd-plugin</report>
+    <report>maven-simian-plugin</report>
+    <report>maven-clover-plugin</report>
+    <report>maven-jellydoc-plugin</report>
+    <report>maven-linkcheck-plugin</report>-->
+  </reports>
+</project>

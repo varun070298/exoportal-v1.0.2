@@ -1,0 +1,19 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+  <ant:property file="../../../global.properties"/>
+
+<!--
+  <preGoal name="java:compile">
+    <mkdir dir="${src.gen.dir}"/>
+
+    <ant:taskdef name="jaxb" classname="com.sun.tools.xjc.XJCTask">
+      <ant:classpath refid="maven.dependency.classpath"/>
+    </ant:taskdef>
+
+    <ant:jaxb schema="xsd/pswincom_submit.xsd" target="${src.gen.dir}"
+         package="org.exoplatform.services.communication.sms.model"
+         extension="false" readonly="true">
+      <ant:arg line="-nv -use-runtime org.exoplatform.commons.jaxb.impl.runtime"/>
+    </ant:jaxb>
+   </preGoal>  
+-->   
+</project>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration
+	key="org.exoplatform.services.organization.OrganizationService"
+	type="org.exoplatform.services.organization.ldap.OrganizationServiceImpl">
+	<!-- OpenLDAP configuration -->
+	<properties-param>
+		<name>exo.organization.service</name>
+		<description>LDAP Organization Service</description>
+		<property name="ldap.base.url" value="dc=exoplatform,dc=org" />
+		<property name="ldap.groups.url" value="ou=groups,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.memberships.url" value="ou=memberships,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.users.url" value="ou=users,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.user.authentication.attribute" value="uid" />
+		<property name="ldap.user.username.attribute" value="uid" />
+		<property name="ldap.user.password.attribute" value="userPassword" />
+		<property name="ldap.user.firstname.attribute" value="givenName" />
+		<property name="ldap.user.lastname.attribute" value="sn" />
+		<property name="ldap.user.mail.attribute" value="mail" />
+		<property name="ldap.group.member.attribute" value="member" />
+		<property name="ldap.role.name.attribute" value="cn" />
+		<property name="ldap.membershiptype.name.attribute" value="cn" />
+		<property name="ldap.user.objectclass.filter" value="objectClass=person" />
+		<property name="ldap.group.objectclass.filter" value="objectClass=organizationalUnit" />
+		<property name="ldap.role.objectclass.filter" value="objectClass=groupOfNames" />
+		<property name="ldap.membershiptype.objectclass.filter" value="objectClass=organizationalRole" />
+		<property name="ldap.group.objectclass" value="organizationalUnit" />
+		<property name="ldap.role.objectclass" value="groupOfNames" />
+		<property name="ldap.membershiptype.objectclass" value="organizationalRole" />
+		<property name="ldap.created.attribute" value="createdTimeStamp" />
+		<property name="ldap.modified.attribute" value="modifiedTimeStamp" />
+	</properties-param>
+	<!-- Active Directory configuration -->
+	<!--
+	<properties-param>
+		<name>exo.organization.service</name>
+		<description>LDAP Organization Service</description>
+		<property name="ldap.base.url" value="dc=exoplatform,dc=org" />
+		<property name="ldap.groups.url" value="OU=groups,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.memberships.url" value="OU=memberships,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.users.url" value="OU=users,ou=portal,dc=exoplatform,dc=org" />
+		<property name="ldap.user.authentication.attribute" value="mail" />
+		<property name="ldap.user.username.attribute" value="sAMAccountName" />
+		<property name="ldap.user.password.attribute" value="unicodePwd" />
+		<property name="ldap.user.firstname.attribute" value="givenName" />
+		<property name="ldap.user.lastname.attribute" value="sn" />
+		<property name="ldap.user.mail.attribute" value="mail" />
+		<property name="ldap.group.member.attribute" value="member" />
+		<property name="ldap.role.name.attribute" value="cn" />
+		<property name="ldap.membershiptype.name.attribute" value="cn" />
+		<property name="ldap.user.objectclass.filter" value="objectClass=user" />
+		<property name="ldap.group.objectclass.filter" value="objectClass=organizationalUnit" />
+		<property name="ldap.role.objectclass.filter" value="objectClass=group" />
+		<property name="ldap.membershiptype.objectclass.filter" value="objectClass=group" />
+		<property name="ldap.group.objectclass" value="organizationalUnit" />
+		<property name="ldap.role.objectclass" value="group" />
+		<property name="ldap.membershiptype.objectclass" value="group" />
+		<property name="ldap.created.attribute" value="createdTimeStamp" />
+		<property name="ldap.modified.attribute" value="modifiedTimeStamp" />
+	</properties-param>
+	-->
+  </service-configuration>
+	
+  <service-configuration type="org.exoplatform.services.organization.ldap.OrganizationImporterExporter" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.OrganizationServiceListenerImpl">
+	<object-param>
+		<name>organization.configuration</name>
+		<type>org.exoplatform.services.organization.ldap.OrganizationConfig</type>
+		<description>
+			Configure default role , group, membership , user when
+			platform start
+		</description>
+
+		<!-- The create the following membership type when the platform startup -->
+		<!-- The member membership is mandatory -->
+		<property name="membershipType[0]"
+			value="#new OrganizationConfig$MembershipType" />
+		<property name="membershipType[0].type" value="member" />
+		<property name="membershipType[0].description"
+			value="This membership is used to tell if an user is in a group or not" />
+
+		<!-- The create the following group when the platform startup -->
+		<property name="group[0]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[0].name" value="portal" />
+		<property name="group[0].parentId" value="" />
+		<property name="group[0].type" value="hierachy" />
+		<property name="group[0].description"
+			value="The portal group" />
+
+		<property name="group[1]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[1].name" value="site" />
+		<property name="group[1].parentId" value="/portal" />
+		<property name="group[1].type" value="hierachy" />
+		<property name="group[1].description"
+			value="The portal site group" />
+
+		<property name="group[2]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[2].name" value="admin" />
+		<property name="group[2].parentId" value="/portal" />
+		<property name="group[2].type" value="hierachy" />
+		<property name="group[2].description"
+			value="The portal admin group" />
+
+		<property name="group[3]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[3].name" value="share" />
+		<property name="group[3].parentId" value="/portal" />
+		<property name="group[3].type" value="hierachy" />
+		<property name="group[3].description"
+			value="The portal share group" />
+
+		<property name="group[4]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[4].name" value="admin" />
+		<property name="group[4].parentId" value="" />
+		<property name="group[4].type" value="hierachy" />
+		<property name="group[4].description"
+			value="The admin group" />
+
+		<property name="group[5]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[5].name" value="user" />
+		<property name="group[5].parentId" value="" />
+		<property name="group[5].type" value="hierachy" />
+		<property name="group[5].description"
+			value="The user group" />
+
+		<property name="group[6]"
+			value="#new OrganizationConfig$Group" />
+		<property name="group[6].name" value="guest" />
+		<property name="group[6].parentId" value="" />
+		<property name="group[6].type" value="hierachy" />
+		<property name="group[6].description"
+			value="The guest group" />
+
+		<!-- The create the following users when the platform startup -->
+		<property name="user[0]"
+			value="#new OrganizationConfig$User" />
+		<property name="user[0].userName" value="admin" />
+		<property name="user[0].password" value="exo" />
+		<property name="user[0].firstName" value="admin" />
+		<property name="user[0].lastName" value="admin" />
+		<property name="user[0].email" value="admin@localhost" />
+		<property name="user[0].groups[0]" value="/admin" />
+		<property name="user[0].groups[1]" value="/user" />
+		<property name="user[0].groups[2]" value="/portal/admin" />
+
+		<property name="user[1]"
+			value="#new OrganizationConfig$User" />
+		<property name="user[1].userName" value="exo" />
+		<property name="user[1].password" value="exo" />
+		<property name="user[1].firstName" value="exo" />
+		<property name="user[1].lastName" value="exo" />
+		<property name="user[1].email" value="exo@localhost" />
+		<property name="user[1].groups[0]" value="/user" />
+		<property name="user[1].groups[1]" value="/portal/site" />
+
+		<property name="user[2]"
+			value="#new OrganizationConfig$User" />
+		<property name="user[2].userName" value="portal" />
+		<property name="user[2].password" value="exo" />
+		<property name="user[2].firstName" value="portal" />
+		<property name="user[2].lastName" value="portal" />
+		<property name="user[2].email" value="portal@localhost" />
+		<property name="user[2].groups[0]" value="/user" />
+		<property name="user[2].groups[1]" value="/portal/admin" />
+	</object-param>
+  </service-configuration>
+  
+  <!-- LDAP options -->
+  <service-configuration type="org.exoplatform.services.organization.ldap.UserHandler" />
+  <!-- <service-configuration type="org.exoplatform.services.organization.ldap.VLVUserHandler" /> -->
+  <service-configuration type="org.exoplatform.services.organization.ldap.GroupHandler" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.MembershipHandler" />
+  
+  <!-- Active Directory extensions -->
+  <!-- 
+  <service-configuration type="org.exoplatform.services.organization.ldap.ActiveDirectoryUserHandler" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.ActiveDirectoryVLVUserHandler" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.ActiveDirectoryGroupHandler" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.ActiveDirectoryMembershipHandler" />
+  -->
+  
+  <!-- Standard - used for LDAP and Active Directory -->
+  <service-configuration type="org.exoplatform.services.organization.ldap.UserProfileHandler" />
+  <service-configuration type="org.exoplatform.services.organization.ldap.MembershipTypeHandler" />
+	
+  <!-- This listener will assign some defautl role and memberships to a user when he resisters -->
+
+  <service-configuration type="org.exoplatform.services.organization.ldap.NewUserEventListener">
+	<object-param>
+	<name>new.user.configuration</name>
+	<type>org.exoplatform.services.organization.ldap.NewUserConfig</type>
+	<description>Configure role , group for the new user</description>
+	
+	<property name="group[0]" value="#new NewUserConfig$JoinGroup" />
+	<property name="group[0].groupId" value="/user" />
+	<property name="group[0].membership" value="member" />
+	
+	<property name="group[1]" value="#new NewUserConfig$JoinGroup" />
+	<property name="group[1].groupId" value="/portal/share" />
+	<property name="group[1].membership" value="member" />
+	
+	<property name="ignoredUser[0]" value="admin" />
+	<property name="ignoredUser[1]" value="exo" />
+	<property name="ignoredUser[2]" value="portal" />     
+	</object-param>
+  </service-configuration>
+
+</configuration>

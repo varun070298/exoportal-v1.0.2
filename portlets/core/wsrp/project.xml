@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <id>exoplatform.portlets.core.wsrp</id>
+  <name>${pom.artifactId} Portlet</name>
+  <package>exo.*</package>
+
+  <description>${pom.artifactId} Portlet</description>
+  <shortDescription>${pom.artifactId} Portlet</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.jsf-components</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portlet-framework.jsf</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.wsrp.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <!-- ************************ soap ************************ -->
+    <dependency>
+      <groupId>jaxrpc</groupId>
+      <artifactId>jaxrpc</artifactId>
+      <version>1.0</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>wsdl4j</groupId>
+      <artifactId>wsdl4j</artifactId>
+      <version>1.0</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>soap</groupId>
+      <artifactId>soap</artifactId>
+      <version>2.3</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>saaj</groupId>
+      <artifactId>saaj</artifactId>
+      <version>1.1</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-discovery</id>
+      <version>0.2</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+    <!-- ========================================================= -->
+    <!-- UNIT TEST DEPENDECY                                       -->
+    <!-- ========================================================= -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.test.framework</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.database.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.resources.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>        
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.wsrp.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portlet-container.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portlet-container.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.backup.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portal.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+</project>

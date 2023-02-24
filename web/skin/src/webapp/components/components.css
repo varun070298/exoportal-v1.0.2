@@ -1,0 +1,128 @@
+/*---------------------------UINode , NodeTabbedPaneRenderer style--------------*/
+.UITabbedPane td {
+  border: none ;
+  padding: 0px ;
+  margin: 0px ;
+}
+
+.UITabbedPane .tab-left {
+  background: url("/skin/icons/metal-tab/left-tab-10x31.jpg") no-repeat;
+  width: 10px; height: 31px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.UITabbedPane .tab-middle {
+  background: url("/skin/icons/metal-tab/tab-middle-11x31.jpg") repeat-x;
+  width: auto; height: 31px ;
+  padding: 0px 0px 0px 0px;
+  text-align: center ;
+  vertical-align : middle;
+}
+
+.UITabbedPane .tab-middle a {
+  text-decoration: none ;
+  font-weight: bold ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  color: gray;
+  font-size : 8pt;
+  vertical-align : middle;
+}
+
+.UITabbedPane .tab-right {
+  background: url("/skin/icons/metal-tab/right-tab-10x31.jpg") no-repeat;
+  width: 10px; height: 31px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.UITabbedPane .selected-tab-left {
+  background: url("/skin/icons/metal-tab/left-tab-10x31.jpg") no-repeat;
+  width: 10px; height: 31px ;
+  padding: 0px; margin: 0px ;
+}
+
+.UITabbedPane .selected-tab-middle {
+  background: url("/skin/icons/metal-tab/tab-middle-11x31.jpg") repeat-x;
+  width: auto; height: 31px ;
+  padding: 0px; margin: 0px ;
+  text-align: center ;
+  vertical-align : middle;
+}
+
+.UITabbedPane .selected-tab-middle a {
+  text-decoration: none ;
+  font-weight: bold ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  color: orange ;
+  font-size : 8pt;
+  vertical-align : middle;
+}
+
+
+.UITabbedPane .selected-tab-right {
+  background: url("/skin/icons/metal-tab/right-tab-10x31.jpg") no-repeat;
+  width: 10px; height: 31px ;
+  padding: 0px;
+}
+/*---------------------------UIPageIterator , PageIteratorRenderer style--------------*/
+.UIPageIterator {
+  font-size : 10pt;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  color : #BC56AC;
+}
+
+.UIPageIterator a, .UIPageIterator span {
+  padding: 0px 3px;
+}
+
+.UIPageIterator .selected-page {
+  padding: 0px 3px ;
+}
+
+.UIPageIterator .page {
+  padding: 0px 3px ;
+}
+
+.UIPageIterator .status {
+  font-size: 8pt;
+}
+
+/*---------------------------UIToolbar--------------*/
+.UIToolbar {
+  background : #fafafa;
+  border : 1px outset #fafafa;
+  padding: 1px 1px 1px 1px;
+  height : 25px;
+  font-size : 12pt;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  margin : 1px 0px 1px 0px;
+}
+
+.UIToolbar .toolbar-left{
+  float : left;  
+  padding: 3px 1px 3px 1px;
+  margin: 1px 0px 0px 1px;
+}
+
+.UIToolbar .toolbar-right{
+  float : right;    
+  padding: 3px 1px 3px 1px;
+  margin: 1px 0px 2px 1px;
+}
+
+.UIToolbar a{
+  border : 1px solid #fafafa;
+  padding: 2px 1px 2px 1px;
+  margin: 1px 1px 1px 1px;
+}
+
+.UIToolbar a:hover {
+  border : 1px solid blue;
+  background : #DDDDDD;
+  padding: 2px 1px 2px 1px;
+  margin: 1px 1px 1px 1px;
+}
+
+.UIToolbar img {
+  padding: 0px 1px 2px 1px;
+  vertical-align: middle;
+}

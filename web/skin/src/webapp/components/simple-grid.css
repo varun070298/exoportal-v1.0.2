@@ -1,0 +1,62 @@
+.UIGrid {
+  width: 100% ;
+}
+
+.UIGrid  th {
+  border-bottom: 1px solid #bbb ;
+  border-top: 1px solid #bbb ;
+  padding: 2px ;
+  background: #dddddd ;
+  color: #074B88;
+}
+
+.UIGrid  td {
+  padding: 2px ;
+  text-align: center ;
+}
+
+.UIGrid .even{
+  background: #eee ;
+}
+
+.UIGrid .odd {
+  background: white ; 
+}
+
+.UIGrid .odd td, 
+.UIGrid .even td {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+
+.UIGrid  .header {
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #CCCCCC ;
+  color: #074B88;
+  text-align : center;
+  height : 25px;
+  vertical-align : middle;
+}
+
+.UIGrid  .footer{
+  padding: 2px ;
+  background: transparent ;
+  color: #074B88;
+  text-align : center;
+  height : 25px;
+  vertical-align : middle;
+}
+
+.UIGrid  .action-column {
+  text-align: center ;
+  white-space: nowrap ;
+}
+
+.UIGrid  .right-indent {
+  text-align: right ;
+}
+
+.UIGrid  .left-indent {
+  text-align: left ;
+}

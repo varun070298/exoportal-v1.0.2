@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!-- ============================================================================= -->
+  <!--  D A T A B A S E   S E R V I C E   S E R V I C E   C O N F I G U R A T I O N  -->
+  <!-- ============================================================================= -->
+  <!--
+  Confguration for the datasource, the first datasource value is the Datasource name and the 
+  second value is the datasource jndi
+  -->
+  <service-configuration type="org.exoplatform.services.database.impl.InMemoryDatabaseServiceImpl">
+    <object-param>
+      <name>database.service.config</name>
+      <type>org.exoplatform.services.database.impl.DatabaseServiceConfig</type>
+      <property name="datasource[0].name" value="exo1" />
+      <property name="datasource[1].name" value="exo2" />
+    </object-param>
+  </service-configuration>
+
+  <!-- service-configuration type="org.exoplatform.services.database.impl.HibernateServiceContainerImpl"/ -->
+
+  <remove-configuration>org.exoplatform.services.database.DatabaseService</remove-configuration>
+</configuration>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">Workflow</description>
+    <portlet-name>Workflow</portlet-name>
+    <display-name xml:lang="en">Workflow</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.workflow.component.UIWorkflowPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.workflow.component.UIWorkflowEdit.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portal.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/bp-definition-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>      
+    </supports>
+
+    <supported-locale>EN</supported-locale>
+    <resource-bundle>locale.portlet.workflow.WorkflowResource</resource-bundle>
+
+    <portlet-info>
+      <title>Workflow</title>
+      <short-title>Workflow</short-title>
+      <keywords>Workflow</keywords>
+    </portlet-info>
+  </portlet>
+
+</portlet-app>

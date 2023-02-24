@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.ServiceDescriptionInterfaceImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.RegistrationOperationsInterfaceImp"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.MarkupOperationsInterfaceImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.PortletManagementOperationsInterfaceImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.JSR168ContainerProxyImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.PersistentStateManagerImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.TransientStateManagerImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.wsdl.WSRPServiceLocator"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.PortletRegistryImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.PortletDriverRegistryImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.ProducerRegistryImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.UserRegistryImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.URLGeneratorImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.URLRewriterImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.ConsumerEnvironmentImpl"/>
+  <service-configuration type="org.exoplatform.services.wsrp.consumer.impl.URLTemplateComposerImpl"/>  
+
+  <service-configuration type="org.exoplatform.services.wsrp.producer.impl.WSRPConfiguration">
+   <properties-param>
+     <name>wsrp-conf</name>
+     <property name="wsrp.requires.registration" value="true"/>
+     <property name="wsrp.has.user.specific.state" value="true"/>
+     <property name="wsrp.does.url.template.processing" value="true"/>
+     <property name="wsrp.templates.stored.in.session" value="false"/>
+     <property name="wsrp.user.context.stored.in.session" value="false"/>
+     <property name="wsrp.uses.method.get" value="false "/>
+     <property name="wsrp.perform.blocking.interaction.optimized" value="false"/>
+     <property name="wsrp.save.registration.state.on.consumer" value="false"/>
+     <property name="wsrp.save.portlet.state.on.consumer" value="false"/>
+   </properties-param>
+  </service-configuration>
+</configuration>

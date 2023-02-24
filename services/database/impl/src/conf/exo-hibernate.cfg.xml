@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 2.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-2.0.dtd">
+
+<hibernate-configuration>
+  <!--
+  <session-factory name="/hibernate/sessionFactory">
+  -->
+  <session-factory>
+    <!-- properties for this SessionFactory only -->
+    <property name="connection.provider_class">org.exoplatform.services.database.impl.ExoConnectionProvider</property>
+    <property name="connection.datasource">@datasource@</property>
+    <property name="dialect">@dialect@</property>
+    <property name="statement_cache.size">5</property>
+    <property name="show_sql">false</property>
+    <property name="hibernate.cache.provider_class">org.exoplatform.services.database.impl.ExoCacheProvider</property>
+<!--
+    <property name="hibernate.transaction.factory_class">net.sf.hibernate.transaction.JTATransactionFactory</property>
+    <property name="transaction.manager_lookup_class">net.sf.hibernate.transaction.JBossTransactionManagerLookup</property>
+-->
+    <mapping resource="exo/services/resources/impl/ResourceBundleDescriptionImpl.hbm.xml"/>
+    <mapping resource="exo/services/resources/impl/ResourceBundleDataImpl.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

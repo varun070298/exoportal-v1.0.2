@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration type="org.exoplatform.services.wsrp.mocks.MockWSRPService"/>
+  <remove-configuration>org.exoplatform.services.wsrp.wsdl.WSRPServiceLocator</remove-configuration>
+</configuration>

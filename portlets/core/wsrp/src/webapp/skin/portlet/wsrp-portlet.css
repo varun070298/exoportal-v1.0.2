@@ -1,0 +1,31 @@
+.wsrp-portlet .UIProducer  {
+  margin-top: 5px ;
+  border: 1px solid #CCCCCC;
+  background: white ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+  width: 100% ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+}
+
+.wsrp-portlet .UIProducer  th {
+  border: 1px solid #CCCCCC;;
+  padding: 2px ;
+  background: #DDDDDD;
+  color: #074B88;
+}
+
+.wsrp-portlet .UIProducer td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+}
+
+.wsrp-portlet .UIProducer tr.even{
+  background: #EEEEEE;
+}
+
+.wsrp-portlet .UIProducer a {
+  text-decoration: underline;
+  color: #074B88;
+}

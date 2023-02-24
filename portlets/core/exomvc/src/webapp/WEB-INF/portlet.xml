@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">eXo MVC Portlet</description>
+    <portlet-name>ExoMVC</portlet-name>
+    <display-name xml:lang="EN">eXo MVC</display-name>
+    <portlet-class>org.exoplatform.portlet.exomvc.MVCPortletFramework</portlet-class>
+
+    <init-param>
+      <name>script.reposistory</name>
+      <value>/WEB-INF/script</value>
+    </init-param>
+    <init-param>
+      <name>configure.script</name>
+      <value>org/exoplatform/portlets/exomvc/ConfigureScript.groovy</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>config</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.exomvc.ExoMVC</resource-bundle>
+    <portlet-info>
+      <title>exo MVC</title>
+      <short-title>MVC</short-title>
+      <keywords>mvc, script</keywords>
+    </portlet-info>
+  </portlet>
+</portlet-app>

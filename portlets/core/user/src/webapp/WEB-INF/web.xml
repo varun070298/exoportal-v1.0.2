@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <!--If define the Portlet Application name MUST end with .par-->
+  <display-name>user</display-name>
+
+  <description>
+    This application is a portlet. It can not be used outside a portal.
+    This web.xml file is mandatory in each .war archive file.
+  </description>
+
+  <listener>
+    <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
+  </listener>
+
+  <security-role>
+    <role-name>admin</role-name>
+  </security-role>
+</web-app>

@@ -1,0 +1,6 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+  <postGoal name="java:compile">
+    <attainGoal name="exo:hibernate:mapping"/>
+    <attainGoal name="exo:copy-test-resources"/>
+  </postGoal>
+</project>

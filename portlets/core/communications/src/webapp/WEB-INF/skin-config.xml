@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>communications/Forum</portlet-name>
+    <style name="forum" url="/communications/skin/portlet/forum-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>communications/SMS</portlet-name>
+    <style name="sms" url="/communications/skin/portlet/sms-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>communications/MessageCenter</portlet-name>
+    <style name="msc" url="/communications/skin/portlet/msc-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

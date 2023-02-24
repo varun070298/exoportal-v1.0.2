@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>content/DisplayContent</portlet-name>
+    <style name="exo-content" url="/content/skin/portlet/exo-content-portlet.css"/>
+    <style name="exo-config-content" url="/content/skin/portlet/exo-config-content-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>content/DisplayStaticContent</portlet-name>    
+    <style name="exo-content" url="/content/skin/portlet/exo-content-portlet.css"/>
+    <style name="exo-config-content" url="/content/skin/portlet/exo-config-content-portlet.css"/>    
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>content/FileExplorer</portlet-name>
+    <style name="explorer" url="/content/skin/portlet/explorer-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>content/JCRExplorer</portlet-name>
+    <style name="explorer" url="/content/skin/portlet/explorer-portlet.css"/>
+    <!--
+    <style name="jcr-explorer" url="/content/skin/portlet/jcr-explorer.css"/>
+    -->
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>content/SearchPortlet</portlet-name>
+    <style name="search" url="/content/skin/portlet/search-portlet.css"/>
+  </portlet-style-config>
+
+</skin-config>

@@ -1,0 +1,53 @@
+.ic3-border  {
+  padding: 0px ; margin: 0px ;
+  width: 100% ; height: auto ;
+  background: transparent ;
+}
+
+.ic3-border  .top-left {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/top-left.gif") no-repeat bottom left;
+}
+
+.ic3-border  .top-middle {
+  padding: 0px ; margin: 0px ;
+  width: auto ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/top-middle.gif") repeat-x bottom;
+}
+
+.ic3-border  .top-right  {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/top-right.gif") no-repeat bottom right;
+}
+
+.ic3-border  .middle-left {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: auto ;
+  background: url("/skin/decorators/ic3-border/middle-left.gif") repeat-y ;
+}
+
+.ic3-border  .middle-right {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: auto ;
+  background: url("/skin/decorators/ic3-border/middle-right.gif") repeat-y ;
+}
+
+.ic3-border  .bottom-left {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/bottom-left.gif") no-repeat;
+}
+
+.ic3-border  .bottom-middle {
+  padding: 0px ; margin: 0px ;
+  width: auto ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/bottom-middle.gif") repeat-x ;
+}
+
+.ic3-border  .bottom-right  {
+  padding: 0px ; margin: 0px ;
+  width: 5px ; height: 5px ;
+  background: url("/skin/decorators/ic3-border/bottom-right.gif") no-repeat;
+}

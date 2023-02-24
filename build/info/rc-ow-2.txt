@@ -1,0 +1,27 @@
+1 CVS information
+
+1.1 Major feature
+-------------------
+
+1. Enhance forum, port the old php forum data, refractor search component to use the standard search component.(done)
+1. Enhance mail portlet (done)
+1. Implement admin link , that allow admin go to any user portal and have all of that user capability(done)
+1. Backup portlet is broken and need some redesign (done)
+1. Move the locale component configuration to the portal container and add more customization parameter(done)
+1. If possible, try to reload the resource bundle configuration for the portal instead of destroying the jsf tree and recreate.(done)
+1. Review the portal configuration permission, interceptor and implement multiple role interceptor (done)
+
+1.1 BUGS FIX
+-------------
+
+1. fix the web.xml version 2.4 support (almost)
+1. Workflow portlet has css problem (done)
+1. Fix pakage name in portlet.tld (done)
+1. The wsrp consummer portlet should not throw exception if there is no producer  (done)
+1. fix bugs in index, reindex of the indexer portlet (done)
+1. the global search portlet should not show the private messgaes.(done)
+1. Message portlet advanced search has css problem (done)
+
+
+
+

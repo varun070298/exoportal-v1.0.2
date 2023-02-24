@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.portlets.core.communications</id>
+  <name>${pom.artifactId} Portlet</name>
+  <shortDescription>${pom.artifactId} Portlet</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.jsf-components</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portlet-framework.jsf</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.container</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.communication.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.indexing.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.grammar-analyzer.api</artifactId>
+      <version>${exoplatform.version}</version>
+       <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+    
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.grammar-analyzer.impl</artifactId>
+      <version>${exoplatform.version}</version>
+       <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-httpclient</id>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <jetty.dependency>true</jetty.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+      </properties>
+    </dependency>    
+    <!-- ========================================================= -->
+    <!-- UNIT TEST DEPENDECY                                       -->
+    <!-- ========================================================= -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.portal.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.common.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.communication.impl</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.services.organization.api</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>mail</artifactId>
+      <jar>mail.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>pop3</artifactId>
+      <jar>pop3.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>imap</artifactId>
+      <jar>imap.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>smtp</artifactId>
+      <jar>smtp.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>mail</groupId>
+      <artifactId>activation</artifactId>
+      <jar>activation.jar</jar>
+      <properties>
+        <tomcat.dependency>true</tomcat.dependency>
+        <war.manifest.classpath>true</war.manifest.classpath>
+        <jetty.dependency>true</jetty.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+</project>

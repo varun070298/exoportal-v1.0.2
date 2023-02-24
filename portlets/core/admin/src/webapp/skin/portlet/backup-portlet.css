@@ -1,0 +1,105 @@
+.backup-portlet .UIBackupPortlet  {
+  width: 100% ; height: 100% ;
+  background: white ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  padding: 0px 0px 0px 0px;
+}
+/* -------------TREE MENU CONFIGURATION-----------------------------------------------*/
+.backup-portlet .UIBackupPortlet  .UITreeMenu {
+  width: 200px ;
+}
+/* ---------------------------------------------------------------------------------- */
+.backup-portlet .UIBackupPortlet .UIExportData {
+  width: 100% ; height: 100% ;
+  border: 1px solid #CCCCCC ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.backup-portlet .UIBackupPortlet .UIExportData th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+  height: 15px ;
+}
+
+.backup-portlet .UIBackupPortlet .UIExportData tr.even {
+  background: #eee ;
+}
+
+.backup-portlet .UIBackupPortlet .UIExportData tr.footer {
+  background: #FFFFEF ;
+}
+
+.backup-portlet .UIBackupPortlet .UIExportData td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align : center;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+.backup-portlet .UIBackupPortlet .UIImportData {
+  width: 100% ; height: 100% ;
+  border: 1px solid #CCCCCC ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.backup-portlet .UIBackupPortlet .UIImportData th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+}
+
+.backup-portlet .UIBackupPortlet .UIImportData td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align : center;
+}
+
+.backup-portlet .UIBackupPortlet .UIImportData tr.footer {
+  background: #FFFFEF ;
+}
+
+.backup-portlet .UIBackupPortlet .UIImportData tr.even {
+  background: #eee ;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.backup-portlet .UIBackupPortlet .UIData {
+  width: 100% ; height: auto ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.backup-portlet .UIBackupPortlet .UIData .meta-data{
+  width: 100%; height: auto ;
+  border: 1px solid  #074B88;
+  empty-cells: show ;
+  border-collapse: collapse ;
+  text-align : center;
+}
+
+.backup-portlet .UIBackupPortlet .UIData .meta-data td{
+  border: 1px solid  #074B88;
+}
+
+.backup-portlet .UIBackupPortlet .UIData .data{
+  width: 100%; height: auto ;
+  border: 1px solid  #074B88;
+  empty-cells: show ;
+  border-collapse: collapse ;
+  text-align : center;
+}
+
+.backup-portlet .UIBackupPortlet .UIData .data .even {
+  background: #eee ;
+}
+
+.backup-portlet .UIBackupPortlet .UIData .footer {
+  width: 100% ; height: 100% ;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project>
+  <!--
+  <extend>${basedir}/../../build/project.xml</extend>
+  -->
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.test.webunit-suites</id>
+  <name>eXo test suites</name>
+  <shortDescription>eXo test suites</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.test.webunit-framework</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <id>commons-lang</id>
+      <version>2.0</version>
+      <url>http://jakarta.apache.org/commons</url>
+    </dependency>
+
+    <dependency>
+      <groupId>httpunit</groupId>
+      <artifactId>httpunit</artifactId>
+      <version>1.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jtidy</groupId>
+      <artifactId>jtidy</artifactId>
+      <version>4aug2000r7-dev</version>
+    </dependency>
+
+    <!-- ************************ groovy ********************************** -->
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm</artifactId>
+      <version>1.4.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>asm</groupId>
+      <artifactId>asm-util</artifactId>
+      <version>1.4.1</version>
+    </dependency>
+
+    <dependency>
+      <id>groovy</id>
+      <version>1.0-beta-7</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceDirectory>src/groovy</sourceDirectory>
+    <unitTestSourceDirectory>src/groovy</unitTestSourceDirectory>
+    <unitTest/>
+    <resources/>
+  </build>
+</project>

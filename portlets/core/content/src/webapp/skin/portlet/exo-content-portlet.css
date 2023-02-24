@@ -1,0 +1,128 @@
+@import "/skin/components/simple-tab.css" ;
+
+.exo-content-portlet {
+  margin-top: 0px ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.exo-content-portlet .UIContentPortlet {
+  background: white ;
+  font-size : 10pt;
+  color : #074B88;
+  vertical-align : top;
+}
+
+.exo-content-portlet .UIContentPortlet b{
+  background: transparent ;
+  color : #F47823 ; /* orange */
+}
+
+.exo-content-portlet .UIContentPortlet .even{
+  background: #eeeeee;
+}
+
+.exo-content-portlet a {
+  text-decoration : underline;
+  color : #074B88;
+  margin : 0px 1px;
+}
+
+.exo-content-portlet .UIContentPortlet img {
+  border : none;
+}
+
+.exo-content-portlet .UIContentPortlet li b{
+  color : #6666FF   ;
+}
+
+.exo-content-portlet .UIContentPortlet ul{  
+  list-style-image: url("images/list-item.gif");
+}
+
+.exo-content-portlet .UIContentTab {
+  background-color:  transparent ;
+  margin-top: 10px ;
+  padding: 0px ;
+  vertical-align: top ;
+  height: inherit;
+}
+/* -------------------------------------------------- */
+.exo-content-portlet  .UIContentConfig {
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.exo-content-portlet .UIContentConfig .footer{
+  margin : 5px;
+}
+
+.exo-content-portlet .UIContentConfig table {
+  float : left;
+  margin : 5px;
+  border : 1px solid #dddddd;
+}
+
+.exo-content-portlet  .UIContentConfig th {
+  border : 1px solid #cccccc;
+  margin-top: 5px ;
+  padding: 2px ;
+  background: #eeeeee ;
+  color : #074B88;
+}
+
+.exo-content-portlet  .UIContentConfig th a{
+  text-decoration: none;
+  font-size: 10pt;
+  padding : 0px 2px;
+}
+
+.exo-content-portlet  .UIContentConfig th a img{
+  padding : 0px 1px;
+}
+
+.exo-content-portlet  .UIContentConfig td {
+  background: #fafafa ;
+}
+
+.exo-content-portlet  .UIContentConfig label {
+  color : #074B88;
+}
+
+.exo-content-portlet  .UIContentConfigForm {
+  empty-cells: show ;
+  border-collapse: collapse ;
+  margin : 0px auto 0px auto;
+}
+
+.exo-content-portlet  .UIContentConfigForm label {
+  color : #074B88;
+}
+
+.exo-content-portlet  .UIContentConfigForm th {
+  background: #CCCCCC ;
+  padding: 2px ;
+  color : #074B88;
+}
+
+.exo-content-portlet  .UIContentConfigForm td {
+  padding: 2px ;
+}
+
+.exo-content-portlet  .UIContentConfigForm input {
+  width: 300px ;
+  border: 1px solid black ;
+}
+
+.exo-content-portlet .UIContentEditor {
+  margin: 0px auto 0px auto ;
+}
+
+.exo-content-portlet .UIContentEditor td th select {
+  padding: 0px ; margin: 0px ;
+  width: auto ;
+}
+
+.exo-content-portlet .UIContentEditor select {
+  padding: 0px ; margin: 0px ;
+  width: auto ;
+}

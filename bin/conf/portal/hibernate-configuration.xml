@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration 
+    key="org.exoplatform.services.organization.OrganizationService"
+    type="org.exoplatform.services.organization.hibernate.OrganizationServiceImpl"/>
+
+  <service-configuration type="org.exoplatform.services.organization.hibernate.HibernateOrganizationImporterExporter"/>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.OrganizationServiceListenerImpl">
+    <object-param>
+      <name>organization.configuration</name>
+      <type>org.exoplatform.services.organization.hibernate.OrganizationConfig</type>
+      <description>Configure default role , group, membership , user when platform start</description>
+
+      <!-- The create the following membership type when the platform startup --> 
+      <!-- The member membership is mandatory -->       
+      <property name="membershipType[0]" value="#new OrganizationConfig$MembershipType" />
+      <property name="membershipType[0].type" value="member" />
+      <property name="membershipType[0].description" value="This membership is used to tell if an user is in a group or not" />
+
+      <!-- The create the following group when the platform startup --> 
+      <property name="group[0]" value="#new OrganizationConfig$Group" />
+      <property name="group[0].name" value="portal" />
+      <property name="group[0].parentId" value="" />
+      <property name="group[0].type" value="hierachy" />
+      <property name="group[0].description" value="The portal group" />
+
+      <property name="group[1]" value="#new OrganizationConfig$Group" />
+      <property name="group[1].name" value="site" />
+      <property name="group[1].parentId" value="/portal" />
+      <property name="group[1].type" value="hierachy" />
+      <property name="group[1].description" value="The portal site group" />
+
+      <property name="group[2]" value="#new OrganizationConfig$Group" />
+      <property name="group[2].name" value="admin" />
+      <property name="group[2].parentId" value="/portal" />
+      <property name="group[2].type" value="hierachy" />
+      <property name="group[2].description" value="The portal admin group" />
+
+      <property name="group[3]" value="#new OrganizationConfig$Group" />
+      <property name="group[3].name" value="share" />
+      <property name="group[3].parentId" value="/portal" />
+      <property name="group[3].type" value="hierachy" />
+      <property name="group[3].description" value="The portal share group" />
+
+      <property name="group[4]" value="#new OrganizationConfig$Group" />
+      <property name="group[4].name" value="admin" />
+      <property name="group[4].parentId" value="" />
+      <property name="group[4].type" value="hierachy" />
+      <property name="group[4].description" value="The admin group" />
+      
+      <property name="group[5]" value="#new OrganizationConfig$Group" />
+      <property name="group[5].name" value="user" />
+      <property name="group[5].parentId" value="" />
+      <property name="group[5].type" value="hierachy" />
+      <property name="group[5].description" value="The user group" />      
+      
+      <property name="group[6]" value="#new OrganizationConfig$Group" />
+      <property name="group[6].name" value="guest" />
+      <property name="group[6].parentId" value="" />
+      <property name="group[6].type" value="hierachy" />
+      <property name="group[6].description" value="The guest group" />            
+
+      <!-- The create the following users when the platform startup --> 
+      <property name="user[0]" value="#new OrganizationConfig$User" />
+      <property name="user[0].userName" value="admin" />
+      <property name="user[0].password" value="exo" />
+      <property name="user[0].firstName" value="admin" />
+      <property name="user[0].lastName" value="admin" />
+      <property name="user[0].email" value="admin@localhost" />
+      <property name="user[0].groups[0]" value="/admin" />
+      <property name="user[0].groups[1]" value="/user" />
+      <property name="user[0].groups[2]" value="/portal/admin" />
+
+      <property name="user[1]" value="#new OrganizationConfig$User" />
+      <property name="user[1].userName" value="exo" />
+      <property name="user[1].password" value="exo" />
+      <property name="user[1].firstName" value="exo" />
+      <property name="user[1].lastName" value="exo" />
+      <property name="user[1].email" value="exo@localhost" />
+      <property name="user[1].groups[0]" value="/user" />
+      <property name="user[1].groups[1]" value="/portal/site" />
+
+      <property name="user[2]" value="#new OrganizationConfig$User" />
+      <property name="user[2].userName" value="portal" />
+      <property name="user[2].password" value="exo" />
+      <property name="user[2].firstName" value="portal" />
+      <property name="user[2].lastName" value="portal" />
+      <property name="user[2].email" value="portal@localhost" />
+      <property name="user[2].groups[0]" value="/user" />
+      <property name="user[2].groups[1]" value="/portal/admin" />
+
+      <property name="user[3]" value="#new OrganizationConfig$User" />
+      <property name="user[3].userName" value="demo" />
+      <property name="user[3].password" value="exo" />
+      <property name="user[3].firstName" value="Demo" />
+      <property name="user[3].lastName" value="eXo Platform" />
+      <property name="user[3].email" value="demo@localhost" />
+      <property name="user[3].groups[0]" value="/user" />
+      <property name="user[3].groups[1]" value="/portal/share" />
+    </object-param>
+  </service-configuration>
+  
+  <service-configuration type="org.exoplatform.services.organization.hibernate.UserQueryHandler"/>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.UserProfileQueryHandler"/>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.GroupQueryHandler"/>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.MembershipQueryHandler"/>
+  <service-configuration type="org.exoplatform.services.organization.hibernate.MembershipTypeQueryHandler"/>
+
+  <!--
+    This listener will assign some defautl role and memberships to a user when he resisters
+  -->
+  <service-configuration type="org.exoplatform.services.organization.hibernate.NewUserEventListener">
+    <object-param>
+      <name>new.user.configuration</name>
+      <type>org.exoplatform.services.organization.hibernate.NewUserConfig</type>
+      <description>Configure role , group for the new user</description>
+      <!-- new user should join the following group --> 
+      <property name="group[0]" value="#new NewUserConfig$JoinGroup" />
+      <property name="group[0].groupId" value="/user" />
+      <property name="group[0].membership" value="member" />
+
+      <property name="group[1]" value="#new NewUserConfig$JoinGroup" />
+      <property name="group[1].groupId" value="/portal/share" />
+      <property name="group[1].membership" value="member" />
+      <!--
+      <property name="group[0].validateGroupId" value="false" />
+      <property name="group[0].validateMembership" value="false" />
+      -->
+      <!-- Do not apply the above rules for the following users --> 
+      <property name="ignoredUser[0]" value="admin" />
+      <property name="ignoredUser[1]" value="exo" />
+      <property name="ignoredUser[2]" value="portal" />
+      <property name="ignoredUser[3]" value="exotest" />
+      <property name="ignoredUser[3]" value="demo" />      
+    </object-param>
+  </service-configuration>
+</configuration>

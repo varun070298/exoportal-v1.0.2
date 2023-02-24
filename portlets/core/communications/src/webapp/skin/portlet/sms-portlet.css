@@ -1,0 +1,143 @@
+.sms-portlet  {
+  width: 100% ; height: 100% ;
+  background: white ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  padding: 0px 0px 0px 0px;
+}
+
+.sms-portlet a {
+  text-decoration: underline;
+  color: #074B88;
+}
+
+.sms-portlet li{
+  color : red;
+}
+
+.sms-portlet th{
+  background: #DDDDDD ;
+  color: #074B88;
+}
+
+.sms-portlet label{
+  color: #074B88;
+}
+
+.sms-portlet .UISmsPortlet {
+  width: 100% ;
+}
+
+.sms-portlet .UISmsPortlet .footer {
+  text-align : center;
+}
+
+.sms-portlet .UISmsForm {
+  width: 500px;
+}
+
+.sms-portlet .UISmsForm table{
+  width: 100%;
+}
+
+.sms-portlet .UISmsForm a {
+  text-decoration: none;
+  color: #074B88;
+}
+
+.sms-portlet .UISmsForm th {
+  border-right: 2px dotted orange ;
+  padding: 2px 5px 2px 0px  ;
+  text-align: left ;
+  background: #ddd ;
+  border-bottom : 1px solid #074B88;
+}
+
+.sms-portlet .UISmsForm td {
+  border-right: 2px dotted orange ;
+  padding: 2px 15px 2px 15px  ;
+  text-align: left ;
+  background: #EEE ;
+}
+
+.sms-portlet .UISmsForm input {
+  border: 1px solid black ;
+  text-align: left ;
+  background: white ;
+  width: 300px ;
+}
+
+.sms-portlet .UISmsForm select {
+  border: 1px dotted black ;
+  text-align: left ;
+  background: white ;
+  width: 200px ;
+}
+
+.sms-portlet .UISmsForm textarea {
+  border: 1px solid black ;
+  text-align: left ;
+  background: white ;
+  width: 410px ;
+}
+
+.sms-portlet .UISmsForm .counter {
+  border: 1px dotted black ;
+  text-align: center ;
+  background: #EEE ;
+  width: 30px ;
+}
+
+
+.sms-portlet .UISmsForm .send {
+  background: url("/communications/images/sms/send-forward.gif") no-repeat;
+  padding-left: 20px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+
+.sms-portlet .UISmsForm .clear{
+  background: url("/communications/images/sms/clear.gif") no-repeat;
+  padding-left: 20px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+
+.sms-portlet .UISmsForm .save{
+  background: url("/communications/images/sms/save-provider.gif") no-repeat;
+  padding-left: 20px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+
+.sms-portlet .UISmsForm .counter-label td {
+  border-right: 2px dotted orange ;
+  padding: 2px 15px 2px 15px  ;
+  text-align: left ;
+  background: #EEE ;
+  width: 400px ;
+  white-space: nowrap ;
+}
+
+
+.sms-portlet .UISmsRecipients {
+  font-size : 10pt;
+  text-align : center;
+  width: 100%;
+}
+
+.sms-portlet .UISmsRecipients .body{
+  border : 1px solid #074B88;
+  width: 100%;
+}
+
+.sms-portlet .UISmsRecipients .body td{
+  border-right : 1px solid #DDDDDD;
+  border-bottom : 1px solid #DDDDDD;
+  width : 50%;
+}
+
+
+

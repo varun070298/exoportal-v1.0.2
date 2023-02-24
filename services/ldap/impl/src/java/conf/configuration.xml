@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration key="org.exoplatform.services.ldap.LDAPService" 
+  						type="org.exoplatform.services.ldap.impl.LDAPServiceImpl">
+		<properties-param>
+			<name>exo.ldap.service</name>
+			<description>LDAP Service</description>
+			<!-- comma seperated list of hostname:port (Ex. localhost:389,ldapserver:389) -->
+			<property name="ldap.host" value="localhost" />
+			<!-- dn of user to bind to ldap with, needs write permissions within portal ou -->
+			<property name="ldap.user.dn" value="cn=Manager,dc=exoplatform,dc=org" />
+			<!-- password for bind user -->
+			<property name="ldap.user.password" value="secret" />
+			<!-- version of ldap spec to use -->
+			<property name="ldap.version" value="3" />
+			<!-- ldap timeout value in milliseconds -->
+			<property name="ldap.timeout" value="10000" />
+			<!-- whether or not to enable ssl, if ssl is used ensure that the javax.net.ssl.keyStore & java.net.ssl.keyStorePassword properties are set -->
+			<property name="ldap.ssl.enabled" value="false" />
+			<!-- whether or not to follow or ignore referrals -->
+			<property name="ldap.referral.mode" value="ignore" />
+		</properties-param>
+	</service-configuration>
+</configuration>

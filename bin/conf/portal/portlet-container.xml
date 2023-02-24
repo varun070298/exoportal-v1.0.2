@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<portlet-container>
+
+  <!-- ================================================================== -->
+  <!--               GLOBAL PROPERTIES                                    -->
+  <!-- ================================================================== -->
+  <global>
+    <name>ExoPortletContainer</name>
+    <description>A JSR 168 compliant portlet container</description>
+    <major-version>1</major-version>
+    <minor-version>0</minor-version>
+  </global>
+
+  <!-- ================================================================== -->
+  <!--               SESSION SHARED PROPERTIES                            -->
+  <!-- ================================================================== -->
+  <shared-session>
+    <enable>false</enable>
+  </shared-session>
+
+  <!-- ================================================================== -->
+  <!--              DELEGATES RESOURCE BUNDLE LOOKUP                      -->
+  <!-- ================================================================== -->
+  <delegated-bundle>
+    <enable>true</enable>
+  </delegated-bundle>
+
+  <!-- ================================================================== -->
+  <!--               OBJECT POOL PROPERTIES                               -->
+  <!-- ================================================================== -->
+  <!-- if equals to 0 then pooling is disabled -->
+  <object-pool>
+    <instances-in-pool>200</instances-in-pool>
+  </object-pool>
+
+  <!-- ================================================================== -->
+  <!--               CACHE  PROPERTIES                                    -->
+  <!-- ================================================================== -->
+  <cache>
+    <enable>true</enable>
+  </cache>
+
+  <!-- ================================================================== -->
+  <!--               SUPPORTED CONTENT                                    -->
+  <!-- ================================================================== -->
+  <supported-content>
+    <name>text/html</name>
+  </supported-content>    
+
+  <supported-content>
+    <name>text/wml</name>
+  </supported-content>    
+
+  <supported-content>
+    <name>audio/x-mpeg</name>
+  </supported-content>    
+
+  <supported-content>
+    <name>image/bmp</name>
+  </supported-content>      
+
+  <!-- ================================================================== -->
+  <!--               CUSTOM SUPPORTED MODES                               -->
+  <!-- ================================================================== -->          
+  <custom-mode>
+    <name>config</name>
+    <description lang="en">to let admin config portlets</description>
+    <description lang="fr">permet de configurer les portlets</description>   
+  </custom-mode>
+
+  <custom-mode>
+    <name>wsrp</name>
+    <description lang="en">to admin wsrp portlet</description>
+  </custom-mode>
+
+  <custom-mode>
+    <name>monitor</name>
+    <description lang="en">to monitor a portlet</description>
+  </custom-mode>
+
+  <custom-mode>
+    <name>about</name>
+    <description lang="en">The about portlet mode should be used by the portlet to display information on the portlets purpose, origin, version etc.</description>
+  </custom-mode>
+
+  <custom-mode>
+    <name>edit_defaults</name>
+    <description lang="en">
+      The edit_defaults portlet mode signifies that the portlet should render a screen to set
+      the default values for the modifiable preferences that are typically changed in the EDIT
+      screen. Calling this mode requires that the user must have administrator rights. Therefore,
+      only the portal can create links for changing the portlet mode into edit_defaults.
+    </description>
+  </custom-mode>
+
+  <custom-mode>
+    <name>print</name>
+    <description lang="en">
+      The printportlet mode signifies that the portlet should render a view that can be printed.
+    </description>
+  </custom-mode>
+
+  <custom-mode>
+    <name>preview</name>
+    <description lang="en">
+      The preview portlet mode should be used by the portlet to render output without the need
+      of having back-end connections or user specific data available. It may be used at page
+      design time and in portlet development tools.
+    </description>
+  </custom-mode>
+
+  <!-- ================================================================== -->
+  <!--               CUSTOM SUPPORTED WINDOW STATES                       -->
+  <!-- ================================================================== -->
+  <custom-window-state>
+    <name>half-page</name>
+    <description lang="en">portlet takes half of the page</description>
+    <description lang="fr">portlet sure une demi page</description>        
+  </custom-window-state>
+
+  <custom-window-state>
+    <name>max-per-column</name>
+    <description lang="en">portlet the whole column</description>
+  </custom-window-state>
+
+  <!-- ================================================================== -->
+  <!--                          PROPERTIES                                -->
+  <!-- ================================================================== -->
+  <properties>
+    <description>a testing property</description>
+    <name>test</name>
+    <value>test_value</value>
+  </properties>
+</portlet-container>

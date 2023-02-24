@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projectDescription>
+  <name>exoplatform.services.jcr.impl</name>
+  <comment>eXo JCR Service impl</comment>
+  <projects>
+    <project>exoplatform.commons</project>
+    <project>exoplatform.services.common.api</project>
+    <project>exoplatform.services.database.api</project>
+    <project>exoplatform.services.database.impl</project>
+    <project>exoplatform.services.xml-processing.api</project>
+    <project>exoplatform.services.xml-processing.impl</project>
+    <project>exoplatform.services.jcr.api</project>
+    <project>exoplatform.services.security.api</project>
+    <project>exoplatform.container</project>
+    <project>exoplatform.services.common.impl</project>
+    <project>exoplatform.test.framework</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

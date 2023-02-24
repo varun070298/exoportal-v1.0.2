@@ -1,0 +1,17 @@
+1 CVS information
+
+1.1 Major feature
+-------------------
+
+1. add wiki syntax to the forum post
+1. Allow to reference external portal owner content from the DisplayContent
+1. Reference a service using the key attribute for better lookup times
+1. Add more groovy web unit tests to allow even better stress tests
+
+1.1 BUGS FIX
+-------------
+
+1. Several concurrency bug fixes discovered while running extensive stress tests
+1. Fix the persistence of the DisplayContent modified content (introduced in rc-ow-3)
+
+

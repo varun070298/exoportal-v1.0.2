@@ -1,0 +1,73 @@
+.jcr-explorer-portlet {
+  width: 100% ;
+  background: white ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size : 10pt;
+}
+
+.jcr-explorer-portlet .JCRExplorer  {
+  width: 100% ;
+  background: white ;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size : 10pt;
+}
+
+.jcr-explorer-portlet .JCRExplorer td  {
+  vertical-align: top ;
+  border: 2px solid #CCCCCC ;
+}
+
+.explorer-portlet a  {
+  text-decoration: none;
+  color: #074B88;
+}
+
+.jcr-explorer-portlet .JCRExplorer .selected  {
+  text-decoration: none;
+  color: #074B88;
+  background-color :#DDDDDD;
+}
+
+.jcr-explorer-portlet .JCRExplorer .header  {
+  height: 35px ;
+  text-align: center ;
+  font-weight: bold ;
+  vertical-align: middle ;
+  background: #DDDDDD ;
+  text-decoration: none ;
+}
+.jcr-explorer-portlet .JCRExplorer .footer  {
+  height: 35px ;
+  text-align: center ;
+  font-weight: bold ;
+  vertical-align: middle ;
+  background: #DDDDDD ;
+}
+
+.jcr-explorer-portlet .JCRExplorer .detail  {
+  padding: 5px ;
+  width: 100% ;
+  text-align: left;
+}
+
+.jcr-explorer-portlet .JCRExplorer .detail  th {
+  color: #074B88;
+  background-color : #DDDDDD;
+  font-size : 10pt;
+}
+
+.jcr-explorer-portlet .JCRExplorer .detail  td {
+  border: none ;
+  padding: 2px 2px 2px 2px ;
+  text-align: left ;
+  font-size : 10pt;
+}
+
+.jcr-explorer-portlet .JCRExplorer .detail  .detail-title {
+  border: none ;
+  padding: 2px 2px 2px 2px ;
+  text-align: left;
+  font-weight: bold ;
+  font-size : 10pt;
+  width: 30% ;
+}

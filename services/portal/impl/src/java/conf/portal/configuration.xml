@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration type="org.exoplatform.services.portal.impl.DefaultPortalServiceInterceptor"/>
+
+  <!--
+  -->
+  <service-configuration type="org.exoplatform.services.portal.impl.PortalMembershipEventListener"/>
+  <!--
+    This listener use to create default portal configuration for a user when he registers. 
+    For the predefined users , you need to create [user]-config.xml, [user]-pages.xml and 
+    [user]-navigation.xml for each the predefined user and save it in the location that 
+    you specify in the location parameter. Other user will use the template  and the 
+    configuration for the template-user is mandatory.
+  -->
+  <service-configuration type="org.exoplatform.services.portal.impl.PortalUserEventListenerImpl">
+    <object-param>
+      <name>new.portal.configuration</name>
+      <type>org.exoplatform.services.portal.impl.NewPortalConfig</type>
+      <description>configuration for the new portal</description>
+      <!-- The following users have the predefined portal configuration -->
+      <property name="predefinedUser[0]" value="admin" />
+      <property name="predefinedUser[1]" value="exo" />
+      <property name="predefinedUser[2]" value="portal" />
+      <property name="predefinedUser[3]" value="exotest" />
+      <property name="predefinedUser[4]" value="demo" />      
+      <!-- The default template configuration for the other user -->
+      <property name="templateUser" value="template" />
+      <!-- The location of the the configuration files -->
+      <property name="templateLocation" value="war:/conf/users" />
+    </object-param>
+  </service-configuration>
+
+  <service-configuration 
+    key="org.exoplatform.services.portal.PortalConfigService"
+    type="org.exoplatform.services.portal.impl.PortalConfigServiceImpl"/>
+  
+
+  <service-configuration type="org.exoplatform.services.portal.impl.PortalACLImpl"/>
+  <!-- Portlet container hooks -->
+  <service-configuration type="org.exoplatform.services.portal.impl.PortletPreferencesPersisterImpl"/>
+  <service-configuration type="org.exoplatform.services.portal.impl.ResourceBundleDelegateImpl"/>
+
+  <!-- Community configuration -->  
+  <service-configuration 
+    key="org.exoplatform.services.portal.community.CommunityConfigService"
+    type="org.exoplatform.services.portal.community.impl.CommunityConfigServiceImpl">
+    <object-param>
+      <name>default.configuration</name>
+      <type>org.exoplatform.services.portal.community.CommunityConfig</type>
+      <description>configuration for the portal communities</description>
+      <property name="communityPortals[0]" value="#new CommunityPortal" />
+      <property name="communityPortals[0].groupId" value="/portal/share" />
+      <property name="communityPortals[0].membership" value="member" />
+      <property name="communityPortals[0].portal" value="portal" />
+      <property name="communityPortals[0].priority" value="#int 5" />
+      <property name="communityPortals[0].description" 
+                value="use 'portal' configuration if user in group portal and have the 'member' membership" />
+
+      <property name="communityNavigations[0]" value="#new CommunityNavigation" />
+      <property name="communityNavigations[0].groupId" value="/portal/share" />
+      <property name="communityNavigations[0].membership" value="member" />
+      <property name="communityNavigations[0].navigation" value="portal" />
+      <property name="communityNavigations[0].description"
+                value="merge navigation of 'portal' with the navigation of the user" />
+    </object-param>  
+  </service-configuration>
+
+  <service-configuration type="org.exoplatform.services.portal.log.impl.PortalLogServiceImpl"/>
+  <!--
+  This service will save the log data of each session, use error.session to save only the session
+  that have the error. The all.session will save all the monitor data of all the session.
+  -->
+  <service-configuration type="org.exoplatform.services.portal.log.impl.SessionLogPersister">
+    <value-param>
+      <name>save.rule</name>
+      <!--
+      <value>error.session</value>
+      -->
+      <value>all.session</value>
+    </value-param>
+  </service-configuration>
+</configuration>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!-- ============================================================================= -->
+  <!--  D A T A B A S E   S E R V I C E   S E R V I C E   C O N F I G U R A T I O N  -->
+  <!-- ============================================================================= -->
+  <!-- 
+    The first datasource configuration will be used as the default datasource configuration
+    for the application
+  -->
+  <service-configuration 
+    key="org.exoplatform.services.database.DatabaseService"
+    type="org.exoplatform.services.database.impl.DatabaseServiceImpl">
+    <object-param>
+      <name>database.service.config</name>
+      <type>org.exoplatform.services.database.impl.DatabaseServiceConfig</type>
+      <property name="datasource[0]" value="#new DatabaseServiceConfig$DataSourceConfig" />
+      <property name="datasource[0].name" value="ExoDS" />
+      <property name="datasource[0].jndi" value="jdbc/ExoDS" />
+
+      <property name="datasource[1]" value="#new DatabaseServiceConfig$DataSourceConfig" />
+      <property name="datasource[1].name" value="WorkflowDS" />
+      <property name="datasource[1].jndi" value="jdbc/WorkflowDS" />
+
+      <!--
+      <property name="datasource[2]" value="#new DatabaseServiceConfig$DataSourceConfig" />
+      <property name="datasource[2].name" value="ThirdPartyDS" />
+      <property name="datasource[2].jndi" value="jdbc/ThirdPartyDS" />
+      -->
+    </object-param>
+  </service-configuration>
+
+  <service-configuration 
+    key="org.exoplatform.services.database.HibernateService"
+    type="org.exoplatform.services.database.impl.HibernateServiceImpl">
+    <properties-param>
+      <name>exo.hibernate.service</name>
+      <description>Default Hibernate Service</description>
+      <property name="hibernate.datasource.name" value="ExoDS"/>
+      <property name="hibernate.cache.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoCacheProvider"/>
+      <property name="hibernate.connection.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoConnectionProvider"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.cglib.use_reflection_optimizer" value="true"/>
+    </properties-param>
+  </service-configuration>
+
+  <service-configuration 
+    key="org.exoplatform.services.database.HibernateServiceContainer"
+    type="org.exoplatform.services.database.impl.HibernateServiceContainerImpl">
+    <properties-param>
+      <name>exo.hibernate.service1</name>
+      <description>Third Party Hibernate Service</description>
+      <property name="hibernate.datasource.name" value="ExoDS"/>
+      <property name="hibernate.cache.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoCacheProvider"/>
+      <property name="hibernate.connection.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoConnectionProvider"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.cglib.use_reflection_optimizer" value="true"/>
+    </properties-param>
+    <properties-param>
+      <name>exo.hibernate.service2</name>
+      <description>Third Party Hibernate Service</description>
+      <property name="hibernate.datasource.name" value="ExoDS"/>
+      <property name="hibernate.cache.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoCacheProvider"/>
+      <property name="hibernate.connection.provider_class" 
+                value="org.exoplatform.services.database.impl.ExoConnectionProvider"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.cglib.use_reflection_optimizer" value="true"/>
+    </properties-param>
+  </service-configuration>
+</configuration>

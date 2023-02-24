@@ -1,0 +1,55 @@
+<repositories-config>
+  <default-repository name="db1"/>
+  <repositories>
+    <repository name="mock" manager="inmemory">
+     <workspaces>
+       <workspace name="ws" default="true" container="c.mock"/>
+       <workspace name="ws2" container="c.mock"/>
+       <workspace name="ws3" container="c.mock"/>
+     </workspaces>
+    </repository>
+    <repository name="fs1" manager="sfs">
+     <workspaces>
+       <workspace name="ws" default="true" container="c.fs1"/>
+       <workspace name="ws2" container="c.fs1"/>
+       <workspace name="ws3" container="c.fs1"/>
+     </workspaces>
+    </repository>
+    <repository name="db1" manager="db">
+     <workspaces>
+       <workspace name="ws" default="true" container="c.db1"/>
+     </workspaces>
+    </repository>
+  </repositories>
+  <containers>
+    <container name="c.mock"
+      class="org.exoplatform.services.jcr.impl.storage.inmemory.ContainerImpl">
+    </container>
+    <container name="c.fs1"
+      class="org.exoplatform.services.jcr.impl.storage.filesystem.SimpleFsContainerImpl">
+      <properties>
+        <property name="rootDir" value="../temp/fsroot"/>
+      </properties>
+    </container>
+    <container name="c.db1"
+      class="org.exoplatform.services.jcr.impl.storage.rdb.container.RDBWorkspaceContainerImpl">
+      <properties>
+        <property name="sourceName" value="exo.hibernate.service1"/>
+      </properties>
+    </container>
+  </containers>
+  <managers>
+    <manager name="inmemory"
+      class="org.exoplatform.services.jcr.impl.storage.inmemory.RepositoryManagerImpl">
+    </manager>
+    <manager name="sfs"
+      class="org.exoplatform.services.jcr.impl.storage.filesystem.SimpleFsRepositoryManagerImpl">
+    </manager>
+    <manager name="db"
+      class="org.exoplatform.services.jcr.impl.storage.rdb.repository.RDBRepositoryManagerImpl">
+      <properties>
+        <property name="sourceName" value="exo.hibernate.service1"/>
+      </properties>
+    </manager>
+  </managers>
+</repositories-config>

@@ -1,0 +1,102 @@
+/*-------------------------------UISearchBar--------------------------------*/
+.UISearchBar  {
+  padding: 0px; margin: 0px ;
+  width: auto ;
+  background: #CCC ;
+  border : 1px outset #ccc;
+}
+
+.UISearchBar  table {
+  width: 100% ;
+  border: none ;
+}
+
+.UISearchBar  input {
+  border: 1px white solid;
+  width: 150px ; height: auto ;
+  margin : 0px 1px 0px 1px;
+}
+
+.UISearchBar  select {
+  width: auto ;
+  height: auto ;
+  margin : 0px 1px 0px 1px;
+}
+/*-------------------------------UISearchSummary--------------------------------*/
+.UISearchSummary {
+  background : #FFFFFE;
+}
+
+.UISearchSummary img  {
+  vertical-align : middle;
+}
+
+.UISearchSummary .no-results {
+  background : #eeeeee;
+  margin : 0px auto 0px auto;
+  text-align: center;
+  border : 1px solid #dddddd;
+}
+
+.UISearchSummary .score  {
+  text-align: right ;
+}
+
+.UISearchSummary .title  {
+  font-weight: bold ;
+}
+
+.UISearchSummary .description  {
+  font-weight: 200 ;
+}
+/*-------------------------------UIViewDocument--------------------------------*/
+.UIViewDocument {
+  text-align: justify;
+  width: 100% ;
+}
+
+.UIViewDocument .actions {
+  text-align: center ;
+  /*float: right ;*/
+}
+
+.UIViewDocument .actions img  {
+  vertical-align : middle;
+}
+
+.UIViewDocument .actions a {
+  padding: 3px ;
+}
+/*-------------------------------UIAdvancedSearch--------------------------------*/
+.UIAdvancedSearch {
+  margin: 15px auto 15px auto;
+  width: 95% ;
+  font-weight: bold ;
+  background : #fafafa;
+  border : 1px outset #fafafa;
+}
+
+.UIAdvancedSearch table {
+  border : none ;
+  width: 100% ;
+}
+
+.UIAdvancedSearch th {
+  text-align: left ;
+  padding: 5px 0px ;
+  background: url("/skin/components/search/1-dot-line.gif") bottom repeat-x ;
+}
+
+.UIAdvancedSearch td {
+  padding: 5px 20px ;
+}
+
+.UIAdvancedSearch input {
+   width: 300px ;
+}
+
+.UIAdvancedSearch .indent-2 {
+  padding: 5px 40px ;
+}
+
+/*-------------------------------UIAdvancedSearch--------------------------------*/

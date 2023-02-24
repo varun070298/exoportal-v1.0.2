@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE process-definition PUBLIC
+    "-//jBpm/jBpm Mapping DTD 2.0 beta2//EN"
+    "http://jbpm.org/dtd/processdefinition-2.0-beta2.dtd">
+
+<process-definition name="pay raise process">
+
+  <!-- SWIMLANES -->
+  <swimlane name="initiator" />
+
+  <!-- START-STATE -->
+  <start-state name="start">    
+    <transition to="evaluation"/>
+  </start-state>
+
+  <!-- NODES -->
+  <state name="evaluation">
+    <assignment swimlane="initiator"/>
+    <transition name="grant" to="hr update"/>
+    <transition name="deny"  to="end"/>
+  </state>
+
+  <state name="hr update">
+    <assignment swimlane="initiator"/>
+    <transition to="end" />
+  </state>
+
+  <!-- END-STATE -->
+  <end-state name="end" />
+
+</process-definition>

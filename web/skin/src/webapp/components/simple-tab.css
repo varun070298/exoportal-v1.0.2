@@ -1,0 +1,75 @@
+.UISimpleTabs {
+   margin: 0px ;
+   padding: 3px 0;
+   margin-left: 0;
+   border-bottom: 1px solid #778;
+   font: bold 10px Verdana, sans-serif;
+ }
+
+.UISimpleTabs li {
+  list-style: none;
+  margin: 0;
+  display: inline;
+}
+
+.UISimpleTabs li a {
+  padding: 3px 0.5em;
+  margin-left: 3px;
+  border: 1px solid #778;
+  border-bottom: none;
+  background: #DDE;
+  text-decoration: none;
+}
+
+.UISimpleTabs li a:link { color: #448; }
+.UISimpleTabs li a:visited { color: #667; }
+
+.UISimpleTabs li a:hover {
+  color: #000;
+  background: #AAE;
+  border-color: #227;
+}
+
+.UISimpleTabs li a.select-link {
+  background: white;
+  border-bottom: 1px solid white;
+}
+
+.UISimpleTabBody {
+  padding: 5px ;
+}
+/*---------------------------------------------------------*/
+.UIPyramidTab {
+  margin: 0;
+  padding: 0px 0px 20px 10px;
+  border-bottom: 1px solid #9FB1BC;
+}
+
+.UIPyramidTab li {
+  margin: 0; 
+  padding: 0;
+  display: inline;
+  list-style-type: none;
+}
+
+.UIPyramidTab a:link, 
+.UIPyramidTab a:visited {
+  float: left;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  padding: 0 10px 6px 12px;
+  text-decoration: none;
+  color: #708491;
+}
+
+.UIPyramidTab a:link.select-link, 
+.UIPyramidTab a:visited.select-link, 
+.UIPyramidTab a:hover {
+  color: #074B88;
+  background: url("tab/tab-pyramid.gif") no-repeat bottom center;
+}
+
+.UIPyramidTabBody {
+  padding: 0px ;
+}

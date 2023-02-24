@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">Display Content</description>
+    <portlet-name>DisplayContent</portlet-name>
+    <display-name xml:lang="EN">Display Content</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.content.display.component.UIContentPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.content.display.component.UIAdminContentPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/display-content-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.content.DisplayContent</resource-bundle>
+
+    <portlet-info>
+      <title>Display Content</title>
+      <short-title>content</short-title>
+      <keywords>content</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>default</name>
+        <value>title=Default Content</value>
+        <value>uri=</value>
+        <value>encoding=UTF-8</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+  </portlet>
+  
+ <portlet>
+    <description xml:lang="EN">Display Static Content</description>
+    <portlet-name>DisplayStaticContent</portlet-name>
+    <display-name xml:lang="EN">Display Static Content</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.content.display.component.UIStaticContentPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlets.content.display.component.UIAdminStaticContentPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/display-content-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.content.DisplayContent</resource-bundle>
+
+    <portlet-info>
+      <title>Display Static Content</title>
+      <short-title>content</short-title>
+      <keywords>content</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>default</name>
+        <value>title=Default Static Content</value>
+        <value>uri=</value>
+        <value>encoding=UTF-8</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+  </portlet>
+  
+
+  <portlet>
+    <description xml:lang="EN">File Explorer</description>
+    <portlet-name>FileExplorer</portlet-name>
+    <display-name xml:lang="EN">File Explorer</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.content.explorer.component.UIFilePortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-config</name>
+      <value>org.exoplatform.portlet.faces.component.UIPreferencesEditor.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/file-explorer-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>config</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.content.FileExplorer</resource-bundle>
+
+    <portlet-info>
+      <title>File Explorer</title>
+      <short-title>Explorer</short-title>
+      <keywords>content, file</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <!-- 
+      The real path of base dir on your file system will be calculated base on the value of
+      file.portlet.resposistory  +  value of base-dir
+      -->
+      <preference>
+        <name>base-dir</name>
+        <value>default</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>read-role</name>
+        <value>any</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>write-role</name>
+        <value>admin</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+    <security-role-ref>
+      <role-name>user</role-name>
+      <role-link>user</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">JCR Explorer</description>
+    <portlet-name>JCRExplorer</portlet-name>
+    <display-name xml:lang="EN">JCR Explorer</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <!--
+      <value>org.exoplatform.portlets.content.jcr.component.UIJCRPortlet.class</value>
+      -->
+      <value>org.exoplatform.portlets.content.explorer.component.UIJCRPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlet.faces.component.UIPreferencesEditor.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/cms-explorer-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.content.JCRExplorer</resource-bundle>
+
+    <portlet-info>
+      <title>JCR Explorer</title>
+      <short-title>JCR Explorer</short-title>
+      <keywords>jcr</keywords>
+    </portlet-info>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Search Portlet</description>
+    <portlet-name>SearchPortlet</portlet-name>
+    <display-name xml:lang="EN">Search Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <!--
+      <value>org.exoplatform.portlets.content.search.component.UISearchPortlet.class</value>
+      -->
+      <value>org.exoplatform.portlets.content.search.component.UIContentSearcher.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/cms-explorer-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.content.SearchPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Search Portlet</title>
+      <short-title>Search</short-title>
+      <keywords>content, search, index</keywords>
+    </portlet-info>
+  </portlet>
+</portlet-app>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<project default="multiproject:install" 
+         xmlns:j="jelly:core" 
+         xmlns:maven="jelly:maven" 
+         xmlns:ant="jelly:ant">
+  <!--==================================================================-->
+  <!--          T E S T S                           -->
+  <!--==================================================================-->
+  <preGoal name="test:test">
+    <delete dir="target/data"/>
+    <ant:path id="webapp.classpath">
+      <ant:pathelement location="src/webapp/WEB-INF/classes"/>
+    </ant:path>
+    <maven:addPath id="maven.dependency.classpath" refid="webapp.classpath"/>
+  </preGoal>
+
+  <preGoal name="test:single">
+    <delete dir="target/data"/>
+    <ant:path id="webapp.classpath">
+      <ant:pathelement location="src/webapp/WEB-INF/classes"/>
+    </ant:path>
+    <maven:addPath id="maven.dependency.classpath" refid="webapp.classpath"/>
+  </preGoal>
+  <!--==================================================================-->
+  <!--                B U I L D                                         -->
+  <!--==================================================================-->
+  <goal name="exo:platform:clean" description="build core modules">
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="clean modules.........................."
+                   includes="${maven.exo.core.modules}"
+                   goals="clean:clean" ignoreFailures="false"/>
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="clean modules.........................."
+                   includes="${maven.exo.services.modules}"
+                   goals="clean:clean" ignoreFailures="false"/>
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="clean modules.........................."
+                   includes="${maven.exo.portal.modules}"
+                   goals="clean:clean" ignoreFailures="false"/>
+  </goal>
+
+  <goal name="exo:platform:build" description="build core modules">
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="deploy all modules"
+                   includes="${maven.exo.core.modules}"
+                   goals="multiproject:install-callback" ignoreFailures="false"/>
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="build all the services modules"
+                   includes="${maven.exo.services.modules}"
+                   goals="multiproject:install-callback" ignoreFailures="false"/>
+    <maven:reactor basedir="${exoplatform.dir}"
+                   banner="build all the portal modules"
+                   includes="${maven.exo.portal.modules}"
+                   goals="multiproject:install-callback" ignoreFailures="false"/>
+  </goal>
+
+  <!--==================================================================-->
+  <!--                A U T O M A T I O N                               -->
+  <!--==================================================================-->
+  <goal name="build" description="clean and build">
+    <attainGoal name="multiproject:clean"/>
+    <attainGoal name="multiproject:install"/>
+    <echo message="============================================================"/>
+    <echo message="|       B U I L D  S U C C E S S F U L L Y                 |"/>
+    <echo message="============================================================"/>
+  </goal>
+
+</project>

@@ -1,0 +1,51 @@
+a.ic3-button {
+  text-decoration:none;
+  cursor: hand;
+  color: white ;
+  float: none ;
+}
+
+
+a.ic3-button .left {
+  display: block ;
+  float: left ;
+  width: 18px; height: 21px ;
+  background:url("ic3-button/button_dot_left.gif") no-repeat ;
+}
+
+a.ic3-button .middle {
+  display: block ;
+  float: left ;
+  width: auto; height: 19px ;
+  padding-top: 2px ;
+  background:url("ic3-button/button_bg.gif") repeat  ;
+}
+
+a.ic3-button .right {
+  display: block ;
+  float: left ;
+  width: 11px; height: 21px ;
+  background:url("ic3-button/button_right.gif") no-repeat;
+}  
+
+a.ic3-button:hover .left {
+  display: block ;
+  float: left ;
+  width: 18px; height: 21px ;
+  background:url("ic3-button/button_dot_left_over.gif") no-repeat;
+}
+
+a.ic3-button:hover .middle {
+  display: block ;
+  float: left ;
+  width: auto; height: 19px ;
+  padding-top: 2px ;
+  background:url("ic3-button/button_bg_over.gif") repeat ;
+}
+
+a.ic3-button:hover .right {
+  display: block ;
+  float: left ;
+  width: 11px; height: 21px ;
+  background:url("ic3-button/button_right_over.gif") no-repeat;
+}

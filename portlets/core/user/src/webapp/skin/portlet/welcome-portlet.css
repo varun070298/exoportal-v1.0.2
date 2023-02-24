@@ -1,0 +1,31 @@
+.welcome-portlet   {
+  vertical-align : top;
+  background: #EEEEEE;
+}
+
+.welcome-portlet .UILogin, 
+.welcome-portlet .UILogout  {
+  text-align : right;
+  margin : 0px auto 1px auto ;
+  color: #074B88;
+  width : 100%;
+}
+
+.welcome-portlet .UILogin table {
+  border: none ;
+}
+
+.welcome-portlet .UILogin input {
+  width: 100px ;
+  height : 11pt;
+  font-size: 8pt;
+  margin : 1px 10px 1px 0px ;
+  padding : 1px auto 1px auto ;
+}
+
+.welcome-portlet .UILogin a, 
+.welcome-portlet .UILogout a {
+  text-decoration: none ;
+  color: #074B88;
+}
+

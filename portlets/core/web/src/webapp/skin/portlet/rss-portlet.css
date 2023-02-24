@@ -1,0 +1,32 @@
+.UIRss {
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  vertical-align : top;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UIRss .title {
+  color: #BC56AC ;
+  font-size: 12pt; font-weight: bold ;
+}
+
+.UIRss .body ul {
+  list-style-image: url("/web/images/icons/page-16x16.gif");
+}
+
+.UIRss .body a {
+  text-decoration: none ;
+  color: #074B88;
+  font-size: 10pt; font-weight: bold ;
+}
+
+.UIRss .body .description {
+  text-decoration: none ;
+  color: #AAAAAA;
+  font-size: 8pt;
+}
+
+.UIRss .footer {
+  float: right;
+}

@@ -1,0 +1,67 @@
+@import "/exo-admin/skin/portlet/monitor-component.css" ;
+@import "/skin/components/simple-tab.css" ;
+@import "/skin/components/simple-form.css" ;
+@import "/skin/components/search-component.css" ;
+@import "/skin/components/simple-properties.css" ;
+
+.admin-portlet .UIAdminConsolePortlet  {
+  width: 100% ; height: 100% ;
+  background: white ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  padding: 0px 0px 0px 0px;
+}
+
+.admin-portlet .UIAdminConsolePortlet a img {
+  vertical-align: bottom;
+}
+
+.admin-portlet .UIAdminConsolePortlet  .header {
+  height: 35px ;
+  border: 1px solid #CCCCCC;
+  text-align: center ;
+  vertical-align: middle ;
+  background: #CCCCCC;
+  color: #074B88;
+}
+
+.admin-portlet .UIAdminConsolePortlet  .navigation {
+  width: 200px ;
+  border: 1px solid #CCCCCC;
+  vertical-align: top ;
+  color: #074B88;
+  white-space: nowrap ;
+  
+}
+
+.admin-portlet .UIAdminConsolePortlet  .navigation a {
+  text-decoration : none;
+}
+
+.admin-portlet .UIAdminConsolePortlet  .navigation ul {
+  padding: 0px 0px 0px 0px ;
+  margin:  0px  0px 0px 0px;
+  list-style: none;
+}
+
+.admin-portlet .UIAdminConsolePortlet  .navigation li {
+  padding: 0px 0px 0px 0px ;
+  margin: 0px  0px 0px 10px;
+  white-space: nowrap ;
+}
+
+
+.admin-portlet .UIAdminConsolePortlet  .component {
+  width: auto ;
+  border: 1px solid #CCCCCC;
+  vertical-align: top ;
+  color: #074B88;
+}
+
+.admin-portlet .UIAdminConsolePortlet  .footer {
+  height: 35px ;
+  border: 1px solid #CCCCCC;
+  text-align: center ;
+  vertical-align: middle ;
+  background: #CCCCCC;
+  color: #074B88;
+}

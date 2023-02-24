@@ -1,0 +1,152 @@
+@import "/skin/components/search-component.css" ;
+@import "/skin/components/calendar-component.css" ;
+@import "/skin/components/wiki.css" ;
+@import "/skin/components/UIForm.css" ;
+
+.forum-portlet {
+  text-align: justify ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 9pt;
+  width: 100% ;
+}
+
+.forum-portlet img {
+  vertical-align : bottom;
+}
+
+.forum-portlet  a {
+  font-size: 12pt;
+  text-decoration: underline;
+  color: #074B88;
+  margin : 0px 1px 0px 1px;
+}
+
+.forum-portlet .UIAdminViewCategories  {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  background: white ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.forum-portlet .UIAdminViewCategories  td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #FAFAFA ;
+}
+
+.forum-portlet .UICategory {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  background: white;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.forum-portlet .UICategory th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #EEEEEE ;
+}
+
+.forum-portlet .UICategory td {
+  border: 1px solid #CCCCCC ;
+  padding: 3px ;
+  background: #FFFFEF;
+}
+
+.forum-portlet .UIForumForm input,
+.forum-portlet .UIForumForm textarea {
+  width: 400px ;
+}
+/*---------------------------------------UITopics--------------------*/
+.forum-portlet .UITopics {
+  width: 100% ;
+  border: 1px solid #CCCCCC ;
+  background: white ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.forum-portlet .UITopics th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center;
+  background: #EEEEEE ;
+}
+
+.forum-portlet .UITopics td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center;
+  background: #FFFFEF;
+}
+/*---------------------------------------UIPosts--------------------*/
+.forum-portlet .UIPosts {
+  width: 100% ;
+  background: white ;
+}
+
+.forum-portlet .UIPosts .UIPost {
+  width: 100% ;
+  border: 1px solid #CCCCCC ;
+  background: white ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.forum-portlet .UIPosts .UIPost th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center;
+  background: #EEEEEE ;
+}
+
+.forum-portlet .UIPosts .UIPost td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #FFFFEF;
+}
+
+.forum-portlet .UIPosts .UIPost td.post-owner {
+  text-align: center ;
+  vertical-align: middle ;
+}
+
+.forum-portlet .UIPosts .UIPost .signature {
+  padding: 10px 0px 0px 0px ;
+}
+/*---------------------------------------UIPostForm--------------------*/
+.forum-portlet .UIPostForm td {
+  padding: 0px ; margin: 0px ;
+}
+.forum-portlet .UIPostForm input {
+  width: 600px ;
+}
+
+.forum-portlet .UIPostForm textarea {
+  width:  600px ;
+  height: 400px ;
+}
+.forum-portlet .UIPostForm pre {
+  margin: 0px ;
+  padding: 0px ;
+  font-size: 8pt ;
+}
+.forum-portlet .UIPostForm h5 {
+  margin: 0px ;
+  padding: 10px 0px 0px 0px ;
+  text-decoration: underline ;
+}
+.forum-portlet .UIPostForm h4 {
+  margin: 0px ;
+  padding: 0px ;
+}
+/*---------------------------------------Overide the default .UIAdvancedSearch--------------------*/
+.forum-portlet .UIAdvancedSearch {
+  margin: 15px auto 15px auto;
+  width: 98% ;
+  font-weight: bold ;
+  background : #fafafa;
+  border : 1px outset #dddddd;
+}

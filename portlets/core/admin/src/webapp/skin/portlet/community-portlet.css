@@ -1,0 +1,49 @@
+.community-portlet{
+}
+
+.community-portlet a {
+   margin : 0px 1px 0px 1px;
+}
+
+.community-portlet .UIGroupExplorer {
+   margin : 0px auto 0px auto;
+   width: 100%;
+}
+
+.community-portlet .UIGroupExplorer .header {
+  border: 1px solid #bbb ;
+  padding: 2px ; font-size : 10pt;
+  background: #CCCCCC ;
+  color: #074B88;
+  height : 25px;
+}
+
+
+.community-portlet .UIGroupExplorer .group-tree{
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #ddd ;
+  width: 175px
+}
+
+.community-portlet .UIConfigInfo {
+ width: 100%;
+ border: 1px solid #bbb ;
+}
+
+.community-portlet .UIConfigInfo .footer {
+  text-align :center;
+}
+
+
+.community-portlet .UIPortalConfigForm {
+   margin : 0px auto 0px auto;
+   width : 100%; height : 100%;
+   border: 1px solid #bbb ;
+}
+
+.community-portlet .UINavigationConfigForm {
+   margin : 0px auto 0px auto;
+   width : 100%; 
+   border: 1px solid #bbb ;
+}

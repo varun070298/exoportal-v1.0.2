@@ -1,0 +1,29 @@
+<controllers>
+  <name>Partner Portlet</name>
+  <identifier>PartnerPortlet</identifier>
+  <view-controller>
+    <default-action>ShowPartner</default-action>
+    <action name="ShowPartner" class="org.exoplatform.portal.portlets.partner.GetPartnerList">
+      <forward name="success" page="partner/Partner.jsp"/>
+      <forward name="error" page="Error.jsp"/>
+    </action>
+  </view-controller>
+
+  <edit-controller>
+    <default-action>EditPartner</default-action>
+    <action name="EditPartner" class="org.exoplatform.portal.portlets.partner.GetPartnerList">
+      <forward name="success" page="partner/PartnerForm.jsp"/>
+      <forward name="error" page="Error.jsp"/>
+    </action>
+    <action name="SavePartner" class="org.exoplatform.portal.portlets.partner.SavePartner">
+      <forward name="success" page="partner/PartnerForm.jsp"/>
+      <forward name="error" page="Error.jsp"/>
+    </action>
+
+    <action name="DeletePartner" class="org.exoplatform.portal.portlets.partner.DeletePartner">
+      <forward name="success" page="partner/PartnerForm.jsp"/>
+      <forward name="error" page="Error.jsp"/>
+    </action>
+  </edit-controller>
+
+</controllers>

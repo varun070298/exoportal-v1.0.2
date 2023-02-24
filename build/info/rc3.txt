@@ -1,0 +1,67 @@
+1.1 Major feature
+
+1. Implement a basic jmx portlet
+1. Implement Session monitor
+1. Support for mobile browser
+1. Implement multiple JCR workspaces
+1. Provide more documentation and How-tos
+
+1.1 Bugs fix
+
+1. Fix portlet hot deploy duplicate key problem (done) 
+
+1. ExoXppParser cannot handle &lt;value/&gt; , &lt;value&gt;&lt;/value&gt;  (done)
+
+1. Find a solution to allow the same portlet added to the same page multiple time(It is easy to generate an id for the portlet. The problem is the automation unit test cannot find the generated portlet id to assert the return value) (done)
+
+1. Elegant portlet render does not manage width......do we still need that renderer though (done)
+
+1. when go to edit container or portlet the current style/renderer are not used (done)
+
+1. When changing style of container surronding the Home portlet than the style of portlet disappear
+
+1. Problems when trying to add a container or portlet to the container that contain body....is it normal? (not a bug , you use the page maximized state so the other child components of the container are not rendered) (done) 
+
+1. Need a back button when "No portlet category" (done)
+
+1. Need to fix all the info:xxxx messages :) (the one in login module when register is clicked is not to be forgotten) (done) 
+
+1. Even after save, portlet mode do not appear for new added portlets (done)
+
+1. When browse page directly form toolbar fo edit navigation mode, the select link has no sense. BTW do we need the browse page icon from toolbar? (This button is necessary, you can go to node and select the a page , the refercence page that you select will be binded to the current node) (done)
+
+1. Search link should not validate the form in add/edit node. (fixed by appending phase[id] as prefix to the action name) 
+
+1. columns template do not work (done)
+
+1. Horizontal enu of mobile is broken (done)
+
+1. config icon has problem (done)
+ 
+1. add/edit node form in IE is not as good as in firefox (done)
+
+1. Visible box not check in by default for visible pages (done)
+
+1. Style of home page portlet changes when a container is added in edit portal mode
+
+1. Cancel of "No portlet category" does not work (look like this has been fixed)
+
+1. Cancel of Page XML view does not work (step to produce ??) (done)
+
+1. Check work of several skin wars
+
+1. fix Display content portlet(done)
+
+1. Add "Remove All" icon in portlet registry (done)
+
+1. In group tab of organization portlet add a delete group link (done)
+
+1. Look like isUserInRole("admin") always return true once user login for jboss 
+
+1. Ability to add a system role for an user is broken (done)
+
+1. No apparent ability to remove system roles, groups, or memberships from system.(done)
+
+1. No ability to set either view or edit permissions on new or existing pages(use page edit mode and edit page properties)
+
+1. If you view a page(view xml page in page browser) the cancel link at the bottom does not work. (done)

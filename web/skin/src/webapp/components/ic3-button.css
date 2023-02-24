@@ -1,0 +1,59 @@
+a.ic3-button {
+  text-decoration:none;
+  cursor: hand;
+  font-size: 10pt;
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-weight : bold;
+  padding: 0px 1px ;
+  display: block ;
+  float: left ;
+}
+
+a.ic3-button:hover {
+  text-decoration:none;
+  cursor: hand;
+}
+
+a.ic3-button .tl {
+  float:left;
+  background:url("ic3-button/button_tl.gif") no-repeat top left;
+  color:#fff;
+  padding: 0px 0px 0px 0px;
+}
+
+a.ic3-button .br {
+  float:left;
+  background:url("ic3-button/button_br.gif") no-repeat right bottom;
+  padding: 0px 0px 0px 0px;
+  color:#fff;
+}
+
+a.ic3-button span.outer {
+  display:block;
+  padding:0px 0px 5px 5px;
+  color:#fff;
+  background:url("ic3-button/button_bl.gif") no-repeat bottom left;
+}  
+
+a.ic3-button span.inner {
+  display:block;
+  background:url("ic3-button/button_ctr.gif") no-repeat right top;
+  color:#fff;
+  padding:3px 8px 0px 3px;
+}
+
+a.ic3-button:hover span.inner {
+  background:url("ic3-button/button_ctr_over.gif") no-repeat right top;
+}
+
+a.ic3-button:hover span.outer {
+  background:url("ic3-button/button_bl_over.gif") no-repeat bottom left;
+}
+
+a.ic3-button:hover span.tl {
+  background:url("ic3-button/button_tl_over.gif") no-repeat top left;
+}
+
+a.ic3-button:hover span.br {
+  background:url("ic3-button/button_br_over.gif") no-repeat right bottom;
+} 

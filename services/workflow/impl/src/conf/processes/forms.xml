@@ -1,0 +1,28 @@
+<forms>
+
+  <form>
+  	<resource-bundle>start</resource-bundle>
+  	<state-name>start</state-name>
+    <variable name="reason" />
+    <variable name="amount.asked" format="org.exoplatform.services.workflow.format.DoubleFormat" />
+  </form>
+
+  <form>
+  	<resource-bundle>evaluation</resource-bundle>
+  	<state-name>evaluation</state-name>
+    <variable name="initiator" />
+    <variable name="reason" />
+    <variable name="amount.asked"   format="org.exoplatform.services.workflow.format.DoubleFormat" />
+    <variable name="amount.granted" format="org.exoplatform.services.workflow.format.DoubleFormat" />
+    <submitbutton value="Grant Pay Raise" transition-name="grant" />
+    <submitbutton value="Deny Pay Raise" transition-name="deny" />
+  </form>
+
+  <form>
+  	<resource-bundle>hr</resource-bundle>
+  	<state-name>hr update</state-name>
+    <variable name="initiator" />
+    <variable name="amount.granted" format="org.exoplatform.services.workflow.format.DoubleFormat" />
+  </form>
+
+</forms>

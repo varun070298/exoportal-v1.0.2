@@ -1,0 +1,12 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+
+  <postGoal name="java:compile">
+    <attainGoal name="exo:hibernate:mapping"/>
+  </postGoal>
+
+  <preGoal name="test:test">
+    <delete dir="${maven.build.dir}/temp/fsroot"/>
+    <mkdir dir="${maven.build.dir}/temp/fsroot"/>
+  </preGoal>
+
+</project>

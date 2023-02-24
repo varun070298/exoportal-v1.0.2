@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+    <title>Portlet Resource</title>
+		<link>http://exo.sourceforge.net</link>
+		<description>
+      Link to Portlet Resource and JSR 168
+    </description>
+		<copyright>
+      Copyright and acceptable usage information for this RSS may feed may be found 
+      at: http://exo.sourceforge.net/
+    </copyright>
+		<lastBuildDate>Thu, 05 Jun 2003 14:13:00 GMT</lastBuildDate>
+		<generator>RSS generator</generator>
+		<image>
+			<title>Exo logo</title>
+			<url>http://images.sourceforge.net/images/sflogo-88-1.png</url>
+			<link>http://sourceforge.net/</link>
+			<width>88</width>
+			<height>31</height>
+      <description>Exo Logo</description>
+		</image>
+		<item>
+      <title>JSR 168</title>
+			<description>
+        <!--
+        To enable interoperability between Portlets and Portals, this specification will define
+        a set of APIs for Portal computing addressing the areas of aggregation, personalization,
+        presentation and security.
+        -->
+      </description>
+			<link>http://www.jcp.org/en/jsr/detail?id=168</link>
+			<guid isPermaLink="false">summary-1054822380</guid>
+			<pubDate>Thu, 21 Aug 2003 14:13:00 GMT</pubDate>
+		</item>
+		<item>
+      <title>Introduction to JSR 168 - The Portlet Specification</title>
+			<description>
+        <!--
+        ava Specification Request (JSR) 168 enables interoperability among portlets and portals.
+        This specification defines a set of APIs for portlets and addresses standardization for 
+        preferences, user information, portlet requests and responses, deployment packaging,
+        and security.
+        -->
+      </description>
+			<link>http://developers.sun.com/prodtech/portalserver/reference/techart/jsr168/</link>
+			<guid isPermaLink="false">summary-1054822380</guid>
+			<pubDate>Thu, 21 Aug 2003 14:13:00 GMT</pubDate>
+		</item>
+		<item>
+      <title>Creating a Distinctive Look and Feel for Your Portal(IBM)</title>
+			<description>
+        <!--
+        The success of a portal is closely tied to the user's experience. As with any tool, 
+        the portal's overall look and feel, embodied in its themes and skins, must be 
+        appealing in terms of style and colors, and it must be easy to use
+        -->
+      </description>
+			<link>http://www7b.software.ibm.com/wsdd/library/techarticles/0307_bartek/bartek.html</link>
+			<guid isPermaLink="false">summary-1054822380</guid>
+			<pubDate>Thu, 21 Aug 2003 14:13:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

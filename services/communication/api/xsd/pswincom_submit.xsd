@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  PSWinCom DTD SMS Submit -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+  jxb:version="1.0" elementFormDefault="qualified">
+  
+  <xs:element name="ID" type="xs:string"/>
+  <xs:element name="NET" type="xs:string"/>
+  <xs:element name="AP" type="xs:string"/>
+  <xs:element name="SD" type="xs:string"/>
+  <xs:element name="TEXT" type="xs:string"/>
+  <xs:element name="CLASS" type="xs:string"/>
+  <xs:element name="OP" type="xs:string"/>
+  <xs:element name="RCPREQ" type="xs:string"/>
+  <xs:element name="RCPFMT" type="xs:string"/>
+  <xs:element name="SND" type="xs:string"/>
+  <xs:element name="RCV" type="xs:string"/>
+  <xs:element name="CLIENT" type="xs:string"/>
+  <xs:element name="PW" type="xs:string"/>
+  <xs:complexType name="NAME">
+    <xs:sequence>
+      <xs:element ref="NAME"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NAME" type="xs:string"/>
+  <xs:element name="MSG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ID"/>
+        <xs:element minOccurs="0" ref="NET"/>
+        <xs:element ref="TEXT"/>
+        <xs:element minOccurs="0" ref="CLASS"/>
+        <xs:element minOccurs="0" ref="OP"/>
+        <xs:element minOccurs="0" ref="RCPREQ"/>
+        <xs:element minOccurs="0" ref="SND"/>
+        <xs:element ref="RCV"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QRY" type="NAME"/>
+  <xs:element name="MSGLST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="MSG"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QRYLST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="QRY"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SESSION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CLIENT"/>
+        <xs:element ref="PW"/>
+        <xs:element minOccurs="0" ref="AP"/>
+        <xs:element minOccurs="0" ref="SD"/>
+        <xs:element minOccurs="0" ref="MSGLST"/>
+        <xs:element minOccurs="0" ref="QRYLST"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

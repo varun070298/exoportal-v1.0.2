@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The Hypersonic embedded database JCA connection factory config
+$Id: workflow-ds.xml,v 1.2 2004/08/25 01:01:58 tuan08 Exp $ -->
+
+
+<datasources>
+  <local-tx-datasource>
+
+    <!-- The jndi name of the DataSource, it is prefixed with java:/ -->
+    <!-- Datasources are not available outside the virtual machine -->
+    <jndi-name>jdbc/WorkflowDS</jndi-name>
+
+    <connection-url>jdbc:hsqldb:${jboss.server.data.dir}${/}hypersonic${/}workflowDB</connection-url>
+
+    <!-- The driver class -->
+    <driver-class>org.hsqldb.jdbcDriver</driver-class>
+
+    <!-- The login and password -->
+    <user-name>sa</user-name>
+    <password></password>
+
+    <!-- The minimum connections in a pool/sub-pool. Pools are lazily constructed on first use -->
+    <min-pool-size>5</min-pool-size>
+
+    <!-- The maximum connections in a pool/sub-pool -->
+    <max-pool-size>20</max-pool-size>
+
+    <!-- The time before an unused connection is destroyed -->
+    <!-- NOTE: This is the check period. It will be destroyed somewhere between 1x and 2x this timeout after last use -->
+    <!-- TEMPORARY FIX! - Disable idle connection removal, HSQLDB has a problem with not reaping threads on closed connections -->
+    <idle-timeout-minutes>0</idle-timeout-minutes>
+
+    <!-- Whether to check all statements are closed when the connection is returned to the pool,
+    this is a debugging feature that should be turned off in production -->
+    <track-statements/>
+
+    <!-- Use the getConnection(user, pw) for logins
+    <application-managed-security/>
+    -->
+
+    <!-- Use the security domain defined in conf/login-config.xml -->
+    <security-domain>WorkflowDbRealm</security-domain>
+
+    <!-- Use the security domain defined in conf/login-config.xml or the
+    getConnection(user, pw) for logins. The security domain takes precedence.
+    <security-domain-and-application>HsqlDbRealm</security-domain-and-application>
+    -->
+
+    <!-- This mbean can be used when using in process persistent hypersonic -->
+    <depends>jboss:service=Hypersonic,database=workflowDB</depends>
+  </local-tx-datasource>
+
+  <!-- This mbean can be used when using in process persistent db -->
+  <mbean code="org.jboss.jdbc.HypersonicDatabase" 
+    name="jboss:service=Hypersonic,database=workflowDB">
+    <attribute name="Database">workflowDB</attribute>
+    <attribute name="InProcessMode">true</attribute>
+  </mbean>
+</datasources>

@@ -1,0 +1,7 @@
+@import "/skin/components/search-component.css" ;
+@import "/skin/components/ic3-button.css";
+
+.search-portlet {
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 9pt;
+}

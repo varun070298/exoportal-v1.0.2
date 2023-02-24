@@ -1,0 +1,84 @@
+@import "/skin/components/search-component.css" ;
+@import "/skin/components/calendar-component.css" ;
+@import "/user/skin/portlet/user-profile-portlet.css" ;
+.organization-portlet {
+  background : white;
+  width: 100% ;
+}
+
+.organization-portlet  img {
+  border: none ;
+  vertical-align: bottom ;
+}
+
+.organization-portlet  .even{
+  background: #eeeeee ;
+}
+
+.organization-portlet .UIOrganizationPortlet {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+  font-size : 9pt;  width: 100% ;
+}
+
+.organization-portlet .UIGroupExplorer {
+  width: 100% ;
+}
+
+.organization-portlet .UIGroupExplorer  .footer{
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #CCCCCC ;
+  color: #074B88;
+  text-align : center;
+  height : 25px;
+  vertical-align : middle;
+}
+
+.organization-portlet .UIGroupExplorer .header {
+  border: 1px solid #bbb ;
+  padding: 2px ; font-size : 10pt;
+  background: #CCCCCC ;
+  color: #074B88;
+  height : 25px;
+}
+
+
+.organization-portlet .UIGroupExplorer .group-tree{
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #eee ;
+  width: 175px
+}
+
+.organization-portlet .UIGroupExplorer .group-detail {
+  width : 100%;
+}
+/*--------------------------------------user info--------------------------*/
+.organization-portlet .UIUserInfo {
+  width : 100%;
+}
+
+.organization-portlet .UIUserInfo .footer{
+  border: 1px solid #bbb ;
+  padding: 2px ;
+  background: #CCCCCC ;
+  color: #074B88;
+  text-align : center;
+  height : 25px;
+  vertical-align : middle;
+}
+
+.organization-portlet .UIUserInfo table {
+  width : 100%;
+}
+
+.organization-portlet .UIUserInfo .form{
+  background : #eee;
+  text-align : center;
+  width: 350px ;
+}
+
+.organization-portlet .UIUserInfo .user-roles {
+  text-align : center;
+  padding: 0px 0px 0px 5px;
+}

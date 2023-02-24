@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration 
+      key="org.exoplatform.services.portletcontainer.PortletContainerService"
+      type="org.exoplatform.services.portletcontainer.impl.PortletContainerServiceImpl"/>
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.PortletContainerDispatcher"/>
+  <!-- ============================================================================= -->
+  <!--    P O R T L E T  C O N T A I N E R    C O N F I G U R A T I O N              -->
+  <!-- ============================================================================= -->
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.PortletContainerConf">
+    <value-param>
+      <name>conf-path</name>
+      <value>jar:/conf/portal/portlet-container.xml</value>
+    </value-param>
+  </service-configuration>
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.PortletApplicationHandler"/>    
+  <service-configuration 
+      key="javax.portlet.PortalContext"
+      type="org.exoplatform.services.portletcontainer.impl.portletAPIImp.PortalContextImp"/>
+  <service-configuration 
+      key="org.exoplatform.services.portletcontainer.impl.portletAPIImp.persistenceImp.PersistenceManager"  
+      type="org.exoplatform.services.portletcontainer.impl.portletAPIImp.persistenceImp.DefaultPersistenceManager"/>
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.portletAPIImp.bundle.ResourceBundleManager"/>
+</configuration>

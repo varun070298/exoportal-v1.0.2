@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE faces-config PUBLIC
+"-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+"http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+
+<faces-config>
+  <factory>
+    <application-factory>com.sun.faces.application.ApplicationFactoryImpl</application-factory>
+    <faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+    <lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+    <render-kit-factory>com.sun.faces.renderkit.RenderKitFactoryImpl</render-kit-factory>
+  </factory>
+
+  <render-kit>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIMenu</component-family>
+      <renderer-type>ExoMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.ExoMenuRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIMenu</component-family>
+      <renderer-type>ExoEditPortalModeMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.ExoEditPortalModeMenuRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIMenu</component-family>
+      <renderer-type>ExoEditPageModeMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.ExoEditPageModeMenuRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIMenu</component-family>
+      <renderer-type>ExoEditNavigationModeMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.ExoEditNavigationModeMenuRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIFirstLevelMenu</component-family>
+      <renderer-type>FirstLevelMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.FirstLevelMenuRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIHorizontalMenu</component-family>
+      <renderer-type>HorizontalMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.HorizontalMenuRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIBreadcrumbs</component-family>
+      <renderer-type>BreadcrumbsRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.BreadcrumbsRenderer</renderer-class>
+    </renderer>    
+    
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UISitemap</component-family>
+      <renderer-type>SitemapRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.SitemapRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIVisitedPages</component-family>
+      <renderer-type>VisitedPagesRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.html.VisitedPagesRenderer</renderer-class>
+    </renderer>
+
+  </render-kit>
+
+  <render-kit>
+    <render-kit-id>xhtmlmp</render-kit-id>
+    <render-kit-class>com.sun.faces.renderkit.RenderKitImpl</render-kit-class>
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UIHorizontalMenu</component-family>
+      <renderer-type>HorizontalMenuRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.xhtmlmp.HorizontalMenuRenderer</renderer-class>
+    </renderer>
+
+    <renderer>
+      <component-family>org.exoplatform.portlets.nav.component.UISitemap</component-family>
+      <renderer-type>SitemapRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.nav.renderer.xhtmlmp.SitemapRenderer</renderer-class>
+    </renderer>    
+  </render-kit>
+</faces-config>

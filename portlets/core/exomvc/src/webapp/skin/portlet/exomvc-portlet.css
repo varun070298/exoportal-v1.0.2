@@ -1,0 +1,24 @@
+.exomvc-portlet {
+  padding: 10px  ;
+}
+
+.exomvc-portlet td, 
+.exomvc-portlet th {
+  border: 1px solid black ;
+  padding: 3px ;
+}
+
+.exomvc-portlet a {
+  padding: 0px 2px ;
+}
+
+.exomvc-portlet .list-page{
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.exomvc-portlet .list-page td.action {
+  text-align: center ;
+}

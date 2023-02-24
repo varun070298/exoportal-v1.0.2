@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <!-- ============================================================================= -->
+  <!--    U N I T     C O N F I G U R A T I O N                                      -->
+  <!-- ============================================================================= -->
+  <service-configuration type="org.exoplatform.container.mocks.MockService">
+    <object-param>
+      <name>new.user.configuration</name>
+      <type>org.exoplatform.container.configuration.test.ConfigParam</type>
+      <description>Configure role , group for the new user</description>
+      <!-- new user should have the following role --> 
+      <property name="role[0]" value="user" />
+      <property name="role[1]" value="portal" />
+      <!-- new user should join those groups --> 
+      <property name="group[0]" value="#new ConfigParam$Group" />
+      <property name="group[0].name" value="portal" />
+      <property name="group[0].membership" value="membership" />
+      <!-- Do not apply the above rules for the following users --> 
+      <property name="ignoredUser[0]" value="admin" />
+      <property name="ignoredUser[1]" value="exo" />
+      <property name="ignoredUser[2]" value="portal" />
+      <property name="ignoredUser[3]" value="exotest" />
+    </object-param>
+  </service-configuration>
+</configuration>

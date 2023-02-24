@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>exo-admin/ResourcesPortlet</portlet-name>
+    <style name="resources" url="/exo-admin/skin/portlet/resources-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>exo-admin/BackupPortlet</portlet-name>
+    <style name="backup" url="/exo-admin/skin/portlet/backup-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>exo-admin/PortletRegistery</portlet-name>
+    <style name="portletregistery" url="/exo-admin/skin/portlet/portletregistery-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>exo-admin/JMXPortlet</portlet-name>
+    <style name="jmx" url="/exo-admin/skin/portlet/jmx-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>exo-admin/PortalAdminPortlet</portlet-name>
+    <style name="portal-admin" url="/exo-admin/skin/portlet/portal-admin-portlet.css"/>
+  </portlet-style-config>
+ 
+  <portlet-style-config>
+    <portlet-name>exo-admin/CommunityConfigPortlet</portlet-name>
+    <style name="community" url="/exo-admin/skin/portlet/community-portlet.css"/>
+  </portlet-style-config> 
+ 
+  <portlet-style-config>
+    <portlet-name>exo-admin/AdminConsole</portlet-name>
+    <style name="admin" url="/exo-admin/skin/portlet/admin-portlet.css"/>
+  </portlet-style-config> 
+  
+  <portlet-style-config>
+    <portlet-name>exo-admin/SummaryPortlet</portlet-name>
+    <style name="summary" url="/exo-admin/skin/portlet/summary-portlet.css"/>
+  </portlet-style-config>   
+</skin-config>

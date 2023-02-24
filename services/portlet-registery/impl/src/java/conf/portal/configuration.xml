@@ -1,0 +1,5 @@
+<configuration>
+  <service-configuration 
+      key="org.exoplatform.services.portletregistery.PortletRegisteryService"
+      type="org.exoplatform.services.portletregistery.impl.hibernate.PortletRegisteryServiceImpl"/>
+</configuration>

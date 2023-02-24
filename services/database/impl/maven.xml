@@ -1,0 +1,22 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+  <postGoal name="java:compile">
+    <attainGoal name="exo:setup-hibernate"/>
+    <attainGoal name="exo:hibernate:mapping"/>
+  </postGoal>
+  
+  <goal name="exo:setup-hibernate">
+    <echo>setting hibernate dialect: ${hibernate.dialect}</echo>
+    <echo>setting hibernate dialect: ${hibernate.dialect}</echo>
+    <echo>setting hibernate datasource: ${hibernate.connection.datasource}</echo>
+    <copy todir="${maven.build.dest}" overwrite="true">
+      <fileset dir="${maven.src.dir}/conf">
+        <include name="*.cfg.xml"/>
+      </fileset>
+    </copy>
+    <replace file="${maven.build.dest}/exo-hibernate.cfg.xml">
+      <replacefilter token="@datasource@" value="${hibernate.connection.datasource}"/>
+      <replacefilter token="@dialect@" value="${hibernate.dialect}"/>
+    </replace>
+  </goal>
+
+</project>

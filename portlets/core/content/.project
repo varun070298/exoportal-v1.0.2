@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projectDescription>
+  <name>exoplatform.portlets.core.content</name>
+  <comment>exoplatform.portlets.core.content Portlet</comment>
+  <projects>
+    <project>exoplatform.commons</project>
+    <project>exoplatform.portal.api</project>
+    <project>exoplatform.portal.impl</project>
+    <project>exoplatform.services.organization.api</project>
+    <project>exoplatform.services.resources.api</project>
+    <project>exoplatform.services.resources.impl</project>
+    <project>exoplatform.jsf-components</project>
+    <project>exoplatform.portlet-framework.jsf</project>
+    <project>exoplatform.services.common.api</project>
+    <project>exoplatform.services.indexing.api</project>
+    <project>exoplatform.container</project>
+    <project>exoplatform.services.jcr.api</project>
+    <project>exoplatform.services.jcr.impl</project>
+    <project>exoplatform.services.cms.impl</project>
+    <project>exoplatform.services.portal.api</project>
+    <project>exoplatform.services.indexing.impl</project>
+    <project>exoplatform.services.portlet-container.api</project>
+    <project>exoplatform.services.portlet-container.impl</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>exomvc/ExoMVC</portlet-name>
+    <style name="exomvc" url="/exomvc/skin/portlet/exomvc-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

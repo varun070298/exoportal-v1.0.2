@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portal-decorators>
+    <decorator>
+      <renderer-type>PortalRenderer</renderer-type>
+      <style name="default" url="/skin/skin/default-portal.css"/>
+    </decorator>
+  </portal-decorators>
+
+  <page-decorators>
+    <decorator>
+      <renderer-type>PageRowRenderer</renderer-type>
+      <style name="default" url="/skin/page/default-page.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>PageColumnRenderer</renderer-type>
+      <style name="default" url="/skin/page/default-page.css"/>
+    </decorator>
+  </page-decorators>
+
+  <container-decorators>
+    <decorator>
+      <renderer-type>ContainerColumnRenderer</renderer-type>
+      <style name="default" url="/skin/container/default-container.css"/>
+      <style name="exo" url="/skin/container/exo-container.css"/>
+      <style name="exo-body" url="/skin/container/exo-body-container.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>CollapsibleRenderer</renderer-type>
+      <style name="default" url="/skin/container/default-container.css"/>
+      <style name="exo" url="/skin/container/exo-container.css"/>
+      <style name="exo-body" url="/skin/container/exo-body-container.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>ContainerRowRenderer</renderer-type>
+      <style name="default" url="/skin/container/default-container.css"/>
+      <style name="menu" url="/skin/container/menu-container.css"/>
+      <style name="exo" url="/skin/container/exo-container.css"/>
+      <style name="exo-body" url="/skin/container/exo-body-container.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>TabRenderer</renderer-type>
+      <style name="default" url="/skin/container/default-container.css"/>
+    </decorator>    
+  </container-decorators>
+
+  <portlet-decorators>
+    <decorator>
+      <renderer-type>PortletRenderer</renderer-type>
+      <style name="default" url="/skin/portlet/decorators/default-decorator.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>InfoPortletRenderer</renderer-type>
+      <style name="info-company" url="/skin/portlet/decorators/info-company-decorator.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>BoxPortletRenderer</renderer-type>
+      <style name="box-2" url="/skin/portlet/decorators/box-2-decorator.css"/>
+      <style name="box-3" url="/skin/portlet/decorators/box-3-decorator.css"/>
+      <style name="box-4" url="/skin/portlet/decorators/box-4-decorator.css"/>
+      <style name="box-5" url="/skin/portlet/decorators/box-5-decorator.css"/>
+    </decorator>
+  </portlet-decorators>
+  
+  <portlet-style-config>
+    <portlet-name>default</portlet-name>
+    <style name="default" url="/skin/portlet/styles/default-portlet.css"/>    
+  </portlet-style-config>
+</skin-config>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<node-navigation>
+  <owner>exo</owner>
+  <node>
+    <uri>/</uri>
+    <name>home</name>
+    <label>#{home}</label>
+    <viewPermission>any</viewPermission>
+    <editPermission>owner</editPermission>
+    <description>/</description>
+    <pageReference type="text/xhtml" visible="true">exo:/home</pageReference>
+    <pageReference type="application/vnd.wap.xhtml+xml" visible="true">exo:/mobile</pageReference>
+    <node>
+      <uri>/home/products</uri>
+      <name>products</name>
+      <label>#{products}</label>
+      <viewPermission>any</viewPermission>
+      <description>Products Page</description>
+      <pageReference>exo:/home/products</pageReference>
+      <node>
+        <uri>/home/products/architecture</uri>
+        <name>architecture</name>
+        <label>#{architecture}</label>
+        <viewPermission>any</viewPermission>
+        <description>architecture Page</description>
+        <pageReference>exo:/home/products/architecture</pageReference>
+      </node>
+      <node>
+        <uri>/home/products/editions</uri>
+        <name>editions</name>
+        <label>#{editions}</label>
+        <viewPermission>any</viewPermission>
+        <description>editions Page</description>
+        <pageReference>exo:/home/products/editions</pageReference>
+        <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/products/editions</pageReference>
+      </node>
+      <node>
+        <uri>/home/products/eclipse-plugin</uri>
+        <name>eclipse-plugin</name>
+        <label>#{eclipse-plugin}</label>
+        <viewPermission>any</viewPermission>
+        <description>eclipse-plugin</description>
+        <pageReference>exo:/home/products/eclipse-plugin</pageReference>
+      </node>
+      <node>
+        <uri>/home/products/licenses</uri>
+        <name>licenses</name>
+        <label>#{licenses}</label>
+        <viewPermission>any</viewPermission>
+        <description>Licenses Page</description>
+        <pageReference>exo:/home/products/licenses</pageReference>
+        <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/products/licenses</pageReference>
+      </node>
+      <node>
+        <uri>/home/products/pricing</uri>
+        <name>pricing</name>
+        <label>#{pricing}</label>
+        <viewPermission>any</viewPermission>
+        <description>Pricing Page</description>
+        <pageReference>exo:/home/products/pricing</pageReference>
+        <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/products/pricing</pageReference>
+      </node>      
+    </node>
+    <node>
+      <uri>/home/services</uri>
+      <name>services</name>
+      <label>#{services}</label>
+      <viewPermission>any</viewPermission>
+      <description>Services Page</description>
+      <pageReference>exo:/home/services</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/services</pageReference>
+      <node>
+        <uri>/home/services/audit</uri>
+        <name>audit</name>
+        <label>#{audit}</label>
+        <viewPermission>any</viewPermission>
+        <description>Audit Page</description>
+        <pageReference>exo:/home/services/audit</pageReference>
+      </node>
+      <node>
+        <uri>/home/services/design</uri>
+        <name>design</name>
+        <label>#{design}</label>
+        <viewPermission>any</viewPermission>
+        <description>Design Page</description>
+        <pageReference>exo:/home/services/design</pageReference>
+      </node>
+      <node>
+        <uri>/home/services/integration</uri>
+        <name>integration</name>
+        <label>#{integration}</label>
+        <viewPermission>any</viewPermission>
+        <description>Integration Page</description>
+        <pageReference>exo:/home/services/integration</pageReference>
+      </node>
+      <node>
+        <uri>/home/services/training</uri>
+        <name>training</name>
+        <label>#{training}</label>
+        <viewPermission>any</viewPermission>
+        <description>Training Page</description>
+        <pageReference>exo:/home/services/training</pageReference>
+      </node>
+      <node>
+        <uri>/home/services/custom-developments</uri>
+        <name>custom-development</name>
+        <label>#{custom-development}</label>
+        <viewPermission>any</viewPermission>
+        <description>Custom Developments Page</description>
+        <pageReference>exo:/home/services/custom-developments</pageReference>
+      </node>
+      <node>
+        <uri>/home/services/web-design</uri>
+        <name>web-design</name>
+        <label>#{web-design}</label>
+        <viewPermission>any</viewPermission>
+        <description>Web Design Page</description>
+        <pageReference>exo:/home/services/web-design</pageReference>
+      </node>
+    </node>
+    <node>
+      <uri>/home/company</uri>
+      <name>company</name>
+      <label>#{company}</label>
+      <viewPermission>any</viewPermission>
+      <description>Company Page</description>
+      <pageReference>exo:/home/company</pageReference>
+      <node>
+        <uri>/home/company/contact-us</uri>
+        <name>contact-us</name>
+        <label>#{contact-us}</label>
+        <viewPermission>any</viewPermission>
+        <description>Contact us</description>
+        <pageReference>exo:/home/company/contact-us</pageReference>
+      </node>
+      <node>
+        <uri>/home/company/integrators</uri>
+        <name>integrators</name>
+        <label>#{integrators}</label>
+        <viewPermission>any</viewPermission>
+        <description>integrators</description>
+        <pageReference>exo:/home/company/integrators</pageReference>
+      </node>
+      <node>
+        <uri>/home/company/oem</uri>
+        <name>oem</name>
+        <label>#{oem}</label>
+        <viewPermission>any</viewPermission>
+        <description>OEMs</description>
+        <pageReference>exo:/home/company/oem</pageReference>
+      </node>      
+      <node>
+        <uri>/home/company/technical</uri>
+        <name>technical</name>
+        <label>#{technical}</label>
+        <viewPermission>any</viewPermission>
+        <description>Technical</description>
+        <pageReference>exo:/home/company/technical</pageReference>
+      </node>      
+      <node>
+        <uri>/home/company/users</uri>
+        <name>users</name>
+        <label>#{users}</label>
+        <viewPermission>any</viewPermission>
+        <description>users</description>
+        <pageReference>exo:/home/company/users</pageReference>
+      </node>          
+    </node>
+    <node>
+      <uri>/home/press</uri>
+      <name>press</name>
+      <label>#{press}</label>
+      <viewPermission>any</viewPermission>
+      <description>Press Page</description>
+      <pageReference>exo:/home/press</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/press</pageReference>
+      <node>
+        <uri>/home/press/books</uri>
+        <name>books</name>
+        <label>#{books}</label>
+        <viewPermission>any</viewPermission>
+        <description>Books</description>
+        <pageReference>exo:/home/press/books</pageReference>
+      </node>
+      <node>
+        <uri>/home/press/whitepapers</uri>
+        <name>whitepapers</name>
+        <label>#{whitepapers}</label>
+        <viewPermission>any</viewPermission>
+        <description>whitepapers</description>
+        <pageReference>exo:/home/press/whitepapers</pageReference>
+      </node>
+      <node>
+        <uri>/home/press/blogs</uri>
+        <name>blogs</name>
+        <label>#{blogs}</label>
+        <viewPermission>any</viewPermission>
+        <description>Blogs</description>
+        <pageReference>exo:/home/press/blogs</pageReference>
+      </node>
+    </node>
+    <node>
+      <uri>/home/community</uri>
+      <name>community</name>
+      <label>#{community}</label>
+      <viewPermission>any</viewPermission>
+      <description>Community Page</description>
+      <pageReference>exo:/home/community</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/community</pageReference>
+      <node>
+        <uri>/home/community/news</uri>
+        <name>news</name>
+        <label>#{news}</label>
+        <viewPermission>any</viewPermission>
+        <description>wiki</description>
+        <pageReference>exo:/home/community/news</pageReference>
+      </node>
+      <node>
+        <uri>/home/community/wiki</uri>
+        <name>wiki</name>
+        <label>#{wiki}</label>
+        <viewPermission>any</viewPermission>
+        <description>wiki</description>
+        <pageReference>exo:/home/community/wiki</pageReference>
+      </node>
+      <node>
+        <uri>/home/community/forum</uri>
+        <name>forum</name>
+        <label>#{forum}</label>
+        <viewPermission>any</viewPermission>
+        <description>Forum</description>
+        <pageReference>exo:/home/community/forum</pageReference>
+      </node>
+      <node>
+        <uri>/home/community/messages</uri>
+        <name>messages</name>
+        <label>#{messages}</label>
+        <viewPermission>any</viewPermission>
+        <description>Forum</description>
+        <pageReference>exo:/home/community/messages</pageReference>
+      </node>      
+    </node>
+    <node>
+      <uri>/home/my-portal</uri>
+      <name>my-portal</name>
+      <label>#{my-portal}</label>
+      <viewPermission>any</viewPermission>
+      <description>My Portal Page</description>
+      <pageReference>exo:/home/my-portal</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/my-portal</pageReference>
+    </node>
+    <node>
+      <uri>/home/search</uri>
+      <name>search</name>
+      <label>#{search}</label>
+      <viewPermission>any</viewPermission>
+      <description>Seach Page</description>
+      <pageReference type="text/xhtml" visible="true">exo:/home/search</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/search</pageReference>
+    </node>        
+    <node>
+      <uri>/home/sitemap</uri>
+      <name>sitemap</name>
+      <label>#{sitemap}</label>
+      <viewPermission>any</viewPermission>
+      <description>Sitemap Page</description>
+      <pageReference type="text/xhtml" visible="true">exo:/home/sitemap</pageReference>
+      <pageReference type="application/vnd.wap.xhtml+xml" visible="false">exo:/home/sitemap</pageReference>
+    </node>
+  </node>
+</node-navigation>

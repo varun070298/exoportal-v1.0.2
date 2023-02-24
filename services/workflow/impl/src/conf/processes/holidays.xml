@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE process-definition PUBLIC
+    "-//jBpm/jBpm Mapping DTD 2.0 beta2//EN"
+    "http://jbpm.org/dtd/processdefinition-2.0-beta2.dtd">
+
+<process-definition name="holiday process">
+
+  <description>holiday process description</description>
+
+  <!-- SWIMLANES -->
+  <swimlane name="initiator"/>
+
+  <swimlane name="boss">
+    <delegation class="org.exoplatform.services.workflow.delegation.BossAssignementHandler"/>
+  </swimlane>
+
+  <swimlane name="hr mgr">
+    <delegation class="org.exoplatform.services.workflow.delegation.HRAssignementHandler"/>
+  </swimlane>
+
+  <!-- TYPES -->
+  <type>
+    <transient/>
+    <variable name="do.not.store"/>
+    <variable name="dont.store.this.either"/>
+  </type>
+
+  <type java-type="java.util.Date">
+    <description>date type description</description>
+    <delegation class="org.jbpm.delegation.serializer.DateSerializer">
+        date type serializer configuration
+    </delegation>
+    <variable name="end.date"/>
+    <variable name="start.date"/>
+  </type>
+
+  <type java-type="java.lang.Boolean">
+    <delegation class="boolean.Serializer">
+        boolean type serializer configuration
+    </delegation>
+  </type>
+
+  <!-- START-STATE -->
+  <start-state name="request">    
+    <transition to="enough holidays left ?"/>
+  </start-state>
+
+  <!-- NODES -->
+  <decision name="enough holidays left ?">
+    <delegation class="org.exoplatform.services.workflow.delegation.MockDecisionHandler"/>
+    <transition name="enough holidays" to="evaluation"/>
+    <transition name="not enough holidays" to="end"/>
+  </decision>
+
+  <state name="evaluation">
+    <assignment swimlane="boss" assignment="required" authentication="verify" />
+    <transition name="approve" to="fork">
+      <action>
+        <delegation class="org.exoplatform.services.workflow.delegation.MockActionHandler"/>
+      </action>
+    </transition>
+    <transition name="disapprove" to="change request"/>
+    <transition name="refuse" to="end">
+      <action>
+        <delegation class="org.exoplatform.services.workflow.delegation.MockActionHandler"/>
+      </action>
+    </transition>
+  </state>
+
+  <state name="change request">
+    <assignment swimlane="initiator"/>
+    <transition name="submit again" to="evaluation"/>
+    <transition name="cancel" to="end"/>
+  </state>
+
+  <fork name="fork">
+    <transition to="hr acknowledgement"/>
+    <transition to="assign replacement"/>
+  </fork>
+
+  <state name="hr acknowledgement">
+    <assignment swimlane="hr mgr"/>
+    <transition to="join"/>
+  </state>
+
+  <state name="assign replacement">
+    <assignment swimlane="boss"/>
+    <transition to="join"/>
+  </state>
+
+  <join name="join">
+    <transition to="end"/>
+  </join>
+
+  <!-- END-STATE -->
+  <end-state name="end"/>
+
+  <!-- ACTIONS -->
+  <action event-type="process-end">
+    <delegation class="org.exoplatform.services.workflow.delegation.MockActionHandler"/>
+  </action>
+
+</process-definition>

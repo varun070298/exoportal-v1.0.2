@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+
+  <service-configuration type="org.exoplatform.services.xml.resolving.impl.simple.SimpleDirResolvingServiceImpl"/>
+  <!--
+  <service-configuration type="org.exoplatform.services.xml.resolving.impl.xmlcommons.XMLCommonsResolvingServiceImpl"/>
+  -->
+  <service-configuration type="org.exoplatform.services.xml.querying.impl.xtas.XMLQueryingServiceImpl"/>
+</configuration>

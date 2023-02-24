@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projectDescription>
+  <name>exoplatform.services.xml-processing.impl</name>
+  <comment>eXo XML Processing impl</comment>
+  <projects>
+    <project>exoplatform.commons</project>
+    <project>exoplatform.services.common.api</project>
+    <project>exoplatform.services.xml-processing.api</project>
+    <project>exoplatform.container</project>
+    <project>exoplatform.services.common.impl</project>
+    <project>exoplatform.test.framework</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+      <arguments>
+      </arguments>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

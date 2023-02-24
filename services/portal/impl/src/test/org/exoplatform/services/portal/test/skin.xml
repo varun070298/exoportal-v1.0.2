@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portal-decorators>
+    <decorator>
+      <renderer-type>default</renderer-type>
+      <style name="default" url="/portal/skin/portal/default-portal.css"/>
+    </decorator>
+  </portal-decorators>
+
+  <page-decorators>
+    <decorator>
+      <renderer-type>default</renderer-type>
+      <style name="default" url="/portal/skin/page/default-page.css"/>
+    </decorator>
+  </page-decorators>
+
+  <container-decorators>
+    <decorator>
+      <renderer-type>default</renderer-type>
+      <style name="default" url="/portal/skin/container/default-container.css"/>
+      <style name="exo" url="/portal/skin/container/exo-container.css"/>
+      <style name="exo-body" url="/portal/skin/container/exo-body-container.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>ContainerColumnRenderer</renderer-type>
+      <style name="default" url="/portal/skin/container/default-container.css"/>
+      <style name="exo" url="/portal/skin/container/exo-container.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>ContainerRowRenderer</renderer-type>
+      <style name="default" url="/portal/skin/container/default-container.css"/>
+      <style name="menu" url="/portal/skin/container/menu-container.css"/>
+      <style name="exo" url="/portal/skin/container/exo-container.css"/>
+    </decorator>
+  </container-decorators>
+
+  <portlet-decorators>
+    <decorator>
+      <renderer-type>default</renderer-type>
+      <style name="default" url="/portal/skin/portlet/decorators/default-decorator.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>InfoPortletRenderer</renderer-type>
+      <style name="info-company" url="/portal/skin/portlet/decorators/info-company-decorator.css"/>
+    </decorator>
+    <decorator>
+      <renderer-type>BoxPortletRenderer</renderer-type>
+      <style name="box-2" url="/portal/skin/portlet/decorators/box-2-decorator.css"/>
+      <style name="box-3" url="/portal/skin/portlet/decorators/box-3-decorator.css"/>
+      <style name="box-4" url="/portal/skin/portlet/decorators/box-4-decorator.css"/>
+      <style name="box-5" url="/portal/skin/portlet/decorators/box-5-decorator.css"/>
+    </decorator>
+  </portlet-decorators>
+  
+  <portlet-style-config>
+    <portlet-name>default</portlet-name>
+    <style name="default" url="/portal/skin/portlet/styles/default-portlet.css"/>
+    <style name="exo" url="/portal/skin/portlet/styles/exo-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

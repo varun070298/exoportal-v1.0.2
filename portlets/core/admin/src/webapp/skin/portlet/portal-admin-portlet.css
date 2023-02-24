@@ -1,0 +1,9 @@
+.portal-admin-portlet {
+  width: 100% ;
+}
+
+.portal-admin-portlet .UIGrid .footer {
+  background : #fafafa;
+  text-align : right;
+  border : 1px solid #eeeeee;
+}

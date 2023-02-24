@@ -1,0 +1,19 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:m="maven" xmlns:ant="jelly:ant">
+  <postGoal name="java:compile">
+  
+    <ant:taskdef name="bind" classname="org.jibx.binding.ant.CompileTask">
+      <ant:classpath>
+        <ant:pathelement location="${pom.getDependencyPath('jibx:jibx-bind')}"/>
+        <ant:pathelement location="${pom.getDependencyPath('jibx:jibx-run')}"/>
+        <ant:pathelement location="${pom.getDependencyPath('xpp3:xpp3')}"/>
+        <ant:pathelement location="${pom.getDependencyPath('bcel:bcel')}"/>
+        <ant:path refid="maven.dependency.classpath"/>
+      </ant:classpath>
+    </ant:taskdef>
+
+    <ant:bind verbose="false" load="true" binding="${maven.src.dir}/resources/binding.xml">
+      <ant:classpathset dir="${maven.build.dir}/classes"/>
+      <ant:classpathset dir="${pom.getDependencyPath('jibx:jibx-run')}"/>
+    </ant:bind> 
+  </postGoal>
+</project>

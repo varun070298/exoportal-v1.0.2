@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../build/project.xml</extend>
+  <id>exoplatform.container</id>
+  <name>eXo  Container</name>
+  <description>exo services api jar.</description>
+  <shortDescription>exo services api</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <!--  unit test dependenies -->
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.test.framework</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <sourceModifications>
+      <sourceModification>
+        <className>java.lang.management.ManagementFactory</className>
+        <excludes>
+          <exclude>**/v15/*.java</exclude>
+        </excludes>
+      </sourceModification>
+    </sourceModifications>
+    <resources>
+      <resource>
+        <directory>src/test</directory>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+          <!--
+          <include>**/*.groovy</include>
+          -->
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+    <title>Portlets Product</title>
+		<link>http://exo.sourceforge.net</link>
+		<description>
+      Link to Portlet Resource and JSR 168
+    </description>
+		<copyright>
+      Copyright and acceptable usage information for this RSS may feed may be found 
+      at: http://exo.sourceforge.net/
+    </copyright>
+		<lastBuildDate>Thu, 05 Jun 2003 14:13:00 GMT</lastBuildDate>
+		<generator>RSS generator</generator>
+		<image>
+			<title>Exo logo</title>
+			<url>http://images.sourceforge.net/images/sflogo-88-1.png</url>
+			<link>http://sourceforge.net/</link>
+			<width>88</width>
+			<height>31</height>
+      <description>Exo Logo</description>
+		</image>
+		<item>
+      <title>Jakarta Jetspeed</title>
+			<description>
+        Jetspeed is an Open Source implementation of an Enterprise Information Portal,
+        using Java and XML
+      </description>
+			<link>http://jakarta.apache.org/jetspeed/site/index.html</link>
+			<guid isPermaLink="false">summary-1054822380</guid>
+			<pubDate>Thu, 21 Aug 2003 14:13:00 GMT</pubDate>
+		</item>
+		<item>
+      <title>Liferay Portal</title>
+			<description>
+        Liferay Enterprise Portal provides personalizable tools to help organizations 
+        communicate and share information more efficiently.
+      </description>
+			<link>http://www.liferay.com/home/index.jsp</link>
+			<guid isPermaLink="false">summary-1054822380</guid>
+			<pubDate>Thu, 21 Aug 2003 14:13:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+
+  <!-- service-configuration type="org.exoplatform.services.jcr.impl.storage.rdb.HypersonicMemDataSourceProviderImpl"/ -->
+
+  <service-configuration type="org.exoplatform.services.jcr.impl.mock.DummyOrganizationService"/>
+  <service-configuration type="org.exoplatform.services.jcr.impl.config.DummyConfig"/>
+
+  <!-- remove-configuration>org.exoplatform.services.jcr.impl.storage.rdb.JNDIDataSourceProviderImpl</remove-configuration -->
+  <!-- remove-configuration>org.exoplatform.services.jcr.impl.storage.rdb.PortalDataSourceProviderImpl</remove-configuration -->
+  <remove-configuration>org.exoplatform.services.jcr.impl.config.XMLConfig</remove-configuration>
+
+</configuration>

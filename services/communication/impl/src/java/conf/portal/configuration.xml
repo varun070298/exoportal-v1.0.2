@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration 
+    type="org.exoplatform.services.communication.forum.hibernate.ForumIndexerPluginImpl"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.forum.hibernate.ImportExportPluginImpl"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.forum.hibernate.ForumServiceContainerImpl"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.forum.hibernate.ForumDependencyObjectManager"/>
+  <!-- ============================================================================= -->
+  <!--                     M A I L      S E R V I C E                                -->
+  <!-- ============================================================================= -->
+  <service-configuration key="org.exoplatform.services.communication.message.MailService"
+                         type="org.exoplatform.services.communication.message.impl.MailServiceImpl">
+    <value-param>
+      <name>outgoing.mail.server</name>
+      <value>smtp1.sympatico.ca</value>
+    </value-param>
+  </service-configuration>
+  
+  <service-configuration 
+    key="org.exoplatform.services.communication.message.MessageService"
+    type="org.exoplatform.services.communication.message.impl.MessageServiceImpl"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.message.impl.StandaloneMessageProtocolPlugin"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.message.impl.IMAPMessageProtocolPlugin"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.message.impl.POP3MessageProtocolPlugin"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.message.impl.MessageIndexerPluginImpl"/>
+
+  <!-- ============================================================================= -->
+  <!--            A C C O U N T    L I S T E N E R                                   -->
+  <!-- ============================================================================= -->
+  <!--
+   This listener create the message account for the new user , and delete the message account 
+   when an user is removed. The listener will use the username and password of the new user 
+   for the remote mail server information(for imap and pop3 account type)
+  -->
+  <service-configuration 
+    type="org.exoplatform.services.communication.message.impl.UserEventAccountListener">
+    <object-param>
+      <name>standalone.account</name>
+      <type>org.exoplatform.services.communication.message.impl.AccountListenerConfig</type>
+      <property name="accountName" value="default" />
+      <property name="protocol" value="standalone" />
+      <property name="server" value="NA" />
+    </object-param>
+    <!--
+    <object-param>
+      <name>imap.account</name>
+      <type>org.exoplatform.services.communication.message.impl.AccountListenerConfig</type>
+      <property name="accountName" value="imap" />
+      <property name="protocol" value="imap" />
+      <property name="server" value="localhost" />
+    </object-param>
+    <object-param>
+      <name>pop3.account</name>
+      <type>org.exoplatform.services.communication.message.impl.AccountListenerConfig</type>
+      <property name="accountName" value="pop3" />
+      <property name="protocol" value="pop3" />
+      <property name="server" value="localhost" />
+    </object-param>
+    -->
+  </service-configuration>
+
+
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.sms.impl.SmsServiceImpl"/>
+
+  <service-configuration 
+    type="org.exoplatform.services.communication.sms.impl.SmsMonitorServiceImpl"/>
+
+</configuration>

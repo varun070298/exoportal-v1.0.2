@@ -1,0 +1,6 @@
+<project default="default" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">
+  <goal name="default">
+    <attainGoal name="war:install"/>
+  </goal>
+
+</project>

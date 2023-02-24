@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  PSWinCom DTD SMS Submit Response -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+  jxb:version="1.0" elementFormDefault="qualified">
+
+  <xs:element name="ID" type="xs:string"/>
+  <xs:element name="LOGON" type="xs:string"/>
+  <xs:element name="REASON" type="xs:string"/>
+  <xs:element name="STATUS" type="xs:string"/>
+  <xs:element name="INFO" type="xs:string"/>
+  <xs:complexType name="RESULT">
+    <xs:sequence>
+      <xs:element ref="RESULT"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RESULT" type="xs:string"/>
+  <xs:element name="MSG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ID"/>
+        <xs:element ref="STATUS"/>
+        <xs:element ref="INFO"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MSGLST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="MSG"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QRY" type="RESULT"/>
+  <xs:element name="QRYLST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="QRY"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SESSION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="LOGON"/>
+        <xs:element ref="REASON"/>
+        <xs:element minOccurs="0" ref="MSGLST"/>
+        <xs:element minOccurs="0" ref="QRYLST"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

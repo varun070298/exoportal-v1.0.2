@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../../../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.services.wsrp.api</id>
+  <name>eXo wsrp service API</name>
+  <shortDescription>eXo WSRP Services API</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>exo</groupId>
+      <artifactId>exoplatform.commons</artifactId>
+      <version>${exoplatform.version}</version>
+      <properties>
+        <eclipse.dependency>true</eclipse.dependency>
+      </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>axis</groupId>
+      <artifactId>axis</artifactId>
+      <version>1.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>wsdl4j</groupId>
+      <artifactId>wsdl4j</artifactId>
+      <version>1.4</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>soap</groupId>
+      <artifactId>soap</artifactId>
+      <version>2.3</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>saaj</groupId>
+      <artifactId>saaj</artifactId>
+      <version>1.1</version>
+    </dependency>
+    
+    <dependency>
+      <id>commons-discovery</id>
+      <version>0.2</version>
+      <url>http://jakarta.apache.org/commons</url>
+    </dependency>
+    
+    <dependency>
+      <groupId>jaxrpc</groupId>
+      <artifactId>jaxrpc</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+</project>

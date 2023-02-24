@@ -1,0 +1,152 @@
+<project default="jar:install" xmlns:j="jelly:core" xmlns:ant="jelly:ant"
+  xmlns:define="jelly:define" xmlns:maven="jelly:maven">
+
+  <postGoal name="java:compile">
+    <attainGoal name="exo:ajc.compile"/>
+    <attainGoal name="exo:compile.war.template"/>
+  </postGoal>
+
+  <goal name="exo:ajc.init">
+    <ant:echo message="exo:ajc.init"/>
+    <ant:taskdef name="ajc" classname="org.aspectj.tools.ant.taskdefs.AjcTask">
+      <ant:classpath refid="maven.dependency.classpath"/>
+    </ant:taskdef>
+  </goal>
+
+  <goal name="exo:ajc.compile" prereqs="exo:ajc.init">
+    <ant:ajc
+      destdir="${maven.build.dest}"
+      debug="${maven.compile.debug}"
+      deprecation="${maven.compile.deprecation}"
+      optimize="${maven.compile.optimize}"
+      source="${maven.compile.source}"
+      srcdir="${basedir}/src/java"
+      >
+      <ant:classpath>
+        <ant:path refid="maven.dependency.classpath"/>
+        <ant:pathelement path="${maven.build.dest}"/>
+      </ant:classpath>
+      <ant:include name="**/PortletApplicationHandler.java"/>
+      <ant:include name="**/*.aj"/>
+    </ant:ajc>
+
+    <!-- this may not be necessary -->
+    <ant:echo message="copy resources to: [${maven.build.dest}] from: [${basedir}/src/java]"/>
+    <ant:copy todir="${maven.build.dest}">
+      <ant:fileset dir="${basedir}/src/java">
+        <ant:include name="exo/**/*.xml"/>
+        <ant:include name="**/*.properties"/>
+      </ant:fileset>
+    </ant:copy>
+  </goal>
+
+  <goal name="exo:compile.war.template">
+    <ant:javac srcdir="${portlet.template.dir}/src" destdir="${portlet.template.dir}/WEB-INF/classes"
+      debug="${maven.compile.debug}"
+      deprecation="${maven.compile.deprecation}"
+      optimize="${maven.compile.optimize}"
+      >
+      <ant:classpath>
+        <ant:path refid="maven.dependency.classpath"/>
+        <ant:pathelement path="${maven.build.dest}"/>
+      </ant:classpath>
+    </ant:javac>
+
+    <ant:copy todir="${portlet.template.dir}/WEB-INF/classes">
+      <ant:fileset dir="${portlet.template.dir}/src">
+        <ant:include name="**/*.properties"/>
+        <ant:include name="**/*.xml"/>
+      </ant:fileset>
+    </ant:copy>
+  </goal>
+
+  <preGoal name="test:single">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+
+  <preGoal name="test:test">
+    <ant:path id="maven.exo.container.war.template.set"
+      location="${portlet.template.dir}/WEB-INF/classes"/>
+    <maven:addPath id="maven.dependency.classpath" refid="maven.exo.container.war.template.set"/>
+  </preGoal>
+
+  <goal name="jar:jar" description="Create the deliverable jar file."
+        prereqs="test:test">
+    <ant:jar
+      jarfile="${maven.build.dir}/${maven.final.name}.jar"
+      basedir="${maven.build.dest}"
+      index="${maven.jar.index}"
+      compress="${maven.jar.compress}"
+      excludes="${maven.jar.excludes}">
+
+      <j:if test="${maven.jar.manifest.available}">
+        <ant:setProperty name="manifest" value="${maven.jar.manifest}"/>
+      </j:if>
+
+      <j:if test="${context.getVariable('maven.jar.includes') != null}">
+        <ant:setProperty name="includes" value="${maven.jar.includes}"/>
+      </j:if>
+
+      <ant:metainf dir="${basedir}/src/conf/">
+        <ant:include name="${portlet.tld.file}"/>
+      </ant:metainf>
+      <ant:manifest>
+        <ant:attribute name="Built-By" value="${user.name}"/>
+        <ant:attribute name="Created-By" value="Apache Jakarta Maven"/>
+        <ant:attribute name="Package" value="${pom.package}"/>
+        <ant:attribute name="Build-Jdk" value="${java.version}"/>
+
+        <j:set var="jarClasspath" value="${maven.jar.manifest.classpath.add}"/>
+        <j:if test="${jarClasspath}">
+          <j:forEach var="dep" items="${pom.dependencies}">
+            <j:if test="${dep.getProperty('jar.manifest.classpath')=='true'}">
+              <j:set var="maven.jar.classpath" value="${maven.jar.classpath} ${dep.artifact}"/>
+            </j:if>
+          </j:forEach>
+          <j:if test="${maven.jar.classpath.length() != 0}">
+            <ant:attribute name="Class-Path" value="${maven.jar.classpath}"/>
+          </j:if>
+        </j:if>
+        <!-- added supplementary entries -->
+        <ant:attribute name="Extension-Name" value="${pom.artifactId}"/>
+        <ant:attribute name="Specification-Title" value="${pom.shortDescription}"/>
+        <ant:attribute name="Specification-Vendor" value="${pom.organization.name}"/>
+        <ant:attribute name="Specification-Version" value="${pom.currentVersion}"/>
+        <ant:attribute name="Implementation-Title" value="${pom.package}"/>
+        <ant:attribute name="Implementation-Vendor" value="${pom.organization.name}"/>
+        <ant:attribute name="Implementation-Version" value="${pom.currentVersion}"/>
+        <maven:pluginVar var="mainclass" plugin="maven-java-plugin" property="maven.jar.mainclass"/>
+        <j:if test="${!empty(mainclass)}">
+          <ant:attribute name="Main-Class" value="${mainclass}"/>
+        </j:if>
+
+        <j:set var="jarExtensions" value="${maven.jar.manifest.extensions.add}"/>
+        <j:if test="${jarExtensions == 'true'}">
+          <j:set var="extensionList" value=""/>
+          <j:forEach var="artifact" items="${pom.artifacts}">
+            <j:set var="dep" value="${artifact.dependency}"/>
+            <j:set var="extensionList" value="${extensionList} ${dep.artifactId}"/>
+          </j:forEach>
+
+          <j:if test="${extensionList.length() != 0}">
+            <j:set var="extensionList" value="${extensionList.substring(1)}"/>
+            <ant:attribute name="Extension-List" value="${extensionList}"/>
+          </j:if>
+
+          <j:forEach var="artifact" items="${pom.artifacts}">
+            <j:set var="dep" value="${artifact.dependency}"/>
+            <ant:attribute name="${dep.artifactId}-Extension-Name" value="${dep.artifactId}"/>
+            <ant:attribute name="${dep.artifactId}-Implementation-Version" value="${dep.version}"/>
+            <ant:attribute name="${dep.artifactId}-Implementation-URL" value="http://www.ibiblio.org/maven${artifact.urlPath}"/>
+          </j:forEach>
+        </j:if>
+      </ant:manifest>
+    </ant:jar>
+  </goal>
+
+  <postGoal name="clean:clean">
+    <delete dir="${portlet.template.dir}/WEB-INF/classes/org"/>
+  </postGoal>
+</project>

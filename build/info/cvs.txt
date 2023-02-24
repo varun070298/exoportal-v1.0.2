@@ -1,0 +1,14 @@
+1 CVS information
+
+1.1 Major feature
+-------------------
+
+1. write eclipse plugin for webunit test framework (almost done)
+1. Need to refractor the ExoPortalInfo component, separate all the component such ClientType , PortalInfo , PathInfo , resources bundle for the portal , Security info. Need to reuse the ExoContainer factory and configuration capabilities
+
+1.1 BUGS FIX
+-------------
+1. When Importing portlets as admin in portlet registry, the admin has to logout and login to be able to add the portlets to his portal.
+1. When adding a new portlet that has a style defined, it should be used by default.
+
+

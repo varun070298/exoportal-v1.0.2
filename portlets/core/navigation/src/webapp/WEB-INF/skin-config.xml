@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<skin-config>
+  <portlet-style-config>
+    <portlet-name>nav/Menu</portlet-name>
+    <style name="menu" url="/nav/skin/portlet/menu-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>nav/FisrtLevelMenu</portlet-name>
+    <style name="first-level-menu" url="/nav/skin/portlet/first-level-menu-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>nav/Breadcrumbs</portlet-name>
+    <style name="breadcrumbs" url="/nav/skin/portlet/breadcrumbs-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>nav/HorizontalMenu</portlet-name>
+    <style name="horizontal" url="/nav/skin/portlet/horizontal-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>nav/Sitemap</portlet-name>
+    <style name="sitemap" url="/nav/skin/portlet/sitemap-portlet.css"/>
+  </portlet-style-config>
+
+  <portlet-style-config>
+    <portlet-name>nav/VisitedPagesPortlet</portlet-name>
+    <style name="visited-pages" url="/nav/skin/portlet/visited-pages-portlet.css"/>
+  </portlet-style-config>
+</skin-config>

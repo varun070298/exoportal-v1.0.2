@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">summary portlet</description>
+    <portlet-name>SummaryPortlet</portlet-name>
+    <display-name xml:lang="EN">SummaryPortlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.summary.component.UISummaryPortlet.class</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.admin.SummaryPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Summary Portlet</title>
+      <short-title>Summary</short-title>
+      <keywords>Summary, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">resources properties portlet</description>
+    <portlet-name>ResourcesPortlet</portlet-name>
+    <display-name xml:lang="EN">ResourcesPortlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.resources.component.UIResourcesPortlet.class</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.admin.ResourcesPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Log Portlet</title>
+      <short-title>Log</short-title>
+      <keywords>log, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">backup data portlet</description>
+    <portlet-name>BackupPortlet</portlet-name>
+    <display-name xml:lang="EN">Backup Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.backup.component.UIBackupPortlet.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/resources-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.admin.BackupPortlet</resource-bundle>
+
+    <portlet-info>
+      <title>Backup Portlet</title>
+      <short-title>backup</short-title>
+      <keywords>backup, admin</keywords>
+    </portlet-info>
+
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Portlet Registry portlet</description>
+    <portlet-name>PortletRegistery</portlet-name>
+    <display-name xml:lang="EN">Portlet Registery</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.portletregistery.component.UIPortletRegistry.class</value>
+    </init-param>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.admin.PortletRegistry</resource-bundle>
+    <portlet-info>
+      <title>Portlet Registery</title>
+      <short-title>portlet registery</short-title>
+      <keywords>portlet registery, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">JMX Portlet</description>
+    <portlet-name>JMXPortlet</portlet-name>
+    <display-name xml:lang="EN">JMXPortlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.jmx.component.UIJMXPortlet.class</value>
+    </init-param>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.admin.JMXPortlet</resource-bundle>
+    <portlet-info>
+      <title>JMX Portlet</title>
+      <short-title>JMX Portlet</short-title>
+      <keywords>jmx, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Indexer Manager Portlet</description>
+    <portlet-name>IndexerManagerPortlet</portlet-name>
+    <display-name xml:lang="EN">Indexer Manager Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.indexing.component.UIIndexerManagerPortlet.class</value>
+    </init-param>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.admin.IndexerManagerPortlet</resource-bundle>
+    <portlet-info>
+      <title>Indexer Manager</title>
+      <short-title>Indexer Manager</short-title>
+      <keywords>index, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Portal Admin Portlet</description>
+    <portlet-name>PortalAdminPortlet</portlet-name>
+    <display-name xml:lang="EN">Portal Admin Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.portal.component.UIPortalAdminPortlet.class</value>
+    </init-param>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.admin.PortalAdminPortlet</resource-bundle>
+    <portlet-info>
+      <title>Portal Admin</title>
+      <short-title>Portal Admin</short-title>
+      <keywords>portal, admin</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">Admin Console</description>
+    <portlet-name>AdminConsole</portlet-name>
+    <display-name xml:lang="en">Admin Console</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.console.component.UIAdminConsolePortlet.class</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+    </supports>
+
+    <supported-locale>EN</supported-locale>
+    <resource-bundle>locale.portlet.admin.AdminConsole</resource-bundle>
+
+    <portlet-info>
+      <title>Admin Console</title>
+      <short-title>console</short-title>
+      <keywords>admin, console</keywords>
+    </portlet-info>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+
+</portlet-app>

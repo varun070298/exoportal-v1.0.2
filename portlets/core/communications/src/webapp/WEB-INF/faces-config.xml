@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+<!DOCTYPE faces-config 
+          PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+          "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+-->
+
+<faces-config>
+  <factory>
+    <application-factory>com.sun.faces.application.ApplicationFactoryImpl</application-factory>
+    <faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+    <lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+    <render-kit-factory>com.sun.faces.renderkit.RenderKitFactoryImpl</render-kit-factory>
+  </factory>
+
+  <render-kit>
+		<renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>TopicsRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.forum.renderer.html.TopicsRenderer</renderer-class>
+		</renderer>
+		<renderer>
+      <component-family>org.exoplatform.faces.core.component.UIExoComponent</component-family>
+      <renderer-type>PostsRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.forum.renderer.html.PostsRenderer</renderer-class>
+		</renderer>
+
+    <!-- *********************** Renderers for sms portlet ***************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.sms.component.UISmsRecipients</component-family>
+      <renderer-type>SmsRecipientsRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.sms.renderer.html.SmsRecipientsRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.sms.component.UISmsMonitor</component-family>
+      <renderer-type>SmsMonitorRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.sms.renderer.html.SmsMonitorRenderer</renderer-class>
+    </renderer>
+    <!-- *********************** message center portlet ***************************** -->
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.message.component.UIAccountConfiguration</component-family>
+      <renderer-type>AccountConfigurationRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.message.renderer.html.AccountConfigurationRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.message.component.UIAccount</component-family>
+      <renderer-type>AccountRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.message.renderer.html.AccountRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.message.component.UIMessages</component-family>
+      <renderer-type>MessagesRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.message.renderer.html.MessagesRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.communication.message.component.UIViewMessage</component-family>
+      <renderer-type>ViewMessageRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.communication.message.renderer.html.ViewMessageRenderer</renderer-class>
+    </renderer>
+  </render-kit>
+</faces-config>

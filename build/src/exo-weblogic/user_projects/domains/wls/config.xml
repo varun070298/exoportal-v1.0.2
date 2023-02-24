@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Domain ConfigurationVersion="8.1.0.0" Name="wls">
+    <Server ListenAddress="" ListenPort="7001" Name="myserver"
+        NativeIOEnabled="true" ReliableDeliveryPolicy="RMDefaultPolicy" ServerVersion="8.1.4.0">
+        <SSL Enabled="false" HostnameVerificationIgnored="false"
+            IdentityAndTrustLocations="KeyStores" Name="myserver"/>
+    </Server>
+    <JMSFileStore Directory="rmfilestore" Name="FileStore"/>
+    <WSReliableDeliveryPolicy DefaultRetryCount="10"
+        DefaultTimeToLive="60000" Name="RMDefaultPolicy" Store="FileStore"/>
+    <Security Name="wls" PasswordPolicy="wl_default_password_policy"
+        Realm="wl_default_realm" RealmSetup="true">
+        <weblogic.security.providers.authentication.DefaultAuthenticator
+            Name="Security:Name=myrealmDefaultAuthenticator" Realm="Security:Name=myrealm"/>
+
+        <weblogic.security.providers.authentication.DefaultIdentityAsserter
+            ActiveTypes="AuthenticatedUser"
+            Name="Security:Name=myrealmDefaultIdentityAsserter" Realm="Security:Name=myrealm"/>
+        <weblogic.security.providers.authorization.DefaultRoleMapper
+            Name="Security:Name=myrealmDefaultRoleMapper" Realm="Security:Name=myrealm"/>
+        <weblogic.security.providers.authorization.DefaultAuthorizer
+            Name="Security:Name=myrealmDefaultAuthorizer" Realm="Security:Name=myrealm"/>
+        <weblogic.security.providers.authorization.DefaultAdjudicator
+            Name="Security:Name=myrealmDefaultAdjudicator" Realm="Security:Name=myrealm"/>
+        <weblogic.security.providers.credentials.DefaultCredentialMapper
+            Name="Security:Name=myrealmDefaultCredentialMapper" Realm="Security:Name=myrealm"/>
+        <weblogic.management.security.authentication.UserLockoutManager
+            Name="Security:Name=myrealmUserLockoutManager" Realm="Security:Name=myrealm"/>
+        <weblogic.management.security.Realm
+            Adjudicator="Security:Name=myrealmDefaultAdjudicator"
+            AuthenticationProviders="Security:Name=myrealmDefaultAuthenticator|Security:Name=myrealmExoAuthenticator"
+            Authorizers="Security:Name=myrealmDefaultAuthorizer"
+            CredentialMappers="Security:Name=myrealmDefaultCredentialMapper"
+            DefaultRealm="false" DisplayName="myrealm"
+            Name="Security:Name=myrealm"
+            RoleMappers="Security:Name=myrealmDefaultRoleMapper" UserLockoutManager="Security:Name=myrealmUserLockoutManager"/>
+        <org.exoplatform.weblogic.security.ExoAuthenticator
+            ControlFlag="OPTIONAL"
+            Name="Security:Name=myrealmExoAuthenticator" Realm="Security:Name=myrealm"/>
+        <weblogic.management.security.Realm
+            Adjudicator="Security:Name=exo-domainDefaultAdjudicator"
+            Auditors="Security:Name=exo-domainDefaultAuditor"
+            AuthenticationProviders="Security:Name=exo-domainDefaultAuthenticator|Security:Name=exo-domainExoAuthenticator"
+            Authorizers="Security:Name=exo-domainDefaultAuthorizer"
+            CredentialMappers="Security:Name=exo-domainDefaultCredentialMapper"
+            DefaultRealm="true" DisplayName="exo-domain"
+            Name="Security:Name=exo-domain"
+            RoleMappers="Security:Name=exo-domainDefaultRoleMapper" UserLockoutManager="Security:Name=exo-domainUserLockoutManager"/>
+        <weblogic.management.security.authentication.UserLockoutManager
+            Name="Security:Name=exo-domainUserLockoutManager" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.authorization.DefaultAdjudicator
+            Name="Security:Name=exo-domainDefaultAdjudicator" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.audit.DefaultAuditor
+            Name="Security:Name=exo-domainDefaultAuditor" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.authentication.DefaultAuthenticator
+            ControlFlag="SUFFICIENT"
+            Name="Security:Name=exo-domainDefaultAuthenticator" Realm="Security:Name=exo-domain"/>
+        <org.exoplatform.weblogic.security.ExoAuthenticator
+            ControlFlag="SUFFICIENT"
+            Name="Security:Name=exo-domainExoAuthenticator" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.authorization.DefaultAuthorizer
+            Name="Security:Name=exo-domainDefaultAuthorizer" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.credentials.DefaultCredentialMapper
+            Name="Security:Name=exo-domainDefaultCredentialMapper" Realm="Security:Name=exo-domain"/>
+        <weblogic.security.providers.authorization.DefaultRoleMapper
+            Name="Security:Name=exo-domainDefaultRoleMapper" Realm="Security:Name=exo-domain"/>
+    </Security>
+    <EmbeddedLDAP
+        CredentialEncrypted="{3DES}zwV0a89UzCHQ0X6nq0heZkQw0U+nPVhe22VsVFklaQo=" Name="wls"/>
+    <SecurityConfiguration
+        CredentialEncrypted="{3DES}O38x0LfK/PltS4+3h3xztUo4NglrjnvxO/aOsK9/3x2xgpR1S2q1UWut+5MVs3/smT7mgWMDV5QgcTT0DIPCwgrQbYDGeetw"
+        Name="wls" RealmBootStrapVersion="1"/>
+    <Realm FileRealm="wl_default_file_realm" Name="wl_default_realm"/>
+    <FileRealm Name="wl_default_file_realm"/>
+    <PasswordPolicy Name="wl_default_password_policy"/>
+    <JMSServer Name="WSStoreForwardInternalJMSServermyserver"
+        Store="FileStore" Targets="myserver">
+        <JMSQueue CreationTime="1106342615513"
+            JNDIName="jms.internal.queue.WSStoreForwardQueue"
+            JNDINameReplicated="false" Name="WSInternaljms.internal.queue.WSStoreForwardQueuemyserver"/>
+        <JMSQueue CreationTime="1106342616356"
+            JNDIName="jms.internal.queue.WSDupsEliminationHistoryQueue"
+            JNDINameReplicated="false" Name="WSInternaljms.internal.queue.WSDupsEliminationHistoryQueuemyserver"/>
+    </JMSServer>
+    <Application Deployed="true" Name="_appsdir_exo_dir"
+        Path="./applications/exo.ear" StagedTargets=""
+        StagingMode="nostage" TwoPhase="true">
+        <WebAppComponent Name="portal.war" Targets="myserver" URI="portal.war"/>
+        <WebAppComponent Name="communications.war" Targets="myserver" URI="communications.war"/>
+        <WebAppComponent Name="content.war" Targets="myserver" URI="content.war"/>
+        <WebAppComponent Name="exo-admin.war" Targets="myserver" URI="exo-admin.war"/>
+        <WebAppComponent Name="exomvc.war" Targets="myserver" URI="exomvc.war"/>
+        <WebAppComponent Name="htmlarea.war" Targets="myserver" URI="htmlarea.war"/>
+        <WebAppComponent Name="nav.war" Targets="myserver" URI="nav.war"/>
+        <WebAppComponent Name="skin.war" Targets="myserver" URI="skin.war"/>
+        <WebAppComponent Name="user.war" Targets="myserver" URI="user.war"/>
+        <WebAppComponent Name="weather.war" Targets="myserver" URI="weather.war"/>
+        <WebAppComponent Name="web.war" Targets="myserver" URI="web.war"/>
+        <WebAppComponent Name="workflow.war" Targets="myserver" URI="workflow.war"/>
+        <WebAppComponent Name="wsrp.war" Targets="myserver" URI="wsrp.war"/>
+    </Application>
+    <JDBCConnectionPool DriverName="org.hsqldb.jdbcDriver"
+        Name="exohsql" Properties="user=sa" Targets="myserver" URL="jdbc:hsqldb:./database/portaldb"/>
+    <JDBCConnectionPool DriverName="org.hsqldb.jdbcDriver"
+        Name="exoworkflowhsql" Properties="user=sa" Targets="myserver" URL="jdbc:hsqldb:./database/workflowportaldb"/>
+    <JDBCTxDataSource JNDIName="jdbc/ExoDS" Name="hsqlTx"
+        PoolName="exohsql" Targets="myserver"/>
+    <JDBCTxDataSource JNDIName="jdbc/WorkflowDS" Name="workflowhsqlTx"
+        PoolName="exoworkflowhsql" Targets="myserver"/>
+</Domain>

@@ -1,0 +1,131 @@
+@import "/skin/components/simple-tab.css" ;
+
+.wsrp-admin-portlet .UIWSRPAdminPortlet  {
+  width: 100% ;
+}
+
+.wsrp-admin-portlet .UIWSRPAdminPortlet  li {
+  color: red;
+}
+
+.wsrp-admin-portlet a {
+  margin: 0px 1px 0px 1px;
+}
+
+/* ------------------------------------------------------------------ */
+.wsrp-admin-portlet .UIProducerNode  {
+  width: 100% ;
+  margin-top: 3px ;
+}
+.wsrp-admin-portlet .UIProducerNode  td {
+  vertical-align: top ;
+  padding: 2px ;
+}
+
+.wsrp-admin-portlet .UIWSRPAdminPortlet .no-producer{
+  border: 1px dotted #074B88;
+  background : #EEEEEE ;
+  padding: 2px ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  color: gray;
+  font-size : 10pt;
+  font-weight: bold ;
+  color : #074B88;
+  text-align : center;
+}
+
+.wsrp-admin-portlet .UIWSRPAdminPortlet .no-producer-icon{
+  background: url("/skin/images/icons/empty.gif") no-repeat;
+  width: 16x; height: 16px ;
+  padding: 0px;
+  vertical-align : middle;
+}
+
+
+/* ------------------------------------------------------------------ */
+.wsrp-admin-portlet .UIProducerMenu {
+  width: 150px;
+}
+
+.wsrp-admin-portlet .UIProducerMenu table{
+  width: 100%;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+  border: 1px solid #074B88 ;
+}
+
+.wsrp-admin-portlet .UIProducerMenu th {
+  padding: 2px 5px 2px 0px  ;
+  text-align: left ;
+  background: #ddd ;
+  border-bottom : 1px solid #074B88;
+}
+
+.wsrp-admin-portlet .UIProducerMenu td {
+  padding: 2px 15px 2px 15px  ;
+  text-align: left ;
+  background: #EEE ;
+}
+
+.wsrp-admin-portlet .UIProducerMenu a {
+  text-decoration: none ;
+  color: #074B88;
+}
+
+.wsrp-admin-portlet .UIProducerMenu .expand {
+  background: url("/skin/images/icons/closed-folder.gif") no-repeat;
+  padding: 0px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+
+.wsrp-admin-portlet .UIProducerMenu .collapse{
+  background: url("/skin/images/icons/open-folder.gif") no-repeat;
+  padding: 0px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+/* ------------------------------------------------------------------ */
+
+.wsrp-admin-portlet .UIProducerInfo {
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+  text-align : center;
+  border : 1px solid #074B88;
+  width: 100%;
+}
+
+.wsrp-admin-portlet .UIProducerInfo th{
+  background: #DDDDDD ;
+  color: #074B88;
+}
+
+.wsrp-admin-portlet .UIProducerInfo td{
+  width : 50%;
+}
+
+/* ------------------------------------------------------------------ */
+
+.wsrp-admin-portlet .UIOfferedPortlet {
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+  text-align : center;
+  border : 1px solid #074B88;
+  width: 100%;
+}
+
+.wsrp-admin-portlet .UIOfferedPortlet th {
+  background: #DDDDDD ;
+  color: #074B88;
+}
+
+.wsrp-admin-portlet .UIOfferedPortlet td{
+  text-align : left;
+  width : 50%;
+}
+
+.wsrp-admin-portlet .UIOfferedPortlet label{
+  color: #074B88;
+}

@@ -1,0 +1,14 @@
+<project default="jar:install" xmlns:maven="jelly:maven" xmlns:ant="jelly:ant">  
+
+  <preGoal name="java:compile">
+    <mkdir dir="tmp"/>
+    <ant:copy todir="tmp">
+      <ant:fileset dir="src/test/data"/>
+    </ant:copy>
+  </preGoal>
+
+  <preGoal name="clean:clean">
+    <delete dir="tmp"/>
+  </preGoal>
+
+</project>

@@ -1,0 +1,18 @@
+<project default="war:install" xmlns:j="jelly:core" xmlns:m="maven" xmlns:ant="jelly:ant">
+  <preGoal name="war:webapp">
+    <echo message="copy ${maven.src.dir}/webapp/WEB-INF/web-${faces.implementation}.xml to web.xml" />
+    <copy file="${maven.src.dir}/webapp/WEB-INF/web-${faces.implementation}.xml" overwrite="true"
+          tofile="${maven.build.dir}/${pom.artifactId}/WEB-INF/web.xml"/>
+        <!--
+    <copy file="${maven.build.dir}/${pom.artifactId}/WEB-INF/faces-config-${faces.implementation}.xml" overwrite="true"
+      tofile="${maven.build.dir}/${pom.artifactId}/WEB-INF/faces-config.xml"/>
+    -->
+  </preGoal>
+
+  <postGoal name="war:webapp">
+    <replace file="${maven.build.dir}/${pom.artifactId}/WEB-INF/web.xml">
+      <replacefilter token="@resource.ref@" value="${resource.ref}"/>
+    </replace>
+  </postGoal>
+
+</project>

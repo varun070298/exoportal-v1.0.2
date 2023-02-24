@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<group-config>
+  <group-pages>
+    <group-name>test</group-name>
+    <resource-name>pages.properties</resource-name>
+    <page default="true">
+      <title>Home</title>
+      <group-page-type>
+        <group-name>any</group-name>
+        <view-permission>any</view-permission>
+        <edit-permission>any</edit-permission>
+      </group-page-type>
+      <main-column width="200">
+        <tab default="true">
+          <title>tab 1</title>
+          <row>
+            <column width="*">
+              <portlet>
+                <title>Welcome</title>
+                <window-id>user/WelcomePortlet/window-welcome-user</window-id>
+              </portlet>
+              <portlet>
+                <title>Download page</title>
+                <window-id>content/DisplayContent/window-download</window-id>
+              </portlet>
+              <portlet>
+                <title>Need support?</title>
+                <window-id>content/DisplayContent/window-company</window-id>
+              </portlet>          
+            </column>
+          </row>
+        </tab>
+      </main-column>
+    </page>
+  </group-pages>
+</group-config>

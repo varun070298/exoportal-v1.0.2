@@ -1,0 +1,76 @@
+.default-container {
+  width: 100% ; height : auto ;
+  background: transparent;
+}
+
+.default-container td {
+  vertical-align: top ;
+}
+
+.default-container .tabs{
+  width: 100% ; height : 19px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.default-container .tabs table{
+  float : left;
+}
+
+.default-container .tabs .selected-tab-left{
+  background: url("images/left-blue.gif") no-repeat;
+  width: 10px; height: 19px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.default-container .tabs .selected-tab-middle{
+  background: url("images/center-blue.gif") repeat-x;
+  padding: 0px 0px 0px 0px;
+  height: 19px ;
+}
+
+.default-container .tabs .selected-tab-middle a{
+  text-decoration : none;
+  color : white;
+  font-weight: bold ;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+  vertical-align : middle;
+}
+
+.default-container .tabs  .selected-tab-right {
+  background: url("images/right-blue.gif") no-repeat;
+  width: 9px; height: 19px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.default-container .tabs .tab-left {
+  background: url("images/left-brown.gif") no-repeat;
+  width: 10px; height: 19px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.default-container .tabs .tab-middle{
+  background: url("images/center-brown.gif") repeat-x;
+  padding: 0px 0px 0px 0px;
+}
+
+.default-container .tabs .tab-middle a{
+  text-decoration : none;
+  font-family: "Arial", "Tahoma", "Helvetica", "sans-serif";
+  font-size : 10pt;
+  color : gray;
+  vertical-align : middle;
+}
+
+.default-container .tabs .tab-right{
+  background: url("images/right-brown.gif") no-repeat;
+  width: 8px; height: 19px ;
+  padding: 0px 0px 0px 0px;
+}
+
+.default-container .selected-body {
+  border: 2px solid #330099;
+  padding: 2px 3px 2px 3px;
+  margin: 0px 0px 0px 0px;
+}

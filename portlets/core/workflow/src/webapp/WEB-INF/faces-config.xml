@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+<!DOCTYPE faces-config PUBLIC
+"-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN"
+"http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+-->
+
+<faces-config>
+  <factory>
+    <faces-context-factory>org.exoplatform.portlet.faces.context.FacesPortletContextFactoryImpl</faces-context-factory>
+    <lifecycle-factory>org.exoplatform.portlet.faces.lifecycle.ExoLifecycleFactory</lifecycle-factory>
+  </factory>
+
+  <render-kit>
+    <renderer>
+      <component-family>org.exoplatform.portlets.workflow.component.UIBPDefinition</component-family>
+      <renderer-type>BPDefinitionRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.workflow.renderer.html.BPDefinitionRenderer</renderer-class>
+    </renderer>
+    <renderer>
+      <component-family>org.exoplatform.portlets.workflow.component.UITaskList</component-family>
+      <renderer-type>TaskListRenderer</renderer-type>
+      <renderer-class>org.exoplatform.portlets.workflow.renderer.html.TaskListRenderer</renderer-class>
+    </renderer>
+  </render-kit>
+</faces-config>

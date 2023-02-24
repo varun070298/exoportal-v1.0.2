@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project>
+  <extend>${basedir}/../build/project.xml</extend>
+  <pomVersion>3</pomVersion>
+  <id>exoplatform.commons</id>
+  <name>eXo Commons</name>
+  <shortDescription>eXo Commons</shortDescription>
+
+  <dependencies>
+    <dependency>
+      <groupId>bcel</groupId>
+      <artifactId>bcel</artifactId>
+      <version>5.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jibx</groupId>
+      <artifactId>jibx-bind</artifactId>
+      <jar>jibx-bind.jar</jar>
+    </dependency>
+
+    <dependency>
+      <groupId>jibx</groupId>
+      <artifactId>jibx-run</artifactId>
+      <jar>jibx-run.jar</jar>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <resources>
+    
+      <resource>
+        <directory>src/test</directory>
+        <targetPath>../test-classes</targetPath>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>    
+    
+      <resource>
+        <directory>src/java</directory>
+        <includes>
+          <include>**/*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>  
+</project>

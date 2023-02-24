@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="user-profile">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="user-name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        <xsd:element name="first-name" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="last-name" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="email" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="attribute" type="Attribute" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="Attribute">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

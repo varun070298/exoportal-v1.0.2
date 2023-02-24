@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.PortletApplicationsHolder"/>
+  <service-configuration type="org.exoplatform.services.portletcontainer.impl.monitor.PortletMonitor"/>      
+  <service-configuration 
+      key="org.exoplatform.services.portletcontainer.PortletApplicationRegister"
+      type="org.exoplatform.services.portletcontainer.impl.PortletApplicationRegisterImpl"/> 
+</configuration>

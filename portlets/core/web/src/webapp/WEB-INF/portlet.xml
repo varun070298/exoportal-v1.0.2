@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+  <portlet>
+    <description xml:lang="EN">Rss news</description>
+    <portlet-name>RssPortlet</portlet-name>
+    <display-name xml:lang="EN">Rss Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.rss.component.UIRss.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlet.faces.component.UIPortletPreferences.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/rss-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.web.RssResource</resource-bundle>
+
+    <portlet-info>
+      <title>Rss News</title>
+      <short-title>News</short-title>
+      <keywords>news, rss</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>channel</name>
+        <value>News</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>description</name>
+        <value>This is the news from internet</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>url</name>
+        <value>/exo-rss.xml</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>item-to-show</name>
+        <value>5</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+  </portlet>
+
+  <portlet>
+    <description xml:lang="EN">IFrame Portlet</description>
+    <portlet-name>IFramePortlet</portlet-name>
+    <display-name xml:lang="EN">Iframe Portlet</display-name>
+    <portlet-class>org.exoplatform.portlet.faces.ExoFacesPortlet</portlet-class>
+
+    <init-param>
+      <name>default-view</name>
+      <value>org.exoplatform.portlets.iframe.component.UIIframe.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-edit</name>
+      <value>org.exoplatform.portlet.faces.component.UIPreferencesEditor.class</value>
+    </init-param>
+
+    <init-param>
+      <name>default-help</name>
+      <value>org.exoplatform.portlet.faces.component.UISimpleHelp.class</value>
+    </init-param>
+
+    <init-param>
+      <name>portlet-help-file</name>
+      <value>/help/iframe-portlet-help.html</value>
+    </init-param>
+
+    <expiration-cache>-1</expiration-cache>
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+      <portlet-mode>help</portlet-mode>
+    </supports>
+
+    <supported-locale>en</supported-locale>
+
+    <resource-bundle>locale.portlet.web.IFrameResource</resource-bundle>
+
+    <portlet-info>
+      <title>Iframe</title>
+      <short-title>Iframe</short-title>
+      <keywords>external site</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>iframe-src</name>
+        <value>/web/iframe-portlet.html</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>iframe-width</name>
+        <value>*</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>iframe-height</name>
+        <value>*</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+  </portlet>
+</portlet-app>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<configuration>
+  <service-configuration 
+      key="org.exoplatform.services.security.SecurityService"
+      type="org.exoplatform.services.security.impl.SecurityServiceImpl"/>
+</configuration>

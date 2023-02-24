@@ -1,0 +1,144 @@
+@import "/skin/components/calendar-component.css" ;
+
+.UIPortletContainerMonitor  {
+  width: 100% ;
+}
+
+.UIPortletContainerMonitor  td {
+  vertical-align: top ;
+
+}
+
+/* ------------------------------------------------------------------ */
+.UIPortletMenu {
+  width: 150px;
+}
+
+.UIPortletMenu table{
+  width: 100%;
+  font-size : 10pt;
+  border: 1px solid #CCCCCC ;
+}
+
+.UIPortletMenu th {
+  padding: 2px 5px 2px 0px  ;
+  text-align: left ;
+  background: #ddd ;
+  border-bottom : 1px solid #074B88;
+}
+
+.UIPortletMenu td {
+  padding: 2px 15px 2px 15px  ;
+  text-align: left ;
+  background: #EEE ;
+}
+
+.UIPortletMenu a {
+  text-decoration: none ;
+}
+
+.UIPortletMenu .expand {
+  background: url("/skin/images/icons/closed-folder.gif") no-repeat;
+  padding: 0px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+
+.UIPortletMenu .collapse{
+  background: url("/skin/images/icons/open-folder.gif") no-repeat;
+  padding: 0px;
+  width : 16px; height : 16px;
+  border : none;
+  vertical-align : bottom;
+}
+/* ------------------------------------------------------------------ */
+.UIPortletApplicationMonitor  {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UIPortletApplicationMonitor  th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+}
+
+.UIPortletApplicationMonitor  td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center ;
+}
+
+.UIPortletApplicationMonitor .even{
+  background: #EEE ;
+}
+
+/* ------------------------------------------------------------------ */
+.UIPortletMonitor  {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UIPortletMonitor  th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+}
+
+.UIPortletMonitor  td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center ;
+}
+
+.UIPortletMonitor .even{
+  background: #EEE ;
+}
+/* ------------------------------------------------------------------ */
+.UILiveSessions  {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UILiveSessions  th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+}
+
+.UILiveSessions  td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center ;
+}
+
+/* ------------------------------------------------------------------ */
+.UISessionMonitor  {
+  border: 1px solid #CCCCCC ;
+  width: 100% ;
+  empty-cells: show ;
+  border-collapse: collapse ;
+}
+
+.UISessionMonitor  th {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  background: #bbb ;
+  color: #074B88;
+}
+
+.UISessionMonitor  td {
+  border: 1px solid #CCCCCC ;
+  padding: 2px ;
+  text-align: center ;
+}

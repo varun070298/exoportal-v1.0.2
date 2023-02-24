@@ -1,0 +1,72 @@
+ /**********************************************************************************
+ *	The.info-company-decorators decorator                                                   *
+ ***********************************************************************************/
+.info-company-decorator {
+  background-color: white ;
+} 
+
+.info-company-decorator .portlet-info-bar {
+  background-color: white ;
+  background: url("box-1-images/info-bar-bg-300x90.gif") no-repeat ;
+  padding: 0px 0px 0px 0px;
+}
+
+.info-company-decorator .portlet-info-bar-title {
+  text-align: center ; vertical-align: bottom ;
+  height: 55px ; width: 100% ;
+  font-size: 14pt; font-weight : bold;
+  padding-left: 2px; padding-right: 2px;
+  color: rgb(61, 57, 147) ;
+}
+
+.info-company-decorator .portlet-footer-bar {
+  background-color: white ;
+  height: 60px ; width: 100% ;
+  padding: 0px 20px 0px 20px;
+  background: url("box-1-images/footer-bg-250x18.gif") no-repeat 50% 90%;
+}
+
+.info-company-decorator .portlet-button-help {
+  display: inline ;
+  border: none ;
+  width: 35px; height: 25px ;
+  background-image: url("box-1-images/icons/help-35x25.gif") ;
+}
+
+.info-company-decorator .portlet-button-config {
+  display: inline ;
+  border: none ;
+  width: 27px; height: 25px ;
+  background-image: url("box-1-images/icons/config-27x25.gif") ;
+}
+
+.info-company-decorator .portlet-button-edit {
+  display: inline ;
+  border: none ;
+  width: 17px; height: 25px ;
+  background-image: url("box-1-images/icons/edit-17x25.gif") ;
+}
+
+.info-company-decorator .portlet-button-view {
+  display: inline ;
+  border: none ;
+  width: 20px; height: 25px ;
+  background-image: url("box-1-images/icons/view-20x25.gif") ;
+}
+
+.info-company-decorator .portlet-button-normal {
+  display: inline ;
+  border: none ;
+  width: 20px; height: 25px ;
+  background-image: url("box-1-images/icons/normal-view-20x25.gif") ;
+}
+
+.info-company-decorator .portlet-button-minimized {
+}
+
+.info-company-decorator .portlet-button-maximized {
+  display: inline ;
+  border: none ;
+  width: 24px; height: 25px ;
+  background-image: url("box-1-images/icons/max-view-24x25.gif") ;
+}

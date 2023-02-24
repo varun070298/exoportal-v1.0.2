@@ -1,0 +1,46 @@
+<forms>
+
+  <form>
+  	<resource-bundle>request</resource-bundle>
+  	<state-name>request</state-name>
+    <variable name="start.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <variable name="end.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+  </form>
+
+  <form>
+  	<resource-bundle>evaluation</resource-bundle>
+  	<state-name>evaluation</state-name>
+    <variable name="requester" />
+    <variable name="start.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <variable name="end.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <submitbutton value="approve" transition-name="approve" />
+    <submitbutton value="disapprove" transition-name="disapprove" />
+    <submitbutton value="refuse" transition-name="refuse" />
+  </form>
+
+  <form>
+  	<resource-bundle>change-request</resource-bundle>
+  	<state-name>change request</state-name>
+    <variable name="start.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <variable name="end.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <submitbutton value="submit" transition-name="submit" />
+    <submitbutton value="cancel" transition-name="cancel" />
+  </form>
+
+  <form>
+  	<resource-bundle>hr-acknoledgement</resource-bundle>
+  	<state-name>hr acknowledgement</state-name>
+    <variable name="requester" />
+    <variable name="start.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <variable name="end.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+  </form>
+
+  <form>
+  	<resource-bundle>assign-replacement</resource-bundle>
+  	<state-name>assign replacement</state-name>
+    <variable name="requester" />
+    <variable name="start.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+    <variable name="end.date" format="org.exoplatform.services.workflow.format.BasicDateFormat"/>
+  </form>
+
+</forms>
